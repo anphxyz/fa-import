@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tab dữ liệu gốc - nhóm nhân viên</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/facilio-icon/stylesheet.css">
+    <link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="css/util.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<img src="images/nav.png" width="100%">
+<div class="content-body">
+    <div class="content-page-system-management">
+        <!-- Start Page Tab Du Lieu Goc Nhan Vien -->
+        <div class="container-fluid">
+            <div class="content">
+                <!-- Top Page -->
+                <div class="content-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-inline">
+                                <a class="btn btn-permission" href="#" role="button" id="btn-permission">Phân quyền</a>
+                                <div class="dropdown">
+                                    <button class="btn btn-data-root dropdown-toggle active" type="button" id="btn-data-root">
+                                        Dữ liệu gốc
+                                    </button>
+                                    <a href="#" class="name-parent-menu">Nhân viên</a><span style="font-size: 12px;">/</span><a href="#" class="name-child-menu">Nhóm nhân viên</a>
+                                    <div class="popup-menu-data-root">
+                                        <ul class="parent d-none">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="faci-buildings ic-menu"></span>Công ty - chi nhánh<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span>
+                                                </a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Danh mục quản lý</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-use3 ic-menu"></span>Nhân viên<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Nhân viên</a></li>
+                                                    <li><a href="">Nhóm nhân viên</a></li>
+                                                    <li><a href="">Nhóm theo khu vực</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><span class="faci-calendar ic-menu"></span>Lịch làm việc</a></li>
+                                            <li>
+                                                <a href="#"><span class="faci-gear ic-menu"></span>Máy - Loại thiết bị<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Máy - Loại thiết bị</a></li>
+                                                    <li><a href="">Bộ phận máy</a></li>
+                                                    <li><a href="">Nguyên nhân</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-baotrisuachua ic-menu"></span>Bảo trì<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vị trí thiết bị</a></li>
+                                                    <li><a href="">Đơn vị bảo trì</a></li>
+                                                    <li><a href="">Nhật ký sửa đổi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-vattuthaythe ic-menu"></span>Vật tư<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vật tư</a></li>
+                                                    <li><a href="">Đơn vị tính</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                    <li><a href="">Vật tư theo thiết bị</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Page -->
+
+                <!-- Page Body -->
+                <div class="content-body">
+                    <div class="content-data-root">
+                        <div class="data-root-body">
+
+                            <div class="top-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row justify-content-end">
+                                            <a href="#" class="btn-group-personnel"><span class="faci-add ic-add"></span>Nhóm nhân viên</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="list-group-personnel">
+                                            <li>
+                                                <a href="#" class="faci-eye ic-eye"></a>
+                                                <span class="title-item">Tổ sửa chữa công trình (t_scct)</span>
+                                                <div class="list-ic-right">
+                                                    <a href="#" class="faci-users ic-user-group"></a>
+                                                    <a href="#" class="faci-use3 ic-user"></a>
+                                                    <a href="#" class="faci-edit ic-edit"></a>
+                                                    <a href="#" class="faci-delete ic-delete"></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="faci-eye ic-eye"></a>
+                                                <span class="title-item">Tổ bôi trơn</span>
+                                                <div class="list-ic-right">
+                                                    <a href="#" class="faci-users ic-user-group"></a>
+                                                    <a href="#" class="faci-use3 ic-user"></a>
+                                                    <a href="#" class="faci-edit ic-edit"></a>
+                                                    <a href="#" class="faci-delete ic-delete"></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="faci-eye2 ic-eye2 active"></a>
+                                                <span class="title-item">Tổ Clinker</span>
+                                                <div class="list-ic-right">
+                                                    <a href="#" class="faci-users ic-user-group"></a>
+                                                    <a href="#" class="faci-use3 ic-user"></a>
+                                                    <a href="#" class="faci-edit ic-edit"></a>
+                                                    <a href="#" class="faci-delete ic-delete"></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Popup Slider List User Group -->
+                            <div class="popup-slider" id="popup_slider_user_group">
+                                <div class="popup-slider-content popup-slider-small">
+
+                                    <div class="popup-slider-small-top">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h3>Tổ sửa chữa công trình (10)</h3>
+                                                <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-search">
+                                        <div class="row justify-content-end">
+                                            <input type="text" class="form-control input-search">
+                                            <a href="#" class="faci-search ic-search"><span class="path2"></span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-body">
+                                        <div class="popup-slider-user-group">
+
+                                            <div class="list-user-group">
+                                                    <ul>
+                                                        <li>1. Bùi Văn Lập</li>
+                                                        <li>2. Bùi Công Trường</li>
+                                                        <li>3. Bùi Quang Trí</li>
+                                                        <li>4. Bùi Quang Trí</li>
+                                                        <li>5. Bùi Quang Trí</li>
+                                                        <li>6. Bùi Quang Trí</li>
+                                                        <li>7. Bùi Quang Trí</li>
+                                                        <li>8. Bùi Quang Trí</li>
+                                                        <li>9. Bùi Quang Trí</li>
+                                                        <li>1. Bùi Văn Lập</li>
+                                                        <li>2. Bùi Công Trường</li>
+                                                        <li>3. Bùi Quang Trí</li>
+                                                        <li>4. Bùi Quang Trí</li>
+                                                        <li>5. Bùi Quang Trí</li>
+                                                        <li>6. Bùi Quang Trí</li>
+                                                        <li>7. Bùi Quang Trí</li>
+                                                        <li>8. Bùi Quang Trí</li>
+                                                        <li>9. Bùi Quang Trí</li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Popup Slider List User Group -->
+
+                            <!-- Popup Slider List User Manage -->
+                            <div class="popup-slider" id="popup_slider_user_manager">
+                                <div class="popup-slider-content popup-slider-small">
+
+                                    <div class="popup-slider-small-top">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span class="faci-use3 ic-user-manage"></span>
+                                                <h3>Nhân viên trực thuộc quản lý</h3>
+                                                <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-search">
+                                        <div class="row justify-content-end">
+                                            <input type="text" class="form-control input-search">
+                                            <a href="#" class="faci-search ic-search"><span class="path2"></span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-body">
+                                        <div class="popup-slider-user-manager">
+                                            <div class="list-user-manager">
+                                                <ul>
+                                                    <li>
+                                                        Bùi Văn Lập
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Công Trường
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb" checked>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb" checked>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-footer">
+                                        <div class="row justify-content-end">
+                                            <a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+                                            <a href="#" class="btn btn-save">LƯU</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Popup Slider List User Manage -->
+
+                            <!-- Popup Slider List User Manage Group -->
+                            <div class="popup-slider" id="popup_slider_user_manager_group">
+                                <div class="popup-slider-content popup-slider-small">
+
+                                    <div class="popup-slider-small-top">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span class="faci-users ic-user-manage-group"></span>
+                                                <h3>Nhóm / Tổ</h3>
+                                                <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-search">
+                                        <div class="row justify-content-end">
+                                            <input type="text" class="form-control input-search">
+                                            <a href="#" class="faci-search ic-search"><span class="path2"></span></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-body">
+                                        <div class="popup-slider-user-manager-group">
+
+                                            <div class="list-user-manager-group">
+                                                <ul>
+                                                    <li>
+                                                        Bùi Văn Lập
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Công Trường
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb" checked>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb" checked>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        Bùi Quang Trí
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="popup-slider-small-footer">
+                                        <div class="row justify-content-end">
+                                            <a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+                                            <a href="#" class="btn btn-save">LƯU</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- End Popup Slider List User Manage Group -->
+
+                            <!-- Dialog Them Edit Nhom Nhan Vien -->
+                            <div class="qb-dialog" id="edit_user_mangager_group">
+                                <div class="qb-dialog-overlay">
+                                    <div class="container-fluid qb-dialog-body">
+
+                                        <!-- Header Dialog -->
+                                        <div class="qb-dialog-header">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3 class="title-dialog">NHÓM NHÂN VIÊN</h3>
+                                                    <a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Content Dialog -->
+                                        <div class="qb-dialog-content">
+                                            <form class="form-add-user-mangager-group">
+                                                <div class="form-group row">
+                                                    <label class="col-4 col-form-label text-right">Tên viết tắt*</label>
+                                                    <div class="col-8 p-0">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-4 col-form-label text-right">Tên nhóm*</label>
+                                                    <div class="col-8 p-0">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-4 col-form-label text-right">Hiển thị*</label>
+                                                    <div class="col-8 p-0">
+                                                        <div class="switch_box">
+                                                            <input type="checkbox" class="switch_cb">
+                                                        </div>
+                                                        <span class="faci-hide ic-hide"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-4 col-form-label text-right">Nhóm trực thuộc</label>
+                                                    <div class="col-8 p-0">
+                                                        <div class="dropdown">
+                                                            <button class="qb-dropdown dropdown-toggle group-personnel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                Không trực thuộc nhóm nào
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+                                                                <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-4 col-form-label text-right">Xưởng sửa chửa*</label>
+                                                    <div class="col-8 p-0">
+                                                        <input type="checkbox" id="c1" name="cb" class="qb-checkbox" />
+                                                        <label for="c1" class="qb-checkbox-label"></label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <!-- Footer Dialog -->
+                                        <div class="qb-dialog-footer">
+                                            <div class="row justify-content-end">
+                                                <div class="col-12 text-right">
+                                                    <a href="#" class="btn-close close-dialog">ĐÓNG</a>
+                                                    <a href="#" class="btn-save">LƯU</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Dialog Them Edit Nhom Nhan Vien -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Page Body -->
+
+            </div>
+        </div>
+        <!-- End Page Tab Du Lieu Goc Nhan Vien -->
+    </div>
+</div>
+
+<script src="dist/jquery/jquery-3.2.1.min.js"></script>
+<script src="dist/jquery/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/ultil.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

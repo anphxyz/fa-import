@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quản trị hệ thống</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/facilio-icon/stylesheet.css">
+    <link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="css/man-ultil.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<img src="images/nav.png" width="100%">
+<div class="content-body">
+    <div class="content-page-system-management">
+
+        <!-- Start Page Quan Tri He Thong -->
+        <div class="container-fluid">
+            <div class="content">
+                <div class="content-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-inline">
+                                <a class="btn btn-permission active" href="#" role="button" id="btn-permission">Phân quyền</a>
+                                <div class="dropdown">
+                                    <button class="btn btn-data-root dropdown-toggle" type="button" id="btn-data-root">
+                                        Dữ liệu gốc
+                                    </button>
+                                    <a href="#" class="name-parent-menu">Bảo trì</a><span style="font-size: 12px;">/</span><a href="#" class="name-child-menu">Vị trí thiết bị</a>
+                                    <div class="popup-menu-data-root">
+                                        <ul class="parent d-none">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="faci-buildings ic-menu"></span>Công ty - chi nhánh<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span>
+                                                </a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Danh mục quản lý</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-use3 ic-menu"></span>Nhân viên<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Nhân viên</a></li>
+                                                    <li><a href="">Nhóm nhân viên</a></li>
+                                                    <li><a href="">Nhóm theo khu vực</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><span class="faci-calendar ic-menu"></span>Lịch làm việc</a></li>
+                                            <li>
+                                                <a href="#"><span class="faci-gear ic-menu"></span>Máy - Loại thiết bị<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Máy - Loại thiết bị</a></li>
+                                                    <li><a href="">Bộ phận máy</a></li>
+                                                    <li><a href="">Nguyên nhân</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-baotrisuachua ic-menu"></span>Bảo trì<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vị trí thiết bị</a></li>
+                                                    <li><a href="">Đơn vị bảo trì</a></li>
+                                                    <li><a href="">Nhật ký sửa đổi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-vattuthaythe ic-menu"></span>Vật tư<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vật tư</a></li>
+                                                    <li><a href="">Đơn vị tính</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                    <li><a href="">Vật tư theo thiết bị</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-tab-menu">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" href="#personal_permission" class="tab-active title-tab">Quyền cá nhân</a></li>
+                                <li><a data-toggle="tab" href="#list_function" class="title-tab">Danh sách chức năng</a></li>
+                                <li><a data-toggle="tab" href="#permission" class="title-tab">Phân quyền</a></li>
+                                <li><a data-toggle="tab" href="#content_login" class="title-tab">Đăng nhập</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="personal_permission" class="tab-pane fade in active personal-permission">
+                                    <div class="personal-permission-top">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <ul class="list-char-sort">
+                                                    <li><a href="#">A</a></li>
+                                                    <li><a href="#">B</a></li>
+                                                    <li><a href="#">C</a></li>
+                                                    <li><a href="#">D</a></li>
+                                                    <li><a href="#">E</a></li>
+                                                    <li><a href="#">F</a></li>
+                                                    <li><a href="#">G</a></li>
+                                                    <li><a href="#">H</a></li>
+                                                    <li><a href="#">I</a></li>
+                                                    <li><a href="#">J</a></li>
+                                                    <li><a href="#">K</a></li>
+                                                    <li><a href="#">L</a></li>
+                                                    <li><a href="#">M</a></li>
+                                                    <li><a href="#">N</a></li>
+                                                    <li><a href="#">O</a></li>
+                                                    <li><a href="#">P</a></li>
+                                                    <li><a href="#">Q</a></li>
+                                                    <li><a href="#">R</a></li>
+                                                    <li><a href="#">S</a></li>
+                                                    <li><a href="#">T</a></li>
+                                                    <li><a href="#">U</a></li>
+                                                    <li><a href="#">V</a></li>
+                                                    <li><a href="#">W</a></li>
+                                                    <li><a href="#">X</a></li>
+                                                    <li><a href="#">Y</a></li>
+                                                    <li><a href="#">Z</a></li>
+                                                    <li><a href="#">Tất cả</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row justify-content-end">
+                                                    <input type="text" class="form-control search-list-name">
+                                                    <span class="faci-search ic-search-list-name">
+                                                        <span class="path2"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="personal-permission-content">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <ul class="list-name">
+                                                    <li class="item-list-name">Văn Tân</li>
+                                                    <li class="item-list-name">Trần Minh Tuệ</li>
+                                                    <li class="item-list-name">Trần Minh Tuệ</li>
+                                                    <li class="item-list-name">Văn Tân</li>
+                                                    <li class="item-list-name">Trần Minh Tuệ</li>
+                                                    <li class="item-list-name">Trần Minh Tuệ</li>
+                                                    <li class="item-list-name">Văn Tân</li>
+                                                    <li class="item-list-name">Trần Minh Tuệ</li>
+                                                    <li class="item-list-name">Trần Minh Tuệ</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list_function" class="tab-pane fade">
+                                    <div class="list-function">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <ul>
+                                                    <li>
+                                                        <span class="title-lf">Nhóm quyền sử dụng giao diện nhập liệu</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Nhóm quyền sử dụng giao diện tim kiếm</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng giao diện TAB Bảo trì bôi trơn</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng giao diện cung ứng vật tư</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng Dashboard</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng TAB admin</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng chương trình</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng giao diện CM</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng giao diện PM</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền sử dụng lịch làm việc</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="title-lf">Quyền xử lý tài liệu / hình ảnh</span>
+                                                        <span class="item-lf">
+                                                            <button>
+                                                                <i class="faci-add"></i>
+                                                                <span>Chức năng</span>
+                                                            </button>
+                                                            <a class="faci-list ic-list"></a>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Popup Danh Sach Quyen -->
+                                    <div class="popup-slider" id="popup_slider_list_permission">
+                                        <div class="popup-slider-content popup-slider-small">
+
+                                            <div class="popup-slider-small-top">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h3>Quyền sử dụng giao diện TAB Bảo trì bôi trơn</h3>
+                                                        <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="popup-slider-small-search">
+                                                <div class="row justify-content-end">
+                                                    <input type="text" class="form-control search-list-permission">
+                                                    <a href="#" class="ic-search-list-permission"><span class="faci-search ic-search"><span class="path1"></span><span class="path2"></span></span></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="popup-slider-small-body">
+                                                <div class="list-permission">
+                                                    <div class="list-permission-content">
+
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                                                        <span class="item">
+                                                                <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Chuc nang chon lua nhom nhan vien (PMB_GRP_SEA)</span>
+                                                                        <span class="item">
+                                                                <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Chức năng cập nhật báo cáo kết quả thực hiện PM (PMB_NOT_CRE)</span>
+                                                                        <span class="item">
+                                                                 <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Chức năng chỉnh sửa báo cáo kết quả thực hiện PM (PMB_NOT_MOD)</span>
+                                                                        <span class="item">
+                                                                 <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Chức năng truy cập báo cáo kết quả thực hiện PM (PMB_NOT_VIE)</span>
+                                                                        <span class="item">
+                                                               <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Chuc nang truy xuat phieu cong tac bang excel (PMB_REP_XLS)</span>
+                                                                        <span class="item">
+                                                                <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Chức năng tạo mới phiếu yêu cầu vật tư PM (PMB_SPA_CRE)</span>
+                                                                        <span class="item">
+                                                                 <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span class="title-item-list-permission">Chức năng cập nhật công việc PM (PMB_TIC_CRE)</span>
+                                                                        <span class="item">
+                                                                <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Chức năng xóa công việc PM (PMB_TIC_DEL)</span>
+                                                                        <span class="item">
+                                                                <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Chức năng truy cập công việc PM (PMB_TIC_VIE)</span>
+                                                                        <span class="item">
+                                                                <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Chuc nang in danh sach cac cong viec (PMB_TLI_PRI)</span>
+                                                                        <span class="item">
+                                                                <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Chuc nang su dung danh sach kiem tra cong viec (PMB_TLI_USE)</span>
+                                                                        <span class="item">
+                                                                 <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Chuc nang khoi ddong lai cac thong so van hanh may & thiet bi (PMB_LOG_RES)</span>
+                                                                        <span class="item">
+                                                                 <a href="#" class="faci-edit"></a>
+                                                                <a href="#" class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Quyen truy cap TAB Speed Jobs (TAB_JOB_VIE)</span>
+                                                                        <span class="item">
+                                                                <a class="faci-edit"></a>
+                                                                <a class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Chuc nang ... (PMB_PRD_NEW)</span>
+                                                                        <span class="item">
+                                                                <a class="faci-edit"></a>
+                                                                <a class="faci-delete"></a>
+                                                            </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="permission" class="tab-pane fade">
+                                    <div class="content-permission">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <button type="button" class="btn-group-permission"><span class="faci-add ic-add"></span>Nhóm quyền</button>
+                                                <div id="accordion" role="tablist">
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="headingOne">
+                                                            <h5 class="mb-0">
+                                                                <a data-toggle="collapse" href="#collapseOne" class="title-collapse" aria-expanded="false"
+                                                                   aria-controls="collapseOne">
+                                                                    <span class="faci-arrow-lineD ic-arrow-down"></span>
+                                                                    Kỹ thuật viên
+                                                                </a>
+                                                                <span class="faci-delete float-right ic-delete-permission"></span>
+                                                                <span class="faci-edit float-right ic-edit-permission"></span>
+                                                                <a href="#" class="btn-add-user"><span class="faci-user-add float-right ic-add-user"></span></a>
+                                                            </h5>
+                                                        </div>
+
+                                                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                                                             data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <ul>
+                                                                    <li class="item-group-permission">Nhóm quyền sử dụng giao diện nhập liệu<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                    <li class="item-group-permission">Nhóm quyền sử dụng giao diện tìm kiếm<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                    <li class="item-group-permission">Quyen su dung giao dien cung ung vat tu<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="headingTwo">
+                                                            <h5 class="mb-0">
+                                                                <a class="collapsed title-collapse" data-toggle="collapse" href="#collapseTwo"
+                                                                   aria-expanded="false" aria-controls="collapseTwo">
+                                                                    <span class="faci-arrow-lineD ic-arrow-down"></span>
+                                                                    Nhân viên X.SC
+                                                                </a>
+                                                                <span class="faci-delete float-right ic-delete-permission"></span>
+                                                                <span class="faci-edit float-right ic-edit-permission"></span>
+                                                                <a href="#" class="btn-add-user"><span class="faci-user-add float-right ic-add-user"></span></a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                                                             data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <ul>
+                                                                    <li class="item-group-permission">Nhóm quyền sử dụng giao diện nhập liệu<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                    <li class="item-group-permission">Nhóm quyền sử dụng giao diện tìm kiếm<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                    <li class="item-group-permission">Quyen su dung giao dien cung ung vat tu<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" role="tab" id="headingThree">
+                                                            <h5 class="mb-0">
+                                                                <a class="collapsed title-collapse" data-toggle="collapse" href="#collapseThree"
+                                                                   aria-expanded="false" aria-controls="collapseThree">
+                                                                    <span class="faci-arrow-lineD ic-arrow-down"></span>
+                                                                    ADMIN GROUP OF XNBS LORME DUMMY TEXT
+                                                                </a>
+                                                                <span class="faci-delete float-right ic-delete-permission"></span>
+                                                                <span class="faci-edit float-right ic-edit-permission"></span>
+                                                                <a href="#" class="btn-add-user"><span class="faci-user-add float-right ic-add-user"></span></a>
+                                                            </h5>
+                                                        </div>
+                                                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                                                             data-parent="#accordion">
+                                                            <div class="card-body">
+                                                                <ul>
+                                                                    <li class="item-group-permission">Nhóm quyền sử dụng giao diện nhập liệu<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                    <li class="item-group-permission">Nhóm quyền sử dụng giao diện tìm kiếm<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                    <li class="item-group-permission">Quyen su dung giao dien cung ung vat tu<span
+                                                                            class="faci-arrow-right float-right"></span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="content_login" class="tab-pane fade">
+                                    <div class="content-page-login">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <ul>
+                                                    <li><a href="#" class="sort-by-char">A</a></li>
+                                                    <li><a href="#" class="sort-by-char">B</a></li>
+                                                    <li><a href="#" class="sort-by-char">C</a></li>
+                                                    <li><a href="#" class="sort-by-char">D</a></li>
+                                                    <li><a href="#" class="sort-by-char">E</a></li>
+                                                    <li><a href="#" class="sort-by-char">F</a></li>
+                                                    <li><a href="#" class="sort-by-char">G</a></li>
+                                                    <li><a href="#" class="sort-by-char">H</a></li>
+                                                    <li><a href="#" class="sort-by-char">I</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <form class="form-inline d-block float-right">
+                                                    <input type="text" class="form-control input-search">
+                                                    <a href="#" class="btn-search"><span class="faci-search"><span class="path2"></span></span></a>
+                                                </form>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <table class="table table-responsive qb-table">
+                                                    <thead>
+                                                    <tr class="header-table">
+                                                        <th class="text-center">HỌ TÊN NHÂN VIÊN</th>
+                                                        <th class="text-center fixed-col">QUYỀN ADMIN</th>
+                                                        <th class="text-center fixed-col">QUYỀN ĐĂNG NHẬP</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="text-left">Văn Tân (NMBP_TANV)</td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left">Trần Tấn Sĩ (NMBP_SITT)</td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left">Trần Minh Tuệ (NMBP_TUETM)</td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left">Bùi Công Trường (NMBP_TRUONGBC)</td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left">Văn Tân (NMBP_TANV)</td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <div class="switch_box">
+                                                                <input type="checkbox" class="switch_cb">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Quan Tri He Thong -->
+
+        <!-- Start Popup Slide Nhom Nguoi -->
+        <div class="popup-slider" id="popup_slide_group_person">
+            <div class="popup-slider-content popup-slider-small">
+                <div class="popup-slider-small-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="faci-user-add float-left ic-add-user"></span>
+                            <h3>Kỹ thuật viên</h3>
+                            <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-search">
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="form-inline">
+                                <div class="form-group mx-sm-3">
+                                    <input type="text" class="form-control input-search">
+                                </div>
+                                <a href="#"><span class="faci-search"><span class="path2"></span></span></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-body">
+                    <div class="slide-group-person">
+                        <div class="clearfix"></div>
+                        <div class="slide-group-person-content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb" checked>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb" checked>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span>Bùi Văn Lập</span>
+                                            <div class="switch_box float-right">
+                                                <input type="checkbox" class="switch_cb">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-footer">
+                    <div class="row justify-content-end">
+                        <a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+                        <a href="#" class="btn btn-save">LƯU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup Slide Nhom Nguoi -->
+
+        <!-- Start Popup Slide Phan Quyen -->
+        <div class="popup-slider" id="popup_slider_permission">
+            <div class="popup-slider-content popup-slider-small">
+                <div class="popup-slider-small-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Nhóm quyền sử dụng giao diện nhập liệu</h3>
+                            <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-body">
+                    <div class="slide-permission-content">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul>
+                                    <li>
+                                        <span>&nbsp;</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-all">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Quyền sử dụng giao diện hạn mức Bôi trơn (PMB_LIM_VIE)</span>
+                                        <label class="custom-control custom-checkbox float-right">
+                                            <input type="checkbox" class="custom-control-input cb-permission">
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-footer">
+                    <div class="row justify-content-end">
+                        <a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+                        <a href="#" class="btn btn-save">LƯU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup Slide Phan Quyen -->
+
+        <!-- Start Popup Slide Danh Sach Quyen Ca Nhan -->
+        <div class="popup-slider" id="popup_slide_list_person_permission">
+            <div class="popup-slider-content popup-slider-small">
+                <div class="popup-slider-small-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Vân Tân</h3>
+                            <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-body">
+                    <div class="slide-list-person-permission">
+                        <div class="list-person-permission-content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul>
+                                        <li>Quyền sử dụng giao diện PM (PMA)</li>
+                                        <li>Quyền sử dụng chuong trình (FAC)</li>
+                                        <li>Nhóm quyền sử dụng giao diện tìm kiếm (SEA)</li>
+                                        <li>Quyen su dung giao dien cung ung vat tu (SPA)</li>
+                                        <li>Quyền sử dụng Dashboard (DAS)</li>
+                                        <li>Quyền xử lý tài liệu / hình ảnh (ATT)</li>
+                                        <li>Quyen su dung giao dien TAB Bao tri Boi tron (PMB)</li>
+                                        <li>Quyền sử dụng giao diện CM (CMA)</li>
+                                        <li>Quyền sử dụng lịch làm việc (CAL)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup Slide Danh Sach Quyen Ca Nhan -->
+
+        <!-- Start Popup Slide Chi Tiet Quyen Ca Nhan -->
+        <div class="popup-slider" id="popup_slide_detail_person_permission">
+            <div class="popup-slider-content popup-slider-small">
+                <div class="popup-slider-small-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Quyền sử dụng chương trình (FAC)</h3>
+                            <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-body">
+                    <div class="slide-detail-person-permission">
+                        <div class="detail-person-permission-content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul>
+                                                    <li>
+                                                        <label>Quyen truy cap cong viec theo loai may (FAC_GRP_MAC)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyền thay đổi nhân viên bảo trì (PMA_EMP_UPD)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyền truy cập TAB Báo cáo (TAB_REP_VIE)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Chức năng sử dụng (xem) tin nhắn (PER_NOT_CRE)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Chức năng chỉnh sửa tin nhắn (PER_NOT_MOD)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyen truy cap cong viec theo loai may (FAC_GRP_MAC)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyền thay đổi nhân viên bảo trì (PMA_EMP_UPD)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyền truy cập TAB Báo cáo (TAB_REP_VIE)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Chức năng sử dụng (xem) tin nhắn (PER_NOT_CRE)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Chức năng chỉnh sửa tin nhắn (PER_NOT_MOD)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyen truy cap cong viec theo loai may (FAC_GRP_MAC)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyền thay đổi nhân viên bảo trì (PMA_EMP_UPD)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Quyền truy cập TAB Báo cáo (TAB_REP_VIE)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Chức năng sử dụng (xem) tin nhắn (PER_NOT_CRE)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>Chức năng chỉnh sửa tin nhắn (PER_NOT_MOD)</label>
+                                                        <label class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input">
+                                                            <span class="custom-control-indicator"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-slider-small-footer">
+                    <div class="row justify-content-end">
+                        <a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+                        <a href="#" class="btn btn-save">LƯU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup Slide Chi Tiet Quyen Ca Nhan -->
+
+        <!-- Start Dialog Cap Nhat Phan Quyen -->
+        <div class="qb-dialog" id="update_permission">
+            <div class="qb-dialog-overlay">
+            <div class="container-fluid qb-dialog-body">
+
+                <!-- Header Dialog -->
+                <div class="qb-dialog-header">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="faci-update ic-title-dialog"></span>
+                            <h3 class="title-dialog">CẬP NHẬT PHÂN QUYỀN</h3>
+                            <a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Dialog -->
+                <div class="qb-dialog-content">
+                    <div class="update-permision">
+                        <p class="title-body">Quyền sử dụng giao diện TAB Bảo trì bôi trơn</p>
+                        <div class="form-group">
+                            <label>Từ khóa</label>
+                            <input type="text" class="form-control input-keyword" placeholder="PMB_NOT_VIE">
+                        </div>
+                        <div class="form-group">
+                            <label>Mô tả</label>
+                            <textarea class="form-control txt-describe" rows="3" placeholder="Chức năng truy cập báo cáo kết quả thực hiện PM"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Dialog -->
+                <div class="qb-dialog-footer">
+                    <div class="row justify-content-end">
+                        <div class="col-12 text-right">
+                            <a href="#" class="btn-close close-dialog">ĐÓNG</a>
+                            <a href="#" class="btn-save">LƯU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Dialog Cap Nhat Phan Quyen -->
+
+    </div>
+</div>
+
+<script src="dist/jquery/jquery-3.2.1.min.js"></script>
+<script src="dist/jquery/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/ultil.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <!----ADD FONTS--->
+        <link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css"/>
+        <link href="fonts/facilio-icon/stylesheet.css" rel="stylesheet" type="text/css"/>
+        <!----ADD BOOTSTRAP--->
+        <link href="dist/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!----ADD LIBS DATE TIME PICKER--->
+        <link href="dist/datetimepicker-master/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>
+        <!----ADD LIBS DATE RANGE PICKER--->
+        <link href="dist/bootstrap-daterangepicker-master/daterangepicker.css" rel="stylesheet" type="text/css"/>
+        <!----ADD LIBS JQUERY UI--->
+        <link href="dist/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <!----ADD CUSTOM FILE CSS--->
+        <link href="css/man-ultil.css" rel="stylesheet" type="text/css"/>
+        <title>Công việc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content-body">
+            <!----------------------------------------------------------------->
+            <!----------------THANH NAVBAR HEADER----------------------------->
+            <!----------------------------------------------------------------->
+            <div>
+                <nav class="menu-on-top navbar navbar-expand-lg p-0">
+                    <div class="navbar-header">
+                        <img class="logo" src="images/facilio-logo.png" />
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="factory nav-item">
+                                <span  class="faci-factory icon-factory"></span>
+                                <div class="dropdown list-fa">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        NHA MAY VICEM BIM SON (10006)
+                                    </button>
+                                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">NHA MAY VICEM BIM SON (10006)</a>
+                                        <a class="dropdown-item" href="#">NHA MAY VICEM BIM SON (10007)</a>
+                                        <a class="dropdown-item" href="#">NHA MAY VICEM BIM SON (10008)</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown menu-list">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="faci-congviectrongyeu icon-congviectrongyeu" aria-hidden="true"></i>
+                                    <span>CÔNG VIỆC TRỌNG YẾU</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="active">
+
+                                        <a href="#">
+                                            <i class="faci-congviectrongyeu"></i>
+                                            CÔNG VIỆC TRỌNG YẾU
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-baotridinhky"></i>
+                                            BẢO TRÌ ĐỊNH KỲ(PM)
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-baotriboitron"></i>
+                                            BẢO TRÌ BÔI TRƠN(BT)
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-baotrisuachua"></i>
+                                            BẢO TRÌ SỬA CHỮA(CM
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-vattuthaythe"></i>
+                                            VẬT TƯ THAY THẾ
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-danhmucthietbi"></i>
+                                            DANH MỤC THIẾT BỊ
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-capnhatdulieu"></i>
+                                            CẬP NHẬT DỮ LIỆU
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-quantrihethong"></i>QUẢN TRỊ HỆ THỐNG
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="faci-timkiem"></i>TÌM KIẾM
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="search nav-item" >
+                                <a>
+                                    <span class="faci-search" id="btn_search"><span class="path1"></span><span class="path2"></span></span>
+                                </a>
+                            </li>
+                            <li class="eyes nav-item"><a><span class="faci-eye"></span></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="icon-la">
+                                <span class="faci-globe"></span>
+                            </li>
+                            <li class="language">
+                                <div class="dropdown list-la">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        English
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Vietnamese</a>
+                                        <a class="dropdown-item" href="#">German</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="icon-user">
+                                <span class="faci-userLOGIN"><span class="path1"></span><span class="path2"></span></span>
+                            </li>
+                            <li class="user">
+                                <a>NMBS_FACIADMIN</a>
+                            </li>
+                            <li class="logout"><a><span class="faci-logout"></span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--------------------------------------------------------------------->
+                <!---------------------POPUP SEARCH------------------------------------>
+                <!--------------------------------------------------------------------->
+
+                <!-- The Modal -->
+                <div id="searchModal" class="searchModal">
+
+                    <!-- Modal content -->
+                    <div class="search-content">
+                        <div class="row-item-1">
+                            <span class="btnclose faci-close" id="btn_close"></span>
+                            <span class="title-input">Từ khóa</span>
+                            <input class="qb-input"/>
+                            <button class="qb-button">TÌM</button>
+                        </div>
+                        <div class="row-item-2">
+                            <input type="checkbox" id="BT" name="cb" class="qb-checkbox" />
+                            <label for="BT" class="qb-checkbox-label "></label>
+                            <span>BT</span>
+                            <div class="BT-child">
+                                <input type="checkbox" id="BT_1" name="cb" class="qb-checkbox" />
+                                <label for="BT_1" class="qb-checkbox-label "></label>
+                                <span>Nhớt</span>
+
+                                <input type="checkbox" id="BT_2" name="cb" class="qb-checkbox" />
+                                <label for="BT_2" class="qb-checkbox-label"></label>
+                                <span>Mỡ</span>
+                            </div>
+                            <input type="checkbox" id="PM" name="cb" class="qb-checkbox" />
+                            <label for="PM" class="qb-checkbox-label "></label>
+                            <span>PM</span>
+                            <div class="PM-child">
+                                <input type="checkbox" id="PM_1" name="cb" class="qb-checkbox" />
+                                <label for="PM_1" class="qb-checkbox-label PM-1"></label>
+                                <span>PM</span>
+
+                                <input type="checkbox" id="PM_2" name="cb" class="qb-checkbox" />
+                                <label for="PM_2" class="qb-checkbox-label PM-1"></label>
+                                <span>PM</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--------------------------------------------------------------------->
+            <!---------------------NÔI DUNG TRANG------------------------------------------>
+            <!--------------------------------------------------------------------->
+            <div class="update-database">
+                <div class="navbar-item-1">
+                    <span class="dropdown">
+                        <button class="qb-dropdown dd-list-content dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cập nhật dử liệu định kỳ
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </span>
+                    <span class="button-group-file">
+                        <button class="btn-1">Choose File</button>
+                        <span>No file chosen</span>
+                        <button class="btn-2">Chọn</button>
+                    </span>
+                    <a class="faci-excel"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></a>
+                    <span class="title-excel">
+                        Tải mẫu excel
+                    </span>
+                    <button class="btn-update">Cập nhật định kỳ</button>
+                </div>
+                <div class="navbar-item-2">
+                    <span class="title-search">TÊN THIẾT BỊ</span>
+                    <span class="priority low"></span>
+                    <input class="txt-search" placeholder="Nhập tên máy"/>
+                </div>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" role="tab" data-toggle="tab" href="#facilio_mechan">      
+                                CƠ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" role="tab" data-toggle="tab" href="#facilio_electric"> 
+                                ĐIỆN
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" role="tab" data-toggle="tab" href="#facilio_oil">
+                                NHỚT
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" role="tab" data-toggle="tab" href="#facilio_grease">
+                                MỠ
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="facilio_mechan" role="tabpanel" class="tab-pane active">
+                            <table class="data">
+                                <thead>
+                                    <tr>
+                                        <td rowspan="2" class="td1">STT</td>
+                                        <td rowspan="2" class="td2">BỘ PHẬN</td>
+                                        <td rowspan="2" class="td3">CÔNG VIỆC BẢO TRÌ</td>
+                                        <td rowspan="2" class="td4">YÊU CẦU KỸ THUẬT*</td>
+                                        <td rowspan="2" class="td5">CÔNG VIỆC TRỌNG YẾU**</td>
+                                        <td rowspan="2" class="td6">MÃ VẬT TƯ</td>
+                                        <td rowspan="2" class="td7">SL</td>
+                                        <td rowspan="2" class="td8">TRẠNG THÁI</td>
+                                        <td colspan="8" class="td9">THỜI GIAN BẢO DƯỠNG</td>
+                                        <td rowspan="2" class="td10">LIM</td>
+                                        <td rowspan="2" class="td11 qb-item-table">CHỨC NĂNG</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td9-child">e.W</td>
+                                        <td class="td9-child">1M</td>
+                                        <td class="td9-child">2M</td>
+                                        <td class="td9-child">3M</td>
+                                        <td class="td9-child">6M</td>
+                                        <td class="td9-child">1Y</td>
+                                        <td class="td9-child">2Y</td>
+                                        <td class="td9-child">Khác</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td1">1</td>
+                                        <td class="td2 data">Máy cơ điện</td>
+                                        <td class="td3 data">Bảo trì sửa chữa</td>
+                                        <td class="td4 data">Lorem dummy text</td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data"></td>
+                                        <td class="td7 data"></td>
+                                        <td class="td8">
+                                            <span>
+                                                <label class="qb-switch">
+                                                    <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                    <span class="qb-slider round"></span>
+                                                </label>
+                                            </span>
+                                        </td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child">X</td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">2</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data"></td>
+                                        <td class="td7 data"></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">3</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text"  class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">4</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data  input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td7 data  input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td10 data  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">5</td>
+                                        <td class="td2 data  input-txt"><input type="text" class="qb-input" value="Máy cơ điện"/></td>
+                                        <td class="td3 data  input-txt"><input type="text" class="qb-input" value="Bảo trì sửa chữa"/></td>
+                                        <td class="td4 data  input-txt"><input type="text" class="qb-input" value="Lorem dummy text"/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data  input-txt"><input type="text" class="qb-input" /></td>
+                                        <td class="td7 data  input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text" class="qb-input" />
+                                        </td>
+                                        <td class="td11">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn-add"><span class="faci-add"></span></button>
+                        </div>
+                        <div  id="facilio_electric" role="tabpanel" class="tab-pane">
+                            <table class="data">
+                                <thead>
+                                    <tr>
+                                        <td rowspan="2" class="td1">STT</td>
+                                        <td rowspan="2" class="td2">BỘ PHẬN</td>
+                                        <td rowspan="2" class="td3">CÔNG VIỆC BẢO TRÌ</td>
+                                        <td rowspan="2" class="td4">YÊU CẦU KỸ THUẬT*</td>
+                                        <td rowspan="2" class="td5">CÔNG VIỆC TRỌNG YẾU**</td>
+                                        <td rowspan="2" class="td6">MÃ VẬT TƯ</td>
+                                        <td rowspan="2" class="td7">SL</td>
+                                        <td rowspan="2" class="td8">TRẠNG THÁI</td>
+                                        <td colspan="8" class="td9">THỜI GIAN BẢO DƯỠNG</td>
+                                        <td rowspan="2" class="td10">LIM</td>
+                                        <td rowspan="2" class="td11 qb-item-table">CHỨC NĂNG</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td9-child">e.W</td>
+                                        <td class="td9-child">1M</td>
+                                        <td class="td9-child">2M</td>
+                                        <td class="td9-child">3M</td>
+                                        <td class="td9-child">6M</td>
+                                        <td class="td9-child">1Y</td>
+                                        <td class="td9-child">2Y</td>
+                                        <td class="td9-child">Khác</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td1">1</td>
+                                        <td class="td2 data">Máy cơ điện</td>
+                                        <td class="td3 data">Bảo trì sửa chữa</td>
+                                        <td class="td4 data">Lorem dummy text</td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data"></td>
+                                        <td class="td7 data"></td>
+                                        <td class="td8">
+                                            <span>
+                                                <label class="qb-switch">
+                                                    <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                    <span class="qb-slider round"></span>
+                                                </label>
+                                            </span>
+                                        </td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child">X</td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">2</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data"></td>
+                                        <td class="td7 data"></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">3</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text"  class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">4</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data  input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td7 data  input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td10 data  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">5</td>
+                                        <td class="td2 data  input-txt"><input type="text" class="qb-input" value="Máy cơ điện"/></td>
+                                        <td class="td3 data  input-txt"><input type="text" class="qb-input" value="Bảo trì sửa chữa"/></td>
+                                        <td class="td4 data  input-txt"><input type="text" class="qb-input" value="Lorem dummy text"/></td>
+                                        <td class="td5">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox">
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td6 data  input-txt"><input type="text" class="qb-input" /></td>
+                                        <td class="td7 data  input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text" class="qb-input" />
+                                        </td>
+                                        <td class="td11">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn-add"><span class="faci-add"></span></button>
+                        </div>
+                        <div  id="facilio_oil" role="tabpanel" class="tab-pane">
+                            <table class="table_mechan" id="table_mechan">
+                                <thead>
+                                    <tr>
+                                        <td rowspan="2" class="td1">STT</td>
+                                        <td rowspan="2" class="td2">BỘ PHẬN</td>
+                                        <td rowspan="2" class="td3">CÔNG VIỆC BẢO TRÌ</td>
+                                        <td rowspan="2" class="td4">CHỦNG LOẠI GỐC</td>
+                                        <td rowspan="2" class="td5">CHỦNG LOẠI SỬ DỤNG</td>
+                                        <td rowspan="2" class="td6">MÃ VẬT TƯ</td>
+                                        <td rowspan="2" class="td7">SL</td>
+                                        <td rowspan="2" class="td8">SL VỊ TRÍ</td>
+                                        <td colspan="8" class="td9">THỜI GIAN BẢO DƯỠNG</td>
+                                        <td rowspan="2" class="td10">LIM</td>
+                                        <td rowspan="2" class="td11">CHỨC NĂNG</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td9-child">e.W</td>
+                                        <td class="td9-child">1M</td>
+                                        <td class="td9-child">2M</td>
+                                        <td class="td9-child">3M</td>
+                                        <td class="td9-child">6M</td>
+                                        <td class="td9-child">1Y</td>
+                                        <td class="td9-child">2Y</td>
+                                        <td class="td9-child">Khác</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td1">1</td>
+                                        <td class="td2 data">Máy cơ điện</td>
+                                        <td class="td3 data">Bảo trì sửa chữa</td>
+                                        <td class="td4 data">Lorem dummy text</td>
+                                        <td class="td5"></td>
+                                        <td class="td6 data"></td>
+                                        <td class="td7 data"></td>
+                                        <td class="td8"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child">X</td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">2</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td6 data input-txt"></td>
+                                        <td class="td7 data input-txt"></td>
+                                        <td class="td8"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child">X</td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">3</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td6 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text"  class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">4</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td6 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td10 data  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">5</td>
+                                        <td class="td2 data  input-txt"><input type="text" class="qb-input" value="Máy cơ điện"/></td>
+                                        <td class="td3 data  input-txt"><input type="text" class="qb-input" value="Bảo trì sửa chữa"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input" value="Lorem dummy text"/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input  input-empty"/></td>
+                                        <td class="td6 data  input-txt"><input type="text" class="qb-input  input-empty" /></td>
+                                        <td class="td7 data  input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text" class="qb-input" />
+                                        </td>
+                                        <td class="td11">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn-add"><span class="faci-add"></span></button>
+                        </div>
+                        <div  id="facilio_grease" role="tabpanel" class="tab-pane">
+                            <table class="table_grease" id="table_grease">
+                                <thead>
+                                    <tr>
+                                        <td rowspan="2" class="td1">STT</td>
+                                        <td rowspan="2" class="td2">BỘ PHẬN</td>
+                                        <td rowspan="2" class="td3">CÔNG VIỆC BẢO TRÌ</td>
+                                        <td rowspan="2" class="td4">CHỦNG LOẠI GỐC</td>
+                                        <td rowspan="2" class="td5">CHỦNG LOẠI SỬ DỤNG</td>
+                                        <td rowspan="2" class="td6">MÃ VẬT TƯ</td>
+                                        <td rowspan="2" class="td7">SL</td>
+                                        <td rowspan="2" class="td8">SL VỊ TRÍ</td>
+                                        <td colspan="8" class="td9">THỜI GIAN BẢO DƯỠNG</td>
+                                        <td rowspan="2" class="td10">LIM</td>
+                                        <td rowspan="2" class="td11">CHỨC NĂNG</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td9-child">e.W</td>
+                                        <td class="td9-child">1M</td>
+                                        <td class="td9-child">2M</td>
+                                        <td class="td9-child">3M</td>
+                                        <td class="td9-child">6M</td>
+                                        <td class="td9-child">1Y</td>
+                                        <td class="td9-child">2Y</td>
+                                        <td class="td9-child">Khác</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td1">1</td>
+                                        <td class="td2 data">Máy cơ điện</td>
+                                        <td class="td3 data">Bảo trì sửa chữa</td>
+                                        <td class="td4 data">Lorem dummy text</td>
+                                        <td class="td5"></td>
+                                        <td class="td6 data"></td>
+                                        <td class="td7 data"></td>
+                                        <td class="td8"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child">X</td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">2</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input" disabled/></td>
+                                        <td class="td6 data"></td>
+                                        <td class="td7 data"></td>
+                                        <td class="td8"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child">X</td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td9-child"></td>
+                                        <td class="td10 data"></td>
+                                        <td class="td11">
+                                            <a class="qb-edit"><span class="faci-edit "></span></a>
+                                            <span class="disable">
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">3</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td6 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text"  class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">4</td>
+                                        <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td6 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td10 data  input-txt">
+                                            <input type="text" class="qb-input"/>
+                                        </td>
+                                        <td class="td11 edit">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy disable"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete disable"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">5</td>
+                                        <td class="td2 data  input-txt"><input type="text" class="qb-input" value="Máy cơ điện"/></td>
+                                        <td class="td3 data  input-txt"><input type="text" class="qb-input" value="Bảo trì sửa chữa"/></td>
+                                        <td class="td4 data input-txt"><input type="text" class="qb-input" value="Lorem dummy text"/></td>
+                                        <td class="td5 data input-txt"><input type="text" class="qb-input  input-empty"/></td>
+                                        <td class="td6 data  input-txt"><input type="text" class="qb-input  input-empty" /></td>
+                                        <td class="td7 data  input-txt"><input type="text" class="qb-input input-empty"/></td>
+                                        <td class="td8">
+                                            <label class="qb-switch">
+                                                <input type="checkbox" class="qb-checkbox" disabled value=''>
+                                                <span class="qb-slider round"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="eW">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="3M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="6M">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="1Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="2Y">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td9-child">
+                                            <label class="qb-container">
+                                                <input type="radio" name="radio" value="other">
+                                                <span class="qb-checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td class="td10 data input-txt">
+                                            <input type="text" class="qb-input" />
+                                        </td>
+                                        <td class="td11">
+                                            <a class="qb-edit disable"><span class="faci-edit "></span></a>
+                                            <span>
+                                                <a class="qb-save"><span class="faci-check "></span></a>
+                                                <a class="qb-cancle"><span class="faci-close"></span></a>
+                                            </span>
+                                            <a class="qb-copy"><span class="faci-File4"></span></a>
+                                            <a class="qb-delete"><span class="faci-delete"></span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn-add"><span class="faci-add"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------------------->
+            <!---------------------FOOTER------------------------------------------>
+            <!--------------------------------------------------------------------->
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- ADD BOOTSTRAP -->
+        <script src="dist/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="dist/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js" type="text/javascript"></script>
+        <script src="dist/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- ADD DATE TIME PICKER -->
+        <script src="dist/datetimepicker-master/build/jquery.datetimepicker.full.js" type="text/javascript"></script>
+        <!-- ADD DATE RANGER PICKER -->
+        <script src="dist/bootstrap-daterangepicker-master/moment.js" type="text/javascript"></script>
+        <script src="dist/bootstrap-daterangepicker-master/daterangepicker.js" type="text/javascript"></script>
+        <!-- ADD JQUERY UI -->
+        <script src="dist/jquery-ui-1.12.1.custom/jquery-ui.js" type="text/javascript"></script>
+        <!-- ADD EDIT TABLE -->
+        <script src="dist/editable-html-table/bootstable.min.js" type="text/javascript"></script>
+        <!-- ADD FILE CUSTOM -->
+        <script src="js/ultil.js" type="text/javascript"></script>
+        <script src="js/man-ultil.js" type="text/javascript"></script>
+    </body>
+</html>

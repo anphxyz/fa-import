@@ -1,0 +1,94 @@
+/* 
+ * Created on : Mar 2, 2018, 2:08:10 PM
+ * Author     : anph
+ */
+
+ #facilio_wrapper.import-wrapper{margin-top: 50px}
+ .import-wrapper input:focus,.import-wrapper input:active{outline: none;}
+ .imp-tool{display: flex;padding: 23px 0px;margin: 0px;justify-content: center;align-items: center;}
+ .imp-tool .imp-tool-item{display: inline-block;margin: 0 7px;}
+ .group-up-file {white-space: nowrap;position: relative;background-color: #f0f0f6;height: 46px;display: inline-flex;padding: 8px 11px;overflow: hidden;}
+ .group-up-file > input[type="file"] {opacity: 0;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;}
+ .group-up-file button {font-size: 12px;color: #3f4f63;height: 30px;padding: 0px 12px;line-height: 28px;cursor: pointer;}
+ .group-up-file > label{margin: 0 0 0 10px;line-height: 30px;font-size: 12px;color: #31393c;min-width: 170px;}
+ .tool-file > p{background-color: #f0f0f6;float: right;padding: 8px 11px;margin: 0px;}
+ .tool-file > p button:focus{background:transparent}
+ .tool-file > p button{font-size: 12px;height: 30px;padding: 0px 10px;border: none;cursor: pointer;background: transparent;}
+ .tool-file > p button>span:before{color: #ccc;}
+ .tool-file > p button:hover{background-color:rgb(102, 206, 219)}
+ .tool-file > p button:hover>span:before{color: #000;}
+ .imp-tool-item a.tool-excel{font-size: 13px;cursor: pointer;color: #0094fb;font-weight: 600;}
+ .imp-tool-item a.tool-excel .ficon{font-size: 16px;}
+ .imp-filter .imp-filter-input{display: flex;align-items: center;margin-bottom: 10px;}
+ .imp-filter .imp-filter-input label{font-size: 14px;color: #9b9a9b;white-space: nowrap;margin-right: 6px;margin-bottom: 0px;}
+ .imp-filter .imp-filter-status .ficon:last-child{display: none;}
+ .imp-filter .imp-filter-status.active .ficon.faci-info{display: none;}
+ .imp-filter .imp-filter-status.active .ficon.faci-finished{display: inline-block;}
+ .imp-filter .imp-filter-status .ficon.faci-finished .path1:before{color:#18c115}
+ .imp-filter .imp-filter-status .ficon.faci-finished .path2:before{color:#fff}
+ 
+ .imp-filter .imp-filter-input input{width: 100%;border: none;border-bottom: 1px solid #c9d4e8;margin-left: 4px;margin-right: 43px;font-size: 17px;height: 42px;padding: 0px 10px;color: #31393c;}
+ .imp-filter .imp-filter-tabs{margin: 0px;padding-bottom: 0px;margin-top: 18px;}
+ .imp-filter .imp-filter-tabs li + li{margin-left: 1px;}
+ .imp-filter .imp-filter-tabs li a{float: left;height: 34px;line-height: 34px;width: 73px;font-size: 14px;background-color: #e9ecf3;border-radius: 4px 4px 0px 0px;color: #435367;text-align: center;text-transform: uppercase;cursor: pointer;padding: 0px;}
+ .imp-filter .imp-filter-tabs li a.active{background-color: #0094fb;color: #ffffff;}
+ table.tb-data.imp-tb{width: 100%;}
+ table.tb-data.imp-tb tbody tr td{padding-top: 12px;padding-bottom: 12px;}
+ table.tb-data.imp-tb tbody tr .td2, table.tb-data.imp-tb tbody tr .td3, table.tb-data.imp-tb tbody tr .td4, table.tb-data.imp-tb tbody tr .td6, table.tb-data.imp-tb tbody tr .td7, table.tb-data.imp-tb tbody tr .td10{padding: 12px 7px;}
+ table.tb-data.imp-tb .data-radio input[type="radio"]{width: inherit;}
+ table.tb-data.imp-tb thead .td1{width: 2%;}
+ table.tb-data.imp-tb thead .td2{width: 10%;}
+ table.tb-data.imp-tb thead .td3{width: 10%;}
+ table.tb-data.imp-tb thead .td4{width: 10%;}
+ table.tb-data.imp-tb thead .td5{width: 4%;}
+ table.tb-data.imp-tb thead .td6{width: 5%;}
+ table.tb-data.imp-tb thead .td7{width: 4%;}
+ table.tb-data.imp-tb thead .td8{width: 4%;}
+ table.tb-data.imp-tb thead .td9{width: 14%;}
+ table.tb-data.imp-tb thead .td10{width: 3%;}
+ table.tb-data.imp-tb thead .td11{width: 5%;}
+ table.tb-data.imp-tb tbody .td11{float: none;}
+ table.tb-data.imp-tb.tb2 thead .td5{width: 8%;}
+ table.tb-data.imp-tb.tb2 thead .td6{width: 6%;}
+ .imp-tb .data-cell{font-size: 13px;color: #4a494a;display: flex;min-height: 35px;width: 100%;align-items: center;border-radius: 3px;}
+ .imp-tb .data-cell:empty{background: #ffd4d4;}
+ .imp-tb .data-cell:blank{background: #ffd4d4;}
+ .imp-tb .data-input{font-size: 13px;color: #4a494a;display: flex;min-height: 35px;width: 100%;align-items: center;border: 1px solid #c9d3e7;border-radius: 3px;padding-left: 8px;}
+ .imp-tb .data-radio.ext-input input[type="radio"] + input{display: none;}
+ .imp-tb .data-radio{margin: 0px;}
+ .imp-tb .row-view .data-input{border: none;background: #fff;pointer-events: none;}
+ .imp-tb .row-view .data-input.fade-out{font-size:0}
+ .imp-tb .row-view .data-input.data-warn:invalid{background: #ffd4d4;box-shadow: none;}
+ .imp-tb .row-view .data-radio{margin: 0px;pointer-events: none;}
+ .imp-tb .row-view .data-radio input[type="radio"]{-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;-o-appearance: none;appearance: none;position: relative;height: 16px;width: 16px;background: #fff;border: none;color: #3f4f63;font-size: 14px;display: inline-block;outline: none;z-index: 1000;}
+ .imp-tb .row-view .data-radio input[type="radio"]:checked::before {height: 100%;width: 100%;position: absolute;content: 'x';display: inline-block;font-size: 14px;text-align: center;line-height: 16px;}
+ .imp-tb .row-view .switch_cb{pointer-events: none;}
+ .imp-tb .row-view .func-ok, .imp-tb .row-view .func-cancel{display: none;}
+ .imp-tb .row-edit .func-edit{display: none;}
+ .imp-tb .row-edit .data-radio.ext-input input[type="radio"]:checked{display: none;}
+ .imp-tb .row-edit .data-radio.ext-input input[type="radio"]:checked + input{display: inline-block;}
+ .imp-tb .row-new .func-edit, .imp-tb .row-new .func-clone, .imp-tb .row-new .func-del{display: none;}
+ .imp-tb .data-func{float: right;width: 96px;text-align: right;}
+ .imp-tb .data-func a{cursor: pointer;width: 24px;text-align: center;float: right;}
+ .imp-tb .td11 .data-func button{border:none;background:transparent;float: right;padding: 5px;}
+ .imp-tb .td11 .data-func button span:before{font-size: 15px;}
+ 
+ .imp-tb .td11 .data-func .func-ok{float: left;}
+ .imp-tb .td11 .data-func .func-ok span:before{font-size: 11px;color: #18c115;}
+ .imp-tb .td11 .data-func .func-cancel{float: left;}
+ .imp-tb .td11 .data-func .func-cancel span:before{font-size: 11px;color:#667884}
+ .tb-add-row{margin: 4px 0px 0px 0px;text-align: right;}
+ .tb-add-row a{width: 40px;height: 30px;border-radius: 3px;background-color: #66cedb;display: inline-block;text-align: center;line-height: 30px;cursor: pointer;}
+ .tb-add-row a span:before{color: #fff;}
+ 
+ .undo-able{position:fixed;bottom: -40px;width:100vw;text-align:center;transition:all ease 0.3s;}
+ .undo-able>div{background-color: #f0f0f6;width: 45ch;margin: 0 auto;padding: 10px;position:  relative;font-size: 13px;display: inline-block;line-height: 12px;}
+ .undo-able>div>label{float:  left;margin: 0;}
+ .undo-able>div>button{background:  transparent;border: none;float:  left;color: #0063FA;cursor:  pointer;font-size: 14px;margin-left: 15px;}
+ .undo-able>div>button:hover{text-decoration:underline}
+ .undo-able>div>span{height: 15px;padding: 7px;border: none;cursor: pointer;POSITION: absolute;top: 1px;padding: 10px;right:  0;display: inline-table;}
+ .undo-able>div>span:before{color:#ccc;font-size: 10px;}
+ .undo-able>div>span:hover{background-color:rgb(102, 206, 219);}
+ .undo-able>div>span:hover:before{color: #000;}
+ 
+ .undo-able.inuse{bottom:0;}

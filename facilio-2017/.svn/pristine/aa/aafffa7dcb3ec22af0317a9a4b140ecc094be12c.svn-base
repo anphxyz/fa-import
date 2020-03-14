@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SEARCH MACHINE VIEW 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/facilio-icon/stylesheet.css">
+    <link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/toai-style.css" rel="stylesheet" type="text/css"/>
+    <link href="dist/bootstrap-treeview/css/bootstrap-treeview.css" rel="stylesheet">
+    <link href="css/man-ultil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="content-page-system-management">
+        <nav class="menu-on-top navbar navbar-expand-lg p-0">
+            <div class="navbar-header">
+                <img class="logo" src="images/facilio-logo.png" />
+            </div>
+        
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="factory nav-item">
+                        <span  class="faci-factory icon-factory"></span>
+                        <div class="dropdown list-fa">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NHA MAY VICEM BIM SON (10006)
+                            </button>
+                            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">NHA MAY VICEM BIM SON (10006)</a>
+                                <a class="dropdown-item" href="#">NHA MAY VICEM BIM SON (10007)</a>
+                                <a class="dropdown-item" href="#">NHA MAY VICEM BIM SON (10008)</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown menu-list">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="faci-congviectrongyeu icon" aria-hidden="true"></i>
+                            <span>CÔNG VIỆC TRỌNG YẾU</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active">
+                                <a href="#">
+                                    <i class="faci-congviectrongyeu"></i>
+                                    CÔNG VIỆC TRỌNG YẾU 
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-baotridinhky"></i>
+                                    BẢO TRÌ ĐỊNH KỲ(PM)
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-baotriboitron"></i>
+                                    BẢO TRÌ BÔI TRƠN(BT)
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-baotrisuachua"></i>
+                                    BẢO TRÌ SỬA CHỮA(CM)
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-vattuthaythe"></i>
+                                    VẬT TƯ THAY THẾ
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-danhmucthietbi"></i>
+                                    DANH MỤC THIẾT BỊ
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-capnhatdulieu"></i>
+                                    CẬP NHẬT DỮ LIỆU
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-quantrihethong"></i>
+                                    QUẢN TRỊ HỆ THỐNG
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="faci-timkiem"></i>
+                                    TÌM KIẾM
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="search nav-item"><a>
+                            <span class="faci-search"><span class="path1"></span><span class="path2"></span></span>
+                        </a></li>
+                    <li class="eyes nav-item"><a><span class="faci-eye"></span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="icon-la">
+                        <span class="faci-globe"></span>
+                    </li>
+                    <li class="language">
+                        <div class="dropdown list-la">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                English
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">English</a>
+                                <a class="dropdown-item" href="#">Vietnamese</a>
+                                <a class="dropdown-item" href="#">German</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="icon-user">
+                        <span class="faci-userLOGIN"><span class="path1"></span><span class="path2"></span></span>
+                    </li>
+                    <li class="user">
+                        <a>NMBS_FACIADMIN</a>
+                    </li>
+                    <li class="logout"><a><span class="faci-logout"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Start Page Quan Tri He Thong -->
+        <div class="container-fluid">
+            <div class="content">
+
+                <!-- Top Page -->
+                <div class="content-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-inline">
+                                    <a class="btn btn-permission active" href="#" role="button" id="btn-permission">Danh mục thiết bị</a>
+                                    <a class="btn btn-permission" href="toai-danh-muc-thiet-bi-view3.html" role="button" id="btn-permission">Theo dõi thiết bị</a>
+                                    <a class="btn btn-permission" href="toai-danh-muc-thiet-bi-view1.html" role="button" id="btn-permission">Tìm kiếm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Page -->
+
+                <!-- Body Page -->
+                <div class="content-body">
+                    <div class="content-data-root">
+                        <!-- Breadcrumb -->
+                        <div class="data-root-breadcrumb">
+                            <div class="row">
+                                <div class="col-12">
+                                    <nav class="breadcrumb">
+                                        <a class="breadcrumb-item link-root" href="#">
+                                            <span class="faci-factory ic-link-root"></span>NHA MAY VICEM BIM SON (10006)</a>
+                                        <a class="breadcrumb-item active link-child" href="#">DÂY CHUYỀN 3</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Breadcrumb -->
+                        
+                        <div class="data-root-body">
+                            <div class="top-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row justify-content-end">
+                                            <div class="dropdown">
+                                                <button class="qb-dropdown dropdown-toggle btn-search-machine-dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Bảo trì định kì
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn-device-location btn-search-machine-foward"><span class="faci-foward ic-add"></span>Vị trí thiết bị</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <div class="row">
+                                    <div class="col-md-3 p-0">
+                                        <div class="left-content">
+                                            <div class="tree"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9" style="padding-left: 0;">
+                                        <div class="right-content">
+                                            <table class="table table-responsive qb-table table-search-machine">
+                                                <thead>
+                                                    <tr class="header-table">
+                                                        <th class="th1">TÊN THIẾT BỊ</th>
+                                                        <th class="th2">MÃ TÀI SẢN</th>
+                                                        <th class="th3">MÃ THIẾT BỊ</th>
+                                                        <th class="th4">YÊU CẦU VẬT TƯ</th>
+                                                        <th class="th5">NHẬT KÝ THIẾT BỊ</th>
+                                                        <th class="th6">CHUYỂN CV</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-left name-device">
+                                                            <span class="faci-finished ic-span"><span class="path1"></span><span class="path2"></span>
+                                                            </span>
+                                                            Băng tải 531.BC01
+                                                        </td>
+                                                        <td>481BL006</td>
+                                                        <td>14531.BC01</td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="#" class="faci-historical-report ic-span"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="faci-update ic-span"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left name-device">
+                                                            <span class="faci-finished ic-span"><span class="path1"></span><span class="path2"></span>
+                                                            </span>
+                                                            Băng tải 531.BC01
+                                                        </td>
+                                                        <td>481BL006</td>
+                                                        <td>14531.BC01</td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="#" class="faci-historical-report ic-span"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="faci-update ic-span"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left name-device">
+                                                            <span class="faci-finished ic-span"><span class="path1"></span><span class="path2"></span>
+                                                            </span>
+                                                            Băng tải 531.BC01
+                                                        </td>
+                                                        <td>481BL006</td>
+                                                        <td>14531.BC01</td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="#" class="faci-historical-report ic-span"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="faci-update ic-span"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left name-device">
+                                                            <span class="faci-finished ic-span"><span class="path1"></span><span class="path2"></span>
+                                                            </span>
+                                                            Băng tải 531.BC01
+                                                        </td>
+                                                        <td>481BL006</td>
+                                                        <td>14531.BC01</td>
+                                                        <td></td>
+                                                        <td>
+                                                            <a href="#" class="faci-historical-report ic-span"></a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="faci-update ic-span"></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Page Body -->
+
+            </div>
+        </div>
+         <!-- End Page Quan Tri He Thong -->
+
+    </div>
+
+    <script src="dist/jquery/jquery-3.2.1.min.js"></script>
+    <script src='dist/jquery/jquery-ui.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/bootstrap-treeview/js/bootstrap-treeview.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ultil.js"></script> 
+
+</body>
+
+</html>
+
+

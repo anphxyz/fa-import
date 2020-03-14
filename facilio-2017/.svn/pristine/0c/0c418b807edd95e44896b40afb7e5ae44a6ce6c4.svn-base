@@ -1,0 +1,226 @@
+/******************************************************************************/
+/****************************BAO TRI DINH KY PM & BT & TY**********************/
+/******************************************************************************/
+.icon-faci{font-size: 16px;}
+.page-pm{margin-top: 89px;}
+.page-pm .btn:focus {outline: 0;box-shadow: none;}
+.page-pm .pm-toolbar .qb-dropdown{margin-left: 5px;}
+.page-pm .pm-toolbar .dropdown-menu{max-height: 200px; overflow-y: auto;}
+.page-pm .pm-toolbar .qb-button{width: 181px;}
+.page-pm .pm-toolbar .btn-pm{margin-right: 5px;}
+.page-pm .pm-toolbar{padding-bottom: 10px;}
+.page-pm .pm-toolbar ul.ul-toolbar{margin: 0;list-style: none;padding-right: 15px;}
+.page-pm .pm-toolbar ul.ul-toolbar li{display: inline-block;}
+.page-pm .pm-toolbar ul.ul-toolbar li a.ic-tool{margin-left: 10px;position: relative;top:3px;}
+.page-pm .pm-toolbar ul.ul-toolbar li .qb-button{width: 46px;color:var(--white-three);background-color:var(--bright-blue);font-weight: 600;}
+.page-pm .pm-toolbar ul.ul-toolbar li .btn-bc{padding: 7px;margin-left: 10px;cursor: pointer;}
+.page-pm .pm-toolbar ul.ul-toolbar li span{font-size: 18px;}
+.page-pm .pm-toolbar ul.ul-toolbar li span.faci-delete:hover:before {color: var(--azure);}
+.page-pm .pm-toolbar ul.ul-toolbar li span.faci-calendar:hover:before {color: var(--azure);}
+.page-pm .pm-toolbar div.time-export{width: 130px; position: absolute; z-index: 2; right: 2px; top: 31px; background: var(--azure);}
+.page-pm .pm-toolbar div.time-export ul.lst-time{padding: 0; margin: 0; list-style: none; font-size: 12px; color: var(--white-three);}
+.page-pm .pm-toolbar div.time-export ul.lst-time li{padding: 11px; border-bottom: 1px solid var(--bright-blue);cursor: pointer;}
+.page-pm .pm-toolbar div.time-export ul.lst-time li:last-child{border-bottom: none;}
+.page-pm .pm-toolbar div.time-export ul.lst-time li:hover{background: var(--bright-blue);}
+.page-pm .tb-content table.qb-table tr th a.ic-sort{font-size: 8px;position: relative;bottom: 1px;left: 10px;cursor: pointer;}
+.page-pm .tb-content table.qb-table tr th a.ic-sort.rotate-down:before{display: inline-block;  -webkit-transform: rotate(90deg);  -moz-transform: rotate(90deg);  -o-transform: rotate(90deg);  -ms-transform: rotate(90deg);  transform: rotate(90deg); position: relative; bottom: 2px;}
+.page-pm .tb-content table.qb-table tr td.text-votes{color: var(--azure);font-weight: bold;cursor: pointer;}
+.page-pm .tb-content table.qb-table tr td.text-limit{color: var(--scarlet);}
+.page-pm .tb-content table.qb-table tr td .ic-faci{font-size: 18px;}
+.page-pm .tb-content table.qb-table tr td .qb-dropdown{border: none;background-color: var(--white-three);}
+.page-pm .tb-content table.qb-table tr td span.priority{position: relative;bottom:3px;right:3px;}
+.page-pm .tb-content table.qb-table tr td span.faci-user{position: relative;top:4px;}
+.page-pm .tb-content table.qb-table tr td a.edt-expected::before{color: var(--slate);}
+.page-pm .tb-content table.qb-table tr td a.edt-expected{margin-left: 10px;}
+.page-pm .tb-content table.qb-table tr td a.title-part{color: var(--azure);}
+.page-pm .tb-content table.qb-table tr td a.faci-attach::before{color: var(--azure);font-weight: bold;font-size: 16px;}
+.page-pm .tb-content table.qb-table tr td a.faci-image::before, a.faci-file::before{color: var(--azure);font-size: 16px;padding: 5px;}
+.page-pm .tb-content table.qb-table tr td span.total-file, span.total-img{color: var(--azure);font-size: 14px;}
+
+/* Dialog Phieu cong viec */
+#dl_pcv .qb-dialog-header{background:var(--dark-sky-blue);}
+#dl_pcv .qb-dialog-content{padding: 0;max-height: 556px;}
+#dl_pcv .qb-dialog-body{height: 600px;font-weight: normal;}
+#dl_pcv .qb-dialog-body .qb-dialog-content{overflow: hidden;}
+#dl_pcv .tabbable .nav-tabs{background-color:var(--cerulean);padding:16px 0 0 11px;height: 50px;font-size: 14px}
+#dl_pcv .tabbable .nav-tabs .icon{font-size:20px;}
+#dl_pcv .tabbable .nav-tabs .nav-link .icon:before{color:rgba(255, 255, 255, 0.5);}
+#dl_pcv .tabbable .nav-tabs .nav-link{color:rgba(255, 255, 255, 0.5);font-size:14px;height:34px;padding-top:5px;}
+#dl_pcv .tabbable .nav-tabs .nav-link:hover{background: var( --dark-sky-blue);}
+#dl_pcv .tabbable .nav-tabs .nav-link .title-tab{float: right;margin-left: 10px;}
+#dl_pcv .tabbable .nav-tabs .nav-link.active .icon:before{color:var(--dark-grey-blue-two);}
+#dl_pcv .tabbable .nav-tabs .nav-link.active{color:var(--dark-grey-blue-two);}
+#dl_pcv .tabbable .tab-content{color:var(--slate);font-size:12px;overflow-y: auto;overflow-x: hidden;height:505px;}
+#dl_pcv .tabbable .tab-content #pieper_work, #pieper_report, #pieper_history{width: 100%; height: 100%; padding: 0 40px;}
+#dl_pcv .tabbable .tab-content #pieper_work .title{font-size:20px;font-weight:600;color:var(--slate);display:block;padding:31px 0 22px 0;margin-bottom: 0}
+#dl_pcv .tabbable .tab-content #pieper_work .factory{border-top:1px solid var(--light-blue-grey);padding: 0;}
+#dl_pcv .tabbable .tab-content #pieper_work .factory,.notepad{border-bottom:1px solid var(--light-blue-grey);color:var(--slate);width:100%;float:left;}
+#dl_pcv .tabbable .tab-content #pieper_work .factory .ficon, .worker .ficon{font-size:44px;float:left;margin:25px 24px 0 0;}
+#dl_pcv .tabbable .tab-content #pieper_work .factory .item-1,.notepad div,.worker div{float:left;padding:23px 0 22px 0;line-height:7px;}
+#dl_pcv .tabbable .tab-content #pieper_work span.text-title{font-size: 13px;line-height: 25px;font-weight: normal;}
+#dl_pcv .tabbable .tab-content #pieper_work span.text-content{font-size: 13px;font-weight: 600;margin-left: 5px;}
+#dl_pcv .tabbable .tab-content #pieper_work .notepad span.text-content{margin-left: 0;line-height: 25px;}
+#dl_pcv .tabbable .tab-content #pieper_work .factory .item-2{float:right;padding:18px 15px 0 0;line-height:7px;}
+#dl_pcv .tabbable .tab-content #pieper_work .notepad .ficon{font-size:44px;float:left;margin:23px 34px 0 5px;}
+#dl_pcv .tabbable .tab-content #pieper_work .worker .ficon{font-size:37px;margin-top:35px;}
+#dl_pcv .tabbable .tab-content #pieper_work .worker div{padding-top: 35px;}
+#dl_pcv .tabbable .tab-content #pieper_work .factory .item-2 .MPKL .faci-running{font-size:18px;position: relative;top:3px;}
+#dl_pcv .tabbable .tab-content #pieper_work .factory .item-2 .MPKL{font-size:14px;font-weight:bold;margin-bottom: 14px;}
+#dl_pcv .tabbable .tab-content #pieper_work .factory .item-2 .MPKL .id-MPKL{color: var(--azure);}
+#dl_pcv .tabbable .tab-content #pieper_work .priority{margin-left: 10px;}
+#dl_pcv .tabbable .tab-content #pieper_work .faci-warning{position: relative; top: 4px; margin-left: 5px;}
+#dl_pcv .tabbable .tab-content #pieper_report .title{font-size:14px;font-weight:600;color:var(--slate);padding-top: 29px;margin-bottom: 25px}
+#dl_pcv .tabbable .tab-content #pieper_report span.title-date{position: relative;top:7px;}
+#dl_pcv .tabbable .tab-content #pieper_report .list-item{height:227px;overflow-y:scroll;margin:0 0 22px 0;border-bottom:1px solid var(--light-blue-grey);}
+#dl_pcv .tabbable .tab-content #pieper_report .list-item span.lb-checkbox{position: relative;bottom: 7px;}
+#dl_pcv .tabbable .tab-content .pieper_report .list-item::-webkit-scrollbar{width:4px;height:60px;background-color:var(--white-three);}
+#dl_pcv .list-item::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 3px rgba(0,0,0,.3);background-color:#c7d1de;}
+#ex1Slider .slider-selection{background:#BABABA;}
+#dl_pcv .tabbable .tab-content .pieper_report #currentVal{font-size:15px;text-align:left;color:var(--slate);font-weight:bold;padding:1px 0 0 10px;}
+#dl_pcv .tabbable .tab-content .pieper_report .txt-describe{width:100%;margin:auto;height:119px;resize:none;outline:none;padding-left: 5px;border-radius: 3px;}
+#dl_pcv .tabbable .tab-content .pieper_report .date-time-complete{width: 210px;}
+#dl_pcv .tabbable .tab-content .pieper_report .txt-describe:focus{border: 1px solid var(--dark-sky-blue);}
+#dl_pcv .tabbable .tab-content .pieper_report .title-text{font-weight: 600;font-size: 14px;margin-bottom: 5px;}
+#dl_pcv .tabbable .tab-content .pieper_report .ic-right::before{color: #667884;}
+#dl_pcv .tabbable .tab-content .pieper_report .ic-right.rotate-down::before{display: inline-block;  -webkit-transform: rotate(90deg);  -moz-transform: rotate(90deg);  -o-transform: rotate(90deg);  -ms-transform: rotate(90deg);  transform: rotate(90deg); position: relative;}
+#dl_pcv .tabbable .tab-content .pieper_report .ic-right{font-size: 12px;margin-left: 5px;}
+#dl_pcv .tabbable .tab-content .pieper_report .qb-footer{padding: 27px 0 27px 0;}
+#dl_pcv .tabbable .tab-content .pieper_history .header-page,.tab-content .pieper_documentCV .header-page,.tab-content .pieper_documentTB .header-page{padding-top:25px;float:left;width:100%;padding-bottom:33px;}
+#dl_pcv .tabbable .tab-content .title-page{font-size:12px;line-height:1.67;color:var(--blue-grey);float:left;padding:3px 8px 0 0;}
+#dl_pcv .tabbable .tab-content .num_page{padding-right:18px;border-right:1px solid var(--pale-grey);float:left;margin:0;font-weight:600;font-size:15px;}
+#dl_pcv .tabbable .tab-content .pagin{font-size:13px;font-weight:600;color:var(--slate);float:left;padding:3px 0 0 19px;}
+#dl_pcv .tabbable .tab-content .btn-L,.btn-R{font-size:12px;float:left;padding:5px 10px 0 10px;}
+#dl_pcv .tabbable .tab-content .btn-R{padding-left:0;}
+#dl_pcv .tabbable .tab-content .content div.hr{width: 100%;height: 1px;border: solid 1px var(--light-blue-grey);margin-bottom: 20px;}
+#dl_pcv .tabbable .tab-content .content .user-name{padding-left:12px;font-weight:bold;font-size:15px;line-height:30px;color:var(--slate);}
+#dl_pcv .tabbable .tab-content .content .txt-content{padding-top:19px;font-size:12px;line-height:19px;color:var(--slate);}
+
+/* Dialog Cap nhat so gio */
+#dl_update_tabb400 .qb-dialog-body{width: 415px;height: 198px;}
+#dl_update_tabb400 .qb-dialog-body .qb-dialog-content{padding: 31px;}
+#dl_update_tabb400 .qb-dialog-body label{font-size: 14px;margin-right: 5px;}
+#dl_update_tabb400 .qb-dialog-body input{ width: 190px; height: 35px; border-radius: 3px; border: solid 1px var(--slate);}
+#dl_update_tabb400 .qb-dialog-body input:focus{ border:solid 1px var(--azure);outline:none; }
+
+/* Dialog Chi tiet phieu */
+#dl_list_of_tabb050e .tb-content {overflow-y: auto;max-height: calc(100vh - 310px);}
+#dl_list_of_tabb050e .qb-dialog-body{height: auto;font-weight: normal;}
+#dl_list_of_tabb050e .detail-ticket .detail-ticket-body{overflow-y: auto;}
+#dl_list_of_tabb050e .detail-ticket .detail-ticket-top span.title{width: 230px;font-size: 14px;color: var(--purpley-grey);text-transform: uppercase;margin-left: 30px;padding: 7px 7px 7px 25px;display: inline-block;text-transform: uppercase;}
+#dl_list_of_tabb050e .detail-ticket .detail-ticket-top span.text-title{font-size: 17px;color: var(--charcoal-grey-two);}
+#dl_list_of_tabb050e .detail-ticket .detail-ticket-top a.ic-excel-file{float: right;font-size: 22px;}
+
+/* Dialog Bao cao nhanh */
+#dl_insert_tabc300pm_fast .qb-dialog-body{width: 415px;height: 200px;}
+#dl_insert_tabc300pm_fast .qb-dialog-body .qb-dialog-content{padding: 33px 40px 0 40px;}
+#dl_insert_tabc300pm_fast .qb-dialog-body span.title-date{float: left;padding-top: 6px;}
+
+/* Popup Yeu cau vat tu */
+#popup_require_materials{z-index: 2;}
+#popup_require_materials table.qb-table tbody tr td.td-none{border-bottom: none;}
+#popup_require_materials table.qb-table thead tr th.th-null{width:15px; background: var(--white-three);}
+#popup_require_materials table.qb-table tbody tr:hover td:last-child{background-color: var(--white-three);}
+#popup_require_materials .popup-slider-large .popup-slider-large-content{padding-right: 0;}
+#popup_require_materials .popup-slider-large .popup-slider-large-content{height: calc(100vh - 30px);}
+#popup_require_materials .popup-slider-large .popup-slider-large-content{overflow-y: hidden;}
+#popup_require_materials .tb-content{overflow-y: auto;height: calc(100vh - 180px);margin-top: 10px;}
+#popup_require_materials .popup-slider-large .popup-slider-large-top{background:#f0f5ff;}
+#popup_require_materials .popup-content-ycvt{padding:23px 0 10px 10px;}
+#popup_require_materials .popup-content-ycvt h3{font-size:18px;font-weight:600;color:var(--slate);}
+#popup_require_materials .popup-content-ycvt span.sp-tb, span.sp-bp{font-size:14px;font-weight:600;color:var(--azure);}
+#popup_require_materials .popup-content-ycvt label.lb-text{font-size:14px;font-weight:600;margin-right:8px;color:var(--slate);}
+#popup_require_materials .popup-content-ycvt .slt-require{margin-right: 24px;}
+#popup_require_materials .popup-content-ycvt input.input-search{max-width:212px;font-size: 12px;height: 30px;background-color: var(--pale-grey-two);}
+#popup_require_materials .popup-content-ycvt input.input-search:focus{background-color: var(--white-three);}
+#popup_require_materials .popup-content-ycvt a.btn-search{padding: 5px 20px 0 26px;}
+#popup_require_materials .popup-content-ycvt span.faci-search:before{color: var(--slate);}
+#popup_require_materials .popup-content-ycvt a:hover{text-decoration:none;}
+#popup_require_materials .popup-content-ycvt table{margin-top:12px;}
+#popup_require_materials .name-material{font-size: 12px;font-weight: 600;color: var(--azure);cursor: pointer;}
+@media (max-width:575px){.popup-content-ycvt .input-search{max-width:100%;} .popup-content-ycvt .form-search{margin-top:12px;}  }
+@media (max-width:1020px){.popup-content-ycvt .qb-dropdown{width:127px;}}
+
+/* Popup Yeu cau vat tu - Danh sach vat tu */
+#popup_ycvt_dsvt{z-index: 3;}
+#popup_ycvt_dsvt table.qb-table tbody tr td.td-none{border-bottom: none;}
+#popup_ycvt_dsvt table.qb-table thead tr th.th-null{width:15px; background: var(--white-three);}
+#popup_ycvt_dsvt table.qb-table tbody tr:hover td:last-child{background-color: var(--white-three);}
+#popup_ycvt_dsvt .tb-content{height: calc(100vh - 80px);overflow-y: auto;}
+#popup_ycvt_dsvt .popup-slider-large .popup-slider-large-content{overflow-y: hidden;padding-right: 0;}
+#popup_ycvt_dsvt table.qb-table{width: 1500px;}
+#popup_ycvt_dsvt .popup-slider-large .popup-slider-large-content{height: calc(100vh - 60px);}
+#popup_ycvt_dsvt .popup-content-ycvt-dsvt{padding:10px 0 10px 10px;}
+#popup_ycvt_dsvt .popup-content-ycvt-dsvt span:before{color: var(--white-three);}
+#popup_ycvt_dsvt .popup-content-ycvt-dsvt table{margin-top:12px;}
+#popup_ycvt_dsvt .popup-content-ycvt-dsvt table tr.active{background-color:var(--pale-grey);}
+#popup_ycvt_dsvt .popup-content-ycvt-dsvt span.faci-delete{font-size: 18px;cursor: pointer;}
+#popup_ycvt_dsvt .popup-report-footer{position:relative;top: 10px;}
+
+/* Dialog Upload File */
+#dl_upload_file .tabbable .nav-tabs .icon{font-size:20px;}
+#dl_upload_file .tabbable .nav-tabs .nav-link .icon:before{color:rgba(255, 255, 255, 0.5);}
+#dl_upload_file .tabbable .nav-tabs .nav-link{color:rgba(255, 255, 255, 0.5);font-size:14px;height:34px;padding-top:5px;}
+#dl_upload_file .tabbable .nav-tabs .nav-link:hover{background: var( --dark-sky-blue);}
+#dl_upload_file .tabbable .nav-tabs .nav-link .title-tab{float: right;margin-left: 10px;}
+#dl_upload_file .tabbable .nav-tabs .nav-link.active .icon:before{color:var(--dark-grey-blue-two);}
+#dl_upload_file .tabbable .nav-tabs .nav-link.active{color:var(--dark-grey-blue-two);}
+#dl_upload_file .tabbable .tab-content{color:var(--slate);font-size:12px;margin: 0 0 25px 25px;}
+#dl_upload_file .tabbable .nav-tabs{background-color:var(--cerulean);padding:16px 0 0 11px;height: 50px;font-size: 14px}
+#dl_upload_file .qb-dialog-body{height:590px;font-weight: normal;}
+#dl_upload_file .qb-dialog-header{background-color: var(--dark-sky-blue);}
+#dl_upload_file .qb-dialog-body .qb-dialog-content{padding: 0;overflow: hidden;}
+#dl_upload_document .tabbable .tab-content{color:var(--slate);font-size:12px;margin: 0 0 25px 25px;}
+#dl_upload_document .qb-dialog-body{height:542px;font-weight: normal;}
+#dl_upload_document .qb-dialog-header{background-color: var(--dark-sky-blue);}
+#dl_upload_document .qb-dialog-body .qb-dialog-content{padding: 0;overflow: hidden;}
+.dl-document-attach{font-size: 13px;}
+.dl-document-attach .icon{font-size: 16px;}
+.dl-document-attach .custom-file-upload input[type='file']{display:none;}
+.dl-document-attach .custom-file-upload{border:1px solid #ccc;display:inline-block;padding:0 12px;background-color:var(--pale-grey-two);cursor:pointer;border-radius:3px;margin-left:15px;font-size: 12px;}
+.dl-document-attach .custom-file-upload:hover{background-color:var(--seafoam-blue);border:1px solid var(--seafoam-blue);}
+.dl-document-attach .document-attach-content .left{padding:21px 10px 10px 10px;}
+.dl-document-attach .document-attach-content .left .bottom{position:relative;top:250px;float:right;}
+.dl-document-attach .custom-file-upload span.ic-add{position:relative;top:1px;margin-right:2px;}
+.dl-document-attach .list-file-upload{overflow-y: auto;overflow-x: hidden;height: 415px;}
+.dl-document-attach .progress-upload span.file-capacity{color:var(--purpley-grey);margin-right:10px;}
+.dl-document-attach .progress-upload{margin-top:25px;}
+.dl-document-attach .progress-upload .progress{margin:15px 0;}
+.dl-document-attach .progress-upload .progress .progress-bar{height:4px;background-color:var(--turquoise);}
+.dl-document-attach .document-attach-content .right{border-left:solid 1px var(--light-blue-grey);height:calc(100vh - 165px);}
+.dl-document-attach .document-attach-content ul{list-style:none;padding:5px 0 0 0;height: 380px;overflow-y: auto;}
+.dl-document-attach .document-attach-content ul li{padding:15px;}
+.dl-document-attach .document-attach-content .right .header-right{padding:15px 15px 20px 15px;border-bottom:solid 1px var(--light-blue-grey);}
+.dl-document-attach .document-attach-content .right .header-right .qb-checkbox-label{float:right;}
+.dl-document-attach .document-attach-content .right .item-right{float:right;}
+.dl-document-attach .document-attach-content .right .header-right  .sp_name_file{text-transform: uppercase;font-weight:600;position: relative;top:2px;}
+.dl-document-attach .document-attach-content .right .item-right .icon{position:relative;top:2px;right:5px;margin-right:5px;}
+.dl-document-attach .document-attach-content .right a.ic-download:hover::before{color: var(--azure);}
+.dl-document-attach .document-attach-content .right a.ic-download::before{color: var(--battleship-grey);}
+.dl-document-attach .document-attach-content .right span.ic-download-file{position:relative;top:1px;margin-right:5px;}
+.dl-document-attach .document-attach-content .right span.ic-download-file::before{color:var(--white-three);}
+.dl-document-attach .document-attach-content .right .item-right a.ic-delele-file:hover:before{color: var(--azure);}
+.dl-document-attach .document-attach-content .right a.btn-download{width:161px;height:22px;color:var(--white-three);font-size:12px;border-radius:3px;text-align:center;line-height:21px;background-color:var(--bright-blue);float:right;margin-right: 20px;}
+/* Dialog List M650 */
+#dl_list_m650 .dl-document-attach .document-attach-content ul{height: 430px;}
+#dl_list_m650 .qb-dialog-body{height:590px;font-weight: normal;}
+#dl_list_m650 .qb-dialog-header{background-color: var(--dark-sky-blue);}
+#dl_list_m650 .qb-dialog-body .qb-dialog-content{padding: 0;overflow: hidden;}
+
+/******************************************************************************/
+/*******************************BAO TRI THEO HAN MUC***************************/
+/******************************************************************************/
+#tb_b350bt .qb-table .th-stt{width: 50px;}
+#tb_b350bt .qb-table .th-thietbi{width: 300px;}
+#tb_b350bt .qb-table .th-mataisan{width: 100px;}
+#tb_b350bt .qb-table .th-sogiohd{width: 150px;}
+#tb_b350bt .qb-table .th-ngaycapnhat{width: 150px;}
+#tb_b350bt .qb-table .th-nguoicapnhat{width: 150px;}
+#tb_b350bt .qb-table .th-chucnang{width: 100px;}
+#tb_b350bt .qb-table td .fa-plus-circle{cursor: pointer;}
+
+/* Dialog Cap nhat so gio hoat dong */
+#dl_update_tabb350b .qb-dialog-body{width: 415px;height: 198px;}
+#dl_update_tabb350b .qb-dialog-body .qb-dialog-content{padding: 31px;}
+#dl_update_tabb350b .qb-dialog-body label{font-size: 14px;margin-right: 5px;}
+#dl_update_tabb350b .qb-dialog-body input{ width: 190px; height: 35px; border-radius: 3px; border: solid 1px var(--slate);}
+#dl_update_tabb350b .qb-dialog-body input:focus{ border:solid 1px var(--azure);outline:none; }

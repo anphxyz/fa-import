@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="39px" viewBox="0 0 74 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quan-tri-he-thong---Nhom-quyen" transform="translate(-5.000000, -480.000000)" fill-rule="nonzero" fill="#3F4F63">
+            <g id="Group-Copy" transform="translate(19.000000, 470.000000)">
+                <path d="M59.2428486,10.7536232 C58.2229308,9.74879227 56.5655643,9.74879227 55.5456465,10.7536232 L23.0357659,42.8454106 L-9.53785953,10.7536232 C-10.5577773,9.74879227 -12.2151438,9.74879227 -13.2350616,10.7536232 C-14.2549795,11.7584541 -14.2549795,13.3913043 -13.2350616,14.3961353 L21.12342,48.2463768 C21.6333789,48.7487923 22.2708276,49 22.9720211,49 C23.6094697,49 24.3106632,48.7487923 24.8206221,48.2463768 L59.1791038,14.3961353 C60.2627664,13.3913043 60.2627664,11.7584541 59.2428486,10.7536232 Z" id="arrow-down"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="103px" height="84px" viewBox="0 0 103 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-back</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.5%" y="-3.1%" width="105.0%" height="105.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.352941176   0 0 0 0 0.407843137   0 0 0 0 0.478431373  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bảo-trì-sửa-chữa-(CM)---Yeu-cau-vat-tu" transform="translate(-506.000000, -2.000000)" fill-rule="nonzero" fill="#0094FB">
+            <g id="Phieu-CV-Copy-9" filter="url(#filter-1)" transform="translate(230.000000, 0.000000)">
+                <g id="Phieu-CV">
+                    <path d="M315.855746,21.7219186 C316.800284,20.7593605 318.287294,20.7593605 319.231832,21.7219186 C320.144461,22.6519579 320.144461,24.1998555 319.231832,25.1277268 L302.113138,42.5730093 L358.602489,42.5730093 C359.919312,42.5730093 361,43.6396278 361,44.9815726 C361,46.3235175 359.919312,47.4248227 358.602489,47.4248227 L302.113138,47.4248227 L319.231832,64.8375864 C320.144461,65.8001445 320.144461,67.35021 319.231832,68.2780814 C318.287294,69.2406395 316.800284,69.2406395 315.855746,68.2780814 L294.684471,46.7029041 C293.771843,45.7728648 293.771843,44.2249673 294.684471,43.2970959 L315.855746,21.7219186 Z" id="arrow-back"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

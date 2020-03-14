@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tab dữ liệu gốc - nhân viên</title>
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/facilio-icon/stylesheet.css">
+    <link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="css/man-ultil.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<img src="images/nav.png" width="100%">
+<div class="content-body">
+    <div class="content-page-system-management">
+        <!-- Start Page Tab Du Lieu Goc Nhan Vien -->
+        <div class="container-fluid">
+            <div class="content">
+                <div class="content-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-inline">
+                                <a class="btn btn-permission" href="#" role="button" id="btn-permission">Phân quyền</a>
+                                <div class="dropdown">
+                                    <button class="btn btn-data-root dropdown-toggle active" type="button" id="btn-data-root">
+                                        Dữ liệu gốc
+                                    </button>
+                                    <a href="#" class="name-parent-menu"></a><span style="font-size: 12px;">/</span><a href="#" class="name-child-menu">Máy loại thiết bị</a>
+                                    <div class="popup-menu-data-root">
+                                        <ul class="parent d-none">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="faci-buildings ic-menu"></span>Công ty - chi nhánh<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span>
+                                                </a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Danh mục quản lý</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-use3 ic-menu"></span>Nhân viên<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Nhân viên</a></li>
+                                                    <li><a href="">Nhóm nhân viên</a></li>
+                                                    <li><a href="">Nhóm theo khu vực</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><span class="faci-calendar ic-menu"></span>Lịch làm việc</a></li>
+                                            <li>
+                                                <a href="#"><span class="faci-gear ic-menu"></span>Máy - Loại thiết bị<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Máy - Loại thiết bị</a></li>
+                                                    <li><a href="">Bộ phận máy</a></li>
+                                                    <li><a href="">Nguyên nhân</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-baotrisuachua ic-menu"></span>Bảo trì<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vị trí thiết bị</a></li>
+                                                    <li><a href="">Đơn vị bảo trì</a></li>
+                                                    <li><a href="">Nhật ký sửa đổi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-vattuthaythe ic-menu"></span>Vật tư<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vật tư</a></li>
+                                                    <li><a href="">Đơn vị tính</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                    <li><a href="">Vật tư theo thiết bị</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="content-data-root">
+                        <div class="data-root-body">
+
+                            <div class="machine-kind-device">
+                                <div class="top-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row justify-content-end">
+                                                <a href="#" class="btn-machine-device"><span class="faci-add ic-add"></span>Máy/Thiết bị</a>
+                                                <div class="dropdown">
+                                                    <button class="qb-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Bảo trì bôi trơn
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>
+                                                    <span>421.615.EL01 THANG MÁY VẬN CHUYỂN</span>
+                                                    <div class="item-tool-right">
+                                                        <a href="#" class="faci-File3"></a>
+                                                        <a href="#" class="faci-edit"></a>
+                                                        <a href="#" class="faci-delete"></a>
+                                                        <a href="#" class="faci-gear"></a>
+                                                        <a href="#" class="faci-machinery"></a>
+                                                        <a href="#" class="faci-file ic-file"></a>
+                                                        <a href="#" class="faci-image"></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>341.020.LQ01-HỆ THỐNG BÔI TRƠN CON LĂN MÁY NGHIỀN LIỆU</span>
+                                                    <div class="item-tool-right">
+                                                        <div class="item-tool-right">
+                                                            <a href="#" class="faci-File3"></a>
+                                                            <a href="#" class="faci-edit"></a>
+                                                            <a href="#" class="faci-delete"></a>
+                                                            <a href="#" class="faci-gear"></a>
+                                                            <a href="#" class="faci-machinery"></a>
+                                                            <a href="#" class="faci-file"></a>
+                                                            <a href="#" class="faci-image"></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>341.026.RM01-ĐÔNG CƠ MÁY NGHIỀN LIỆU SRHB-2800 KW-6</span>
+                                                    <div class="item-tool-right">
+                                                        <div class="item-tool-right">
+                                                            <a href="#" class="faci-File3"></a>
+                                                            <a href="#" class="faci-edit"></a>
+                                                            <a href="#" class="faci-delete"></a>
+                                                            <a href="#" class="faci-gear"></a>
+                                                            <a href="#" class="faci-machinery"></a>
+                                                            <a href="#" class="faci-file"></a>
+                                                            <a href="#" class="faci-image"></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>341.026.RM01-ĐÔNG CƠ MÁY NGHIỀN LIỆU SRHB-2800 KW-6</span>
+                                                    <div class="item-tool-right">
+                                                        <div class="item-tool-right">
+                                                            <a href="#" class="faci-File3"></a>
+                                                            <a href="#" class="faci-edit"></a>
+                                                            <a href="#" class="faci-delete"></a>
+                                                            <a href="#" class="faci-gear"></a>
+                                                            <a href="#" class="faci-machinery"></a>
+                                                            <a href="#" class="faci-file"></a>
+                                                            <a href="#" class="faci-image"></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>341.026.RM01-ĐÔNG CƠ MÁY NGHIỀN LIỆU SRHB-2800 KW-6</span>
+                                                    <div class="item-tool-right">
+                                                        <div class="item-tool-right">
+                                                            <a href="#" class="faci-File3"></a>
+                                                            <a href="#" class="faci-edit"></a>
+                                                            <a href="#" class="faci-delete"></a>
+                                                            <a href="#" class="faci-gear"></a>
+                                                            <a href="#" class="faci-machinery"></a>
+                                                            <a href="#" class="faci-file"></a>
+                                                            <a href="#" class="faci-image"></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>341.026.RM01-ĐÔNG CƠ MÁY NGHIỀN LIỆU SRHB-2800 KW-6</span>
+                                                    <div class="item-tool-right">
+                                                        <div class="item-tool-right">
+                                                            <a href="#" class="faci-File3"></a>
+                                                            <a href="#" class="faci-edit"></a>
+                                                            <a href="#" class="faci-delete"></a>
+                                                            <a href="#" class="faci-gear"></a>
+                                                            <a href="#" class="faci-machinery"></a>
+                                                            <a href="#" class="faci-file"></a>
+                                                            <a href="#" class="faci-image"></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Tab Du Lieu Goc Nhan Vien -->
+    </div>
+
+    <!-- Dialog Them Edit May Thiet Bi -->
+    <div class="qb-dialog" id="add_machine_device">
+        <div class="qb-dialog-overlay">
+            <div class="container-fluid qb-dialog-body">
+
+                <!-- Header Dialog -->
+                <div class="qb-dialog-header">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="title-dialog">MÁY / THIẾT BỊ</h3>
+                            <a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Dialog -->
+                <div class="qb-dialog-content">
+                    <form class="form-add-machine-device">
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label text-right">Máy/thiết bị*</label>
+                            <div class="col-8 p-0">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label text-right">Thông tin đính kèm</label>
+                            <div class="col-8 p-0">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label text-right">Mã máy / mã thiết bị*</label>
+                            <div class="col-8 p-0">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label text-right">Số thứ tự</label>
+                            <div class="col-8 p-0">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label text-right">Tên tập tin</label>
+                            <div class="col-8 p-0">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Footer Dialog -->
+                <div class="qb-dialog-footer">
+                    <div class="row justify-content-end">
+                        <div class="col-12 text-right">
+                            <a href="#" class="btn-close close-dialog">ĐÓNG</a>
+                            <a href="#" class="btn-save">LƯU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Dialog Them Edit May Thiet Bi -->
+
+    <!-- Dialog Upload File -->
+    <div class="qb-dialog" id="dialog_document_attach">
+        <div class="qb-dialog-overlay">
+            <div class="container-fluid qb-dialog-body">
+
+                <!-- Header Dialog -->
+                <div class="qb-dialog-header">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="faci-votes ic-title-dialog"></span>
+                            <h3 class="title-dialog">TÀI LIỆU ĐÍNH KÈM</h3>
+                            <a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Dialog -->
+                <div class="qb-dialog-content">
+                    <div class="moda-job">
+                        <div class="tabbable dialog-document-attach">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" role="tab" data-toggle="tab" href="#image">
+                                            <span class="faci-image icon"></span>
+                                            <span class="title-tab">Hình ảnh</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" role="tab" data-toggle="tab" href="#film">
+                                            <span class="faci-film-strips-video-player icon"></span>
+                                            <span class="title-tab">Phim</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="image" role="tabpanel" class="tab-pane active">
+                                        <div class="document-attach-content">
+                                            <div class="row">
+                                                <div class="col-6 p-0">
+                                                    <div class="left">
+
+                                                        <label>Tải lên ở đây</label>
+                                                        <label for="file-upload" class="custom-file-upload">
+                                                            <span class="faci-add ic-add"></span> Chọn file
+                                                        </label>
+                                                        <input id="file-upload" type="file" style="display:none;"/>
+                                                        <div class="progress-upload">
+                                                            <span class="name-file">Screenshot 14 12535 5435.png</span>
+                                                            <div class="float-right">
+                                                                <span class="file-capacity">4.4MB</span>
+                                                                <a href="#" class="faci-delete ic-delete icon"></a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress-upload">
+                                                            <span class="name-file">CanhdepDalat.png</span>
+                                                            <div class="float-right">
+                                                                <span class="file-capacity">1.2MB</span>
+                                                                <a href="#" class="faci-delete icon ic-delete"></a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bottom">
+                                                            <a href="#" class="btn-close"><span class="faci-delete icon"></span>Đóng</a>
+                                                            <a href="#" class="btn-upload"><span class="faci-logout icon"></span>Tải file</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="right">
+                                                        <ul>
+                                                            <li>
+                                                                <span>TÊN FILE</span>
+                                                                <input type="checkbox" id="c1" name="cb" class="qb-checkbox" />
+                                                                <label for="c1" class="qb-checkbox-label"></label>
+                                                            </li>
+                                                            <li>
+                                                                <span>tutorial_mackbook.pdf</span>
+                                                                <div class="item-right">
+                                                                    <a href="#" class="faci-Combined-Shape ic-download icon"></a>
+                                                                    <a href="#" class="faci-delete ic-delete-file icon"></a>
+                                                                    <input type="checkbox" id="c2" name="cb" class="qb-checkbox" />
+                                                                    <label for="c2" class="qb-checkbox-label"></label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span>adobe_cc_2016.jpg</span>
+                                                                <div class="item-right">
+                                                                    <a href="#" class="faci-Combined-Shape ic-download icon"></a>
+                                                                    <a href="#" class="faci-delete ic-delete-file icon"></a>
+                                                                    <input type="checkbox" id="c3" name="cb" class="qb-checkbox" />
+                                                                    <label for="c3" class="qb-checkbox-label"></label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="#" class="btn-download"><span class="faci-Combined-Shape ic-download-file"></span>Tải xuống file đã chọn</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="film" role="tabpanel" class="tab-pane pieper_report">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Dialog Upload File -->
+
+</div>
+<script src="dist/jquery/jquery-3.2.1.min.js"></script>
+<script src="dist/jquery/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/ultil.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>logout</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logout" transform="translate(2.000000, 2.000000)" stroke="#3F4F63" stroke-width="2.4" fill="#3F4F63" fill-rule="nonzero">
+            <path d="M37.5,75 C38.88,75 40,76.12 40,77.5 C40,78.88 38.88,80 37.5,80 L2.5,80 C1.12,80 0,78.88 0,77.5 L0,2.5 C0,1.12 1.12,0 2.5,0 L37.5,0 C38.88,0 40,1.12 40,2.5 C40,3.88 38.88,5 37.5,5 L5,5 L5,75 L37.5,75 Z M79.27496,38.255 C80.24752,39.225 80.23752,40.8525 79.27248,41.825 L62.02496,59.3225 C61.05,60.31 59.46752,60.31 58.49,59.3225 C57.51248,58.3375 57.51248,56.74 58.49,55.7525 L71.49,42.565 L20.00752,42.565 C18.62752,42.565 17.50752,41.435 17.50752,40.04 C17.50752,38.645 18.62752,37.515 20.00752,37.515 L71.49,37.515 L58.49,24.3275 C57.51248,23.3425 57.51248,21.7425 58.49,20.7575 C59.46504,19.7725 61.04752,19.77 62.02496,20.7575 L79.27496,38.255 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <!----ADD FONTS--->
+        <link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css"/>
+        <link href="fonts/facilio-icon/stylesheet.css" rel="stylesheet" type="text/css"/>
+        <!----ADD BOOTSTRAP--->
+        <link href="dist/bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <!----ADD LIBS DATE TIME PICKER--->
+        <link href="dist/datetimepicker-master/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>
+        <!----ADD LIBS DATE RANGE PICKER--->
+        <link href="dist/bootstrap-daterangepicker-master/daterangepicker.css" rel="stylesheet" type="text/css"/>
+        <!----ADD LIBS JQUERY UI--->
+        <link href="dist/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <!----ADD CUSTOM FILE CSS--->
+        <link href="css/man-ultil.css" rel="stylesheet" type="text/css"/>
+        <title>Công việc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content-body">
+            <!--------------------------------------------------------------------->
+            <!----------------HỘP THOẠI BÁO CÁO NHANH ---------------------------->
+            <!--------------------------------------------------------------------->
+            <div id="reportModal" class="reportModal">
+
+                <!-- Modal content -->
+                <div class="report-content qb-content">
+                    <div class="report-header qb-header">
+                        <span class="faci-votes qb-icon"></span>
+                        <span class="title-report qb-title">BÁO CÁO NHANH</span>
+                        <span class="faci-close qb-close"></span>
+                    </div>
+                    <div class="report-body">
+                        <span class="title-date">Chọn ngày</span>
+                        <div class="qb-daterange">
+                            <i class="faci-calendar qb-icon-ca"></i>
+                            <input type="text" id="qb_daterange" class="daterange" name="daterange"/>
+                            <i id="icon-down" class="faci-arrow-down qb-icon-down"></i>
+                        </div>
+                    </div>
+                    <div class="report-footer qb-footer">
+                        <a class="qb-exit">ĐÓNG</a>
+                        <a class="qb-save">LƯU</a>
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------->
+            <!----------------HỘP THOẠI CẬP NHẬT SỐ GIỜ ---------------------------->
+            <!--------------------------------------------------------------------->
+            <div id="updateModal" class="updateModal">
+
+                <!-- Modal content -->
+                <div class="update-content qb-content">
+                    <div class="update-header qb-header">
+                        <span class="faci-votes qb-icon"></span>
+                        <span class="title-update qb-title">CẬP NHẬT SỐ GIỜ HOẠT ĐỘNG TRONG NGÀY</span>
+                        <span class="faci-close qb-close"></span>
+                    </div>
+                    <div class="update-body">
+                        <span class="title-time">Số giờ</span>
+                        <input class="time qb-input"/>
+                    </div>
+                    <div class="update-footer qb-footer">
+                        <a class="qb-exit">ĐÓNG</a>
+                        <a class="qb-save">LƯU</a>
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------->
+            <!---------------------FOOTER------------------------------------------>
+            <!--------------------------------------------------------------------->
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- ADD BOOTSTRAP -->
+        <script src="dist/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="dist/bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js" type="text/javascript"></script>
+        <script src="dist/bootstrap-4.0.0-beta/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- ADD DATE TIME PICKER -->
+        <script src="dist/datetimepicker-master/build/jquery.datetimepicker.full.js" type="text/javascript"></script>
+        <!-- ADD DATE RANGER PICKER -->
+        <script src="dist/bootstrap-daterangepicker-master/moment.js" type="text/javascript"></script>
+        <script src="dist/bootstrap-daterangepicker-master/daterangepicker.js" type="text/javascript"></script>
+        <!-- ADD JQUERY UI -->
+        <script src="dist/jquery-ui-1.12.1.custom/jquery-ui.js" type="text/javascript"></script>
+        <!-- ADD FILE CUSTOM -->
+        <script src="js/ultil.js" type="text/javascript"></script>
+        <script src="js/man-ultil.js" type="text/javascript"></script>
+    </body>
+</html>

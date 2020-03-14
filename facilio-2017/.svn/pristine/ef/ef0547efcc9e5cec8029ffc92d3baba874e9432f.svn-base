@@ -1,0 +1,538 @@
+@font-face {
+  font-family: 'facilio-icon';
+  src:  url('facilio-icon.eot?m5s78z');
+  src:  url('facilio-icon.eot?m5s78z#iefix') format('embedded-opentype'),
+    url('facilio-icon.ttf?m5s78z') format('truetype'),
+    url('facilio-icon.woff?m5s78z') format('woff'),
+    url('facilio-icon.svg?m5s78z#facilio-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="faci-"], [class*=" faci-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'facilio-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.faci-info .path1:before {
+  content: "\e900";
+  color: rgb(102, 206, 219);
+}
+.faci-info .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(63, 79, 99);
+}
+.faci-i:before {
+  content: "\e902";
+}
+.faci-dot:before {
+  content: "\e903";
+  color: #9b9b9b;
+}
+.faci-add:before {
+  content: "\e904";
+  color: #3f4f63;
+}
+.faci-arrow-back:before {
+  content: "\e905";
+  color: #0094fb;
+}
+.faci-arrow-down:before {
+  content: "\e906";
+  color: #667884;
+}
+.faci-arrow-lineD:before {
+  content: "\e907";
+  color: #3f4f63;
+}
+.faci-arrow-lineL:before {
+  content: "\e908";
+  color: #3f4f63;
+}
+.faci-arrow-lineR:before {
+  content: "\e909";
+  color: #3f4f63;
+}
+.faci-arrow-right:before {
+  content: "\e90a";
+  color: #fff;
+}
+.faci-attach:before {
+  content: "\e90b";
+  color: #667884;
+}
+.faci-baocaocv:before {
+  content: "\e90c";
+  color: #3a5162;
+}
+.faci-baotriboitron:before {
+  content: "\e90d";
+  color: #9da7bf;
+}
+.faci-baotridinhky:before {
+  content: "\e90e";
+  color: #9da7bf;
+}
+.faci-baotrisuachua:before {
+  content: "\e90f";
+  color: #9da7bf;
+}
+.faci-buildings:before {
+  content: "\e910";
+  color: #fff;
+}
+.faci-calendar:before {
+  content: "\e911";
+  color: #667884;
+}
+.faci-capnhatdulieu:before {
+  content: "\e912";
+  color: #9da7bf;
+}
+.faci-check:before {
+  content: "\e913";
+  color: #fff;
+}
+.faci-clock:before {
+  content: "\e914";
+  color: #667884;
+}
+.faci-close:before {
+  content: "\e915";
+  color: #fff;
+}
+.faci-Combined-Shape:before {
+  content: "\e916";
+  color: #667884;
+}
+.faci-CongViec:before {
+  content: "\e917";
+  color: #3a5162;
+}
+.faci-congviectrongyeu:before {
+  content: "\e918";
+  color: #475575;
+}
+.faci-danhmucthietbi:before {
+  content: "\e919";
+  color: #9da7bf;
+}
+.faci-delete:before {
+  content: "\e91a";
+  color: #667884;
+}
+.faci-edit:before {
+  content: "\e91b";
+  color: #667884;
+}
+.faci-excel-download .path1:before {
+  content: "\e91c";
+  color: rgb(80, 124, 92);
+}
+.faci-excel-download .path2:before {
+  content: "\e91d";
+  margin-left: -1.173828125em;
+  color: rgb(207, 240, 158);
+}
+.faci-excel-download .path3:before {
+  content: "\e91e";
+  margin-left: -1.173828125em;
+  color: rgb(207, 240, 158);
+}
+.faci-excel-download .path4:before {
+  content: "\e91f";
+  margin-left: -1.173828125em;
+  color: rgb(80, 124, 92);
+}
+.faci-excel-download .path5:before {
+  content: "\e920";
+  margin-left: -1.173828125em;
+  color: rgb(80, 124, 92);
+}
+.faci-excel-download .path6:before {
+  content: "\e921";
+  margin-left: -1.173828125em;
+  color: rgb(80, 124, 92);
+}
+.faci-excel .path1:before {
+  content: "\e922";
+  color: rgb(80, 124, 92);
+}
+.faci-excel .path2:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(207, 240, 158);
+}
+.faci-excel .path3:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(207, 240, 158);
+}
+.faci-excel .path4:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(80, 124, 92);
+}
+.faci-excel .path5:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(80, 124, 92);
+}
+.faci-eye:before {
+  content: "\e927";
+  color: #3f4f63;
+}
+.faci-eye2:before {
+  content: "\e928";
+  color: #0396fc;
+}
+.faci-factory:before {
+  content: "\e929";
+  color: #96a5c3;
+}
+.faci-File-plus:before {
+  content: "\e92a";
+  color: #667884;
+}
+.faci-file:before {
+  content: "\e92b";
+  color: #687a85;
+}
+.faci-File3:before {
+  content: "\e92c";
+  color: #667884;
+}
+.faci-File4:before {
+  content: "\e92d";
+  color: #687a85;
+}
+.faci-film-strips-video-player:before {
+  content: "\e92e";
+  color: #667884;
+}
+.faci-finished .path1:before {
+  content: "\e92f";
+  color: rgb(102, 206, 219);
+}
+.faci-finished .path2:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(29, 29, 27);
+}
+.faci-foward:before {
+  content: "\e931";
+  color: #667884;
+}
+.faci-gear:before {
+  content: "\e932";
+  color: #fff;
+}
+.faci-globe:before {
+  content: "\e933";
+  color: #3f4f63;
+}
+.faci-hide:before {
+  content: "\e934";
+  color: #9b9b9b;
+}
+.faci-historical-report:before {
+  content: "\e935";
+  color: #667884;
+}
+.faci-history:before {
+  content: "\e936";
+  color: #667884;
+}
+.faci-image:before {
+  content: "\e937";
+  color: #687a85;
+}
+.faci-lichsubaocao:before {
+  content: "\e938";
+  color: #3a5162;
+}
+.faci-list:before {
+  content: "\e939";
+  color: #667884;
+}
+.faci-logo .path1:before {
+  content: "\e93a";
+  color: rgb(55, 78, 96);
+}
+.faci-logo .path2:before {
+  content: "\e93b";
+  margin-left: -3.5361328125em;
+  color: rgb(112, 121, 125);
+}
+.faci-logo .path3:before {
+  content: "\e93c";
+  margin-left: -3.5361328125em;
+  color: rgb(0, 92, 255);
+}
+.faci-logo .path4:before {
+  content: "\e93d";
+  margin-left: -3.5361328125em;
+  color: rgb(0, 92, 255);
+}
+.faci-logout:before {
+  content: "\e93e";
+  color: #3f4f63;
+}
+.faci-machinery:before {
+  content: "\e93f";
+  color: #687a85;
+}
+.faci-menu:before {
+  content: "\e940";
+  color: #0094fb;
+}
+.faci-move:before {
+  content: "\e941";
+  color: #667884;
+}
+.faci-notepad:before {
+  content: "\e942";
+  color: #96a5c3;
+}
+.faci-quantrihethong:before {
+  content: "\e943";
+  color: #9da7bf;
+}
+.faci-running .path1:before {
+  content: "\e944";
+  color: rgb(181, 219, 102);
+}
+.faci-running .path2:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.faci-search .path1:before {
+  content: "\e946";
+  color: rgb(198, 206, 219);
+}
+.faci-search .path2:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(63, 79, 99);
+}
+.faci-storage:before {
+  content: "\e948";
+  color: #667884;
+}
+.faci-tailieucv:before {
+  content: "\e949";
+  color: #3a5162;
+}
+.faci-tailieuTB:before {
+  content: "\e94a";
+  color: #3a5162;
+}
+.faci-timkiem:before {
+  content: "\e94b";
+  color: #9da7bf;
+}
+.faci-update:before {
+  content: "\e94c";
+  color: #667884;
+}
+.faci-use3:before {
+  content: "\e94d";
+  color: #fff;
+}
+.faci-user-add:before {
+  content: "\e94e";
+  color: #667884;
+}
+.faci-user .path1:before {
+  content: "\e94f";
+  color: rgb(201, 212, 232);
+}
+.faci-user .path2:before {
+  content: "\e950";
+  margin-left: -0.94140625em;
+  color: rgb(102, 120, 132);
+}
+.faci-userLOGIN .path1:before {
+  content: "\e951";
+  color: rgb(67, 211, 232);
+}
+.faci-userLOGIN .path2:before {
+  content: "\e952";
+  margin-left: -1em;
+  color: rgb(63, 79, 99);
+}
+.faci-users:before {
+  content: "\e953";
+  color: #667884;
+}
+.faci-vattu .path1:before {
+  content: "\e954";
+  color: rgb(246, 191, 88);
+}
+.faci-vattu .path2:before {
+  content: "\e955";
+  margin-left: -1em;
+  color: rgb(102, 206, 219);
+}
+.faci-vattu .path3:before {
+  content: "\e956";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path4:before {
+  content: "\e957";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path5:before {
+  content: "\e958";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path6:before {
+  content: "\e959";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path7:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path8:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path9:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path10:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path11:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path12:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path13:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path14:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path15:before {
+  content: "\e962";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path16:before {
+  content: "\e963";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattu .path17:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(1, 1, 51);
+}
+.faci-vattuthaythe:before {
+  content: "\e965";
+  color: #9da7bf;
+}
+.faci-votes:before {
+  content: "\e966";
+  color: #c5c5c5;
+}
+.faci-warning .path1:before {
+  content: "\e967";
+  color: rgb(254, 85, 0);
+}
+.faci-warning .path2:before {
+  content: "\e968";
+  margin-left: -1.052734375em;
+  color: rgb(0, 0, 0);
+}
+.faci-worker:before {
+  content: "\e969";
+  color: #96a5c3;
+}
+.faci-wrenches .path1:before {
+  content: "\e96a";
+  color: rgb(149, 156, 181);
+}
+.faci-wrenches .path2:before {
+  content: "\e96b";
+  margin-left: -1em;
+  color: rgb(200, 65, 70);
+}
+.faci-wrenches .path3:before {
+  content: "\e96c";
+  margin-left: -1em;
+  color: rgb(255, 80, 80);
+}
+.faci-wrenches .path4:before {
+  content: "\e96d";
+  margin-left: -1em;
+  color: rgb(200, 65, 70);
+}
+.faci-wrenches .path5:before {
+  content: "\e96e";
+  margin-left: -1em;
+  color: rgb(127, 132, 153);
+}
+.faci-wrenches .path6:before {
+  content: "\e96f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.faci-wrenches .path7:before {
+  content: "\e970";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.faci-wrenches .path8:before {
+  content: "\e971";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.faci-wrenches .path9:before {
+  content: "\e972";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.faci-wrenches .path10:before {
+  content: "\e973";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.faci-wrenches .path11:before {
+  content: "\e974";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}

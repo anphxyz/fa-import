@@ -1,0 +1,13 @@
+RULES
+<input type="checkbox" name="agreement" data-validation="required"> // validation field required
+<input type="text" data-validation="length" data-validation-length="max100"> // Max 100 characters
+<input type="text" data-validation="number"> // Any numerical value
+<input type="text" data-validation="number" data-validation-allowing="float"> // Only allowing float values
+<input type="text" data-validation="email"> // validation email
+<input type="text" data-validation="url"> // validation url
+<input type="text" data-validation="date"> // Validate date formatted yyyy-mm-dd
+<input type="text" data-validation="date" data-validation-require-leading-zero="false"> // Validate date formatted yyyy-mm-dd but dont require leading zeros
+<input type="text" data-validation="date" data-validation-format="dd/mm/yyyy"> // Validate date formatted dd/mm/yyyy
+<input type="text" data-validation="alphanumeric"> // This input requires an answer that contains only letters a-z and/or numbers
+<input type="text" data-validation="alphanumeric" data-validation-allowing="-_"> // This input requires the same as the one above but it also allows hyphen and underscore
+<input type="text" data-validation="custom" data-validation-regexp="^([a-z]+)$"> // This input would only allow lowercase letters a-z

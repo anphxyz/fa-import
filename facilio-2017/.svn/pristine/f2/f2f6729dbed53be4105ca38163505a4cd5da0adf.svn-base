@@ -1,0 +1,857 @@
+/******************************************************************************/
+/************************************DROPDOWN**********************************/
+/******************************************************************************/
+.qb-dropdown { width:158px; height:30px; border-radius:3px; border:solid 1px var(--light-blue-grey); background-color:var(--pale-grey-two); margin-left: 10px; font-size: 12px; text-align: left; padding-left: 8px; color:var(--slate); cursor: pointer; position: relative; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
+.qb-dropdown::after { float: right; margin: 7px 5px 0 0; position: absolute; right: 0; } 
+.qb-dropdown-item { font-size: 12px; } 
+.qb-dropdown-item.active { background-color: var(--azure); color:var(--white-three); } 
+.qb-dropdown:focus { outline: none; } 
+.dropdown-menu { max-height: 260px; overflow-y: auto; } 
+.dropdown-menu.show-calendar { max-height: 330px; max-width: 511px; overflow-y: auto; } 
+/* Ex */
+/*
+<div class="dropdown">
+ <button class="qb-dropdown dropdown-toggle" type="button" data-toggle="dropdown">
+ Nội dung list
+ </button>
+ <div class="dropdown-menu">
+ <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+ <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+ <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+ </div>
+</div>
+*/
+
+/******************************************************************************/
+/********************************SWITCH CHECKBOX*******************************/
+/******************************************************************************/
+/* Example: */
+/*
+<div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+</div>
+ */
+input[type="checkbox"].switch_cb { border: none !important; } 
+input[type="checkbox"].switch_cb { font-size:30px; -webkit-appearance:none; -moz-appearance:none; width:1.3em; height:0.6em; background:var(--light-blue-grey); border-radius:3em; position:relative; cursor:pointer; outline:none; -webkit-transition:all .2s ease-in-out; transition:all .2s ease-in-out; } 
+input[type="checkbox"].switch_cb:checked { background:#008aff; } 
+input[type="checkbox"].switch_cb:after { position:absolute; content:""; width:0.6em; height:0.6em; border-radius:50%; background:#fff; -webkit-transform:scale(.7); transform:scale(.7); left:0; -webkit-transition:all .2s ease-in-out; transition:all .2s ease-in-out; } 
+input[type="checkbox"].switch_cb:checked:after { left:calc(100% - 0.6em); } 
+
+/******************************************************************************/
+/***********************************POPUP SLIDER*******************************/
+/******************************************************************************/
+/* Ex: */
+/*
+----With Button Save And Close----
+
+<div class="popup-slider" id="demo">
+ <div class="popup-slider-content popup-slider-small">
+ <div class="popup-slider-small-top">
+ <div class="row">
+ <div class="col-12">
+ <h3>Title Popup</h3>
+ <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+ </div>
+ </div>
+ </div>
+ <div class="popup-slider-small-body">
+ <div class="row">
+ <div class="col-12">
+ Body
+ </div>
+ </div>
+ </div>
+ <div class="popup-slider-small-footer">
+ <div class="row justify-content-end">
+ <a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+ <a href="#" class="btn btn-save">LƯU</a>
+ </div>
+ </div>
+ </div>
+</div>
+
+----Large----
+
+<div class="popup-slider" id="large">
+ <div class="popup-slider-content popup-slider-large">
+ <div class="popup-slider-large-top">
+ <div class="row">
+ <div class="col-12">
+ <h3>Title Popup</h3>
+ <a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+ </div>
+ </div>
+ </div>
+ <div class="popup-slider-large-content">
+ <div class="row">
+ <div class="col-12">
+ Body Popup
+ </div>
+ </div>
+ </div>
+ <div class="popup-slider-large-footer">
+ <div class="row justify-content-end">
+ <a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+ <a href="#" class="btn btn-save">LƯU</a>
+ </div>
+ </div>
+ </div>
+</div>
+*/
+/* Style Popup Slider */
+.popup-slider { width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0); position: fixed; right: 0; top:0; visibility: hidden; opacity: 0; transition: all 0.3s; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s; z-index: 2; } 
+.popup-slider .popup-slider-content { width: 100%; height: 100vh; background-color: var(--white-three); transition: all 0.3s; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s; position: fixed; right: -110vw; top:0; } 
+.popup-slider.on { visibility: visible; opacity: 1; } 
+.popup-slider.on .popup-slider-content { right: 0; opacity: 1 } 
+
+/* Style Popup Slider Small */
+.popup-slider-small { max-width: 672px; height: 100vh; background-color: var(--white-three); box-shadow: 0 -1px 10px 0 rgba(90, 104, 122, 0.3); padding: 0; transition: all 0.3s; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s; position: fixed; right: -110vw; top:0; } 
+.popup-slider-small .popup-slider-small-top { padding: 30px 20px 0 20px; height: 50px; margin-bottom: 30px; } 
+.popup-slider-small .popup-slider-small-top h3 { font-size: 18px; font-weight: 600; color: var(--azure); display: inline; } 
+.popup-slider-small .popup-slider-small-top span.close-slide::before { color: var(--black); } 
+.popup-slider-small .popup-slider-small-body { width:100%; height: calc(100vh - 165px); overflow-y: auto; overflow-x: hidden; padding: 0 20px 0 20px; } 
+.popup-slider-small .popup-slider-small-footer { height: 60px; margin-bottom: 10px; padding: 0 20px 0 20px; } 
+.popup-slider-small .popup-slider-small-footer .justify-content-end { position: relative; top: 16px; right:15px; } 
+.popup-slider-small .popup-slider-small-footer .btn-close, .btn-save { font-size: 14px !important; width: 81px; height: 31px; padding: 0.4rem .75rem !important; } 
+.popup-slider-small .popup-slider-small-footer .btn-close:focus { box-shadow: none; } 
+.popup-slider-small .popup-slider-small-footer .btn-save:focus { box-shadow: none; } 
+.popup-slider-small .popup-slider-small-footer .btn-close { color: var(--slate); margin-right: 10px; } 
+.popup-slider-small .popup-slider-small-footer .btn-save { background-color: var(--bright-blue); color: #ffffff; } 
+.popup-slider-small .popup-slider-small-footer .btn-save:hover { color: #ffffff; } 
+
+/* Style Popup Slider large */
+.popup-slider-large { max-width: 1210px; height: 100vh; background-color: var(--white-three); box-shadow: 0 -1px 10px 0 rgba(90, 104, 122, 0.3); transition: all 0.3s; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; -o-transition: all 0.3s; position: fixed; right: -110vw; top:0; } 
+.popup-slider-large .popup-slider-large-top { width:100%; height:45px; background-color:#f0f5ff; padding:11px 0 0 14px; position: relative; } 
+.popup-slider-large .popup-slider-large-top h3 { font-size:14px; color:var(--azure); padding-left: 10px; font-weight: bold; display: inline; position: relative; bottom: 2px; } 
+.popup-slider-large .popup-slider-large-top a.close-popup-slider { float: right; padding: 2px 24px 0 0; } 
+.popup-slider-large .popup-slider-large-top span.close-slide::before { color:var(--azure); } 
+.popup-slider-large .popup-slider-large-content { width:100%; height: calc(100vh - 110px); padding: 10px 10px 10px 10px; overflow-y: auto; } 
+.popup-slider-large .popup-slider-large-footer { height: 60px; padding-right: 20px; } 
+.popup-slider-large .popup-slider-large-footer .justify-content-end { position: relative; top: 16px; right:15px; } 
+.popup-slider-large .popup-slider-large-footer .btn-close:focus { box-shadow: none; } 
+.popup-slider-large .popup-slider-large-footer .btn-save:focus { box-shadow: none; } 
+.popup-slider-large .popup-slider-large-footer .btn-close, .btn-save { font-size: 14px !important; width: 81px; height: 31px; padding: 0.4rem .75rem !important; } 
+.popup-slider-large .popup-slider-large-footer .btn-close { color: var(--slate); margin-right: 10px; } 
+.popup-slider-large .popup-slider-large-footer .btn-save { background-color: var(--bright-blue); color: #ffffff; } 
+.popup-slider-large .popup-slider-large-footer .btn-save:hover { color: #ffffff; } 
+
+/******************************************************************************/
+/**************************************TABLE***********************************/
+/******************************************************************************/
+/* Ex:
+<table class="table table-responsive qb-table">
+ <thead>
+ <tr class="header-table">
+ <th>PHIẾU YÊU CẦU</th>
+ <th>MÃ VẬT TƯ</th>
+ <th>TÊN VẬT TƯ</th>
+ <th>ĐƠN VỊ</th>
+ <th>MỤC ĐÍCH</th>
+ <th>SỐ LƯỢNG</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>NMBS-002668</td>
+ <td>031801000091</td>
+ <td>BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+ <td>Cái</td>
+ <td></td>
+ <td>0.0</td>
+ </tr>
+ </tbody>
+</table>
+*/
+/* Style Table */
+.tb-content { overflow-x: auto; overflow-y: hidden; width: auto; margin-bottom: 10px; } 
+button.btn-filter { position: absolute; height: 50px; background-color: var(--seafoam-blue); border: none; width: 40px; right: 15px; z-index: 1; cursor: pointer; top:161px; } 
+button.btn-filter span.faci-dot::before { color: var(--white-three); } 
+.tb-content button.btn-filter:focus { outline: none; } 
+.item-filter { width: 215px; height: auto; border-radius: 3px; background-color: var(--white-three); box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.15); font-size: 12px; position: absolute; right:15px; top: 181px; z-index: 1; padding: 7px 16px 16px 16px; } 
+.item-filter ul { list-style: none; margin: 0; padding: 0; } 
+.item-filter ul li label.custom-checkbox { position: relative; top:6px; } 
+.item-filter ul li label.custom-checkbox:before { content: ""; position: absolute; background: transparent; padding: 22px 0 0 150px; left: 0; } 
+.item-filter ul li label.custom-checkbox .custom-control-input:checked~.custom-control-indicator::before { background: var(--seafoam-blue); } 
+.item-filter ul li span.sp-title { color: var(--charcoal-grey-two); } 
+table.qb-table { width: 100%; color: var(--slate); table-layout: fixed; } 
+table.qb-table thead tr { height: 50px; } 
+table.qb-table thead tr th:not(:last-child)::after { content: ""; height: 70%; width: 1px; background: var(--light-blue-grey); position: absolute; right: -2px; top: 15%; } 
+table.qb-table thead tr th:last-child::after { background: #fff; border-spacing: 50px 0; } 
+table.qb-table tr.header-table th { border-bottom: none; padding: 5px; } 
+table.qb-table tr:last-child { border-bottom: solid 1px var(--light-blue-grey); } 
+table.qb-table tr.header-table { font-size:13px; color:var(--white-three); background-color:var(--bright-blue); border-bottom: none; } 
+table.qb-table tr.header-table th { position:relative; font-weight:600 !important; text-align:center; vertical-align:middle; text-transform: uppercase; } 
+table.qb-table tbody tr { height: 55px; } 
+table.qb-table tbody tr td { font-size:12px; text-align:center; vertical-align: middle; padding: 10px; border-bottom: solid 1px var(--light-blue-grey); } 
+table.qb-table tbody tr:hover { background-color: var(--pale-grey); } 
+table.qb-table tbody tr:hover .qb-dropdown { background-color: var(--pale-grey) !important; } 
+table.qb-table thead tr th.th-all { width: 60px; cursor: pointer; } 
+table.qb-table thead tr th.th-sophieu { width: 130px; } 
+table.qb-table thead tr th.th-khuvuc { width: 130px; } 
+table.qb-table thead tr th.th-may { width: 380px; } 
+table.qb-table thead tr th.th-bophan { width: 350px; } 
+table.qb-table thead tr th.th-vattu { width: 70px; } 
+table.qb-table thead tr th.th-trangthai { width: 100px; } 
+table.qb-table thead tr th.th-nvth { width: 220px; } 
+table.qb-table thead tr th.th-ngaybtcuoi { width: 130px; } 
+table.qb-table thead tr th.th-handinh { width: 130px; } 
+table.qb-table thead tr th.th-motacongviec { width: 400px; } 
+table.qb-table thead tr th.th-ghichu { width: 400px; } 
+table.qb-table thead tr th.th-tailieucv { width: 100px; } 
+table.qb-table thead tr th.th-dukien { width: 120px; } 
+table.qb-table thead tr th.th-tailieutb { width: 200px; } 
+table.qb-table thead tr th.th-none { width: 40px; } 
+table.qb-table thead tr th.th-mavattu { width: 100px; } 
+table.qb-table thead tr th.th-tenvattu { width: 500px; } 
+table.qb-table thead tr th.th-donvi { width: 70px; } 
+table.qb-table thead tr th.th-tonkho { width: 80px; } 
+table.qb-table thead tr th.th-tonkhothuc { width: 120px; } 
+table.qb-table thead tr th.th-khochinh { width: 100px; } 
+table.qb-table thead tr th.th-khocon { width: 100px; } 
+table.qb-table thead tr th.th-phieuyeucau { width: 140px; } 
+table.qb-table thead tr th.th-mucdich { width:100px; } 
+table.qb-table thead tr th.th-soluong { width:100px; } 
+table.qb-table thead tr th.th-tgsudung { width:150px; } 
+table.qb-table thead tr th.th-ngaycapnhat { width:130px; } 
+table.qb-table thead tr th.th-del { width:50px; } 
+/* Ex */
+/*
+ <table class="tb-data">
+ <thead>
+ <tr>
+ <td rowspan="2" class="td1">STT</td>
+ <td rowspan="2" class="td2">BỘ PHẬN</td>
+ <td rowspan="2" class="td3">CÔNG VIỆC BẢO TRÌ</td>
+ <td rowspan="2" class="td4">YÊU CẦU KỸ THUẬT*</td>
+ <td rowspan="2" class="td5">CÔNG VIỆC TRỌNG YẾU**</td>
+ <td rowspan="2" class="td6">MÃ VẬT TƯ</td>
+ <td rowspan="2" class="td7">SL</td>
+ <td rowspan="2" class="td8">TRẠNG THÁI</td>
+ <td colspan="8" class="td9">THỜI GIAN BẢO DƯỠNG</td>
+ <td rowspan="2" class="td10">LIM</td>
+ <td rowspan="2" class="td11 qb-item-table">CHỨC NĂNG</td>
+ </tr>
+ <tr>
+ <td class="td9-child">e.W</td>
+ <td class="td9-child">1M</td>
+ <td class="td9-child">2M</td>
+ <td class="td9-child">3M</td>
+ <td class="td9-child">6M</td>
+ <td class="td9-child">1Y</td>
+ <td class="td9-child">2Y</td>
+ <td class="td9-child">Khác</td>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td class="td1">1</td>
+ <td class="td2 data">Máy cơ điện</td>
+ <td class="td3 data">Bảo trì sửa chữa</td>
+ <td class="td4 data">Lorem dummy text</td>
+ <td class="td5 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td6 data"></td>
+ <td class="td7 data"></td>
+ <td class="td8 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td9-child"></td>
+ <td class="td9-child">X</td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td10 data"></td>
+ <td class="td11">
+ <a class="qb-edit"><span class="faci-edit "></span></a>
+ <span class="disable">
+ <a class="qb-save"><span class="faci-check "></span></a>
+ <a class="qb-cancle"><span class="faci-close"></span></a>
+ </span>
+ <a class="qb-copy"><span class="faci-File4"></span></a>
+ <a class="qb-delete"><span class="faci-delete"></span></a>
+ </td>
+ </tr>
+ <tr>
+ <td class="td1">2</td>
+ <td class="td2 data input-txt"><input type="text" class="qb-input" disabled/></td>
+ <td class="td3 data input-txt"><input type="text" class="qb-input" disabled/></td>
+ <td class="td4 data input-txt"><input type="text" class="qb-input" disabled/></td>
+ <td class="td5 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td6 data"></td>
+ <td class="td7 data"></td>
+ <td class="td8 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td9-child"></td>
+ <td class="td10 data"></td>
+ <td class="td11">
+ <a class="qb-edit"><span class="faci-edit "></span></a>
+ <span class="disable">
+ <a class="qb-save"><span class="faci-check "></span></a>
+ <a class="qb-cancle"><span class="faci-close"></span></a>
+ </span>
+ <a class="qb-copy"><span class="faci-File4"></span></a>
+ <a class="qb-delete"><span class="faci-delete"></span></a>
+ </td>
+ </tr>
+ <tr>
+ <td class="td1">3</td>
+ <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+ <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+ <td class="td4 data input-txt"><input type="text" class="qb-input"/></td>
+ <td class="td5 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td6 data input-txt"><input type="text" class="qb-input"/></td>
+ <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+ <td class="td8 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="eW">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="1M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="2M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="3M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="6M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="1Y">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="2Y">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="other">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td10 data input-txt">
+ <input type="text" class="qb-input"/>
+ </td>
+ <td class="td11 edit">
+ <a class="qb-edit disable"><span class="faci-edit "></span></a>
+ <span>
+ <a class="qb-save"><span class="faci-check "></span></a>
+ <a class="qb-cancle"><span class="faci-close"></span></a>
+ </span>
+ <a class="qb-copy disable"><span class="faci-File4"></span></a>
+ <a class="qb-delete disable"><span class="faci-delete"></span></a>
+ </td>
+ </tr>
+ <tr>
+ <td class="td1">4</td>
+ <td class="td2 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+ <td class="td3 data input-txt"><input type="text" class="qb-input input-empty"/></td>
+ <td class="td4 data input-txt"><input type="text" class="qb-input"/></td>
+ <td class="td5 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td6 data input-txt"><input type="text" class="qb-input"/></td>
+ <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+ <td class="td8 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="eW">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="1M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="2M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="3M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="6M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="1Y">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="2Y">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child input-txt">
+ <input type="text" class="qb-input"/>
+ </td>
+ <td class="td10 data input-txt">
+ <input type="text" class="qb-input"/>
+ </td>
+ <td class="td11 edit">
+ <a class="qb-edit disable"><span class="faci-edit "></span></a>
+ <span>
+ <a class="qb-save"><span class="faci-check "></span></a>
+ <a class="qb-cancle"><span class="faci-close"></span></a>
+ </span>
+ <a class="qb-copy disable"><span class="faci-File4"></span></a>
+ <a class="qb-delete disable"><span class="faci-delete"></span></a>
+ </td>
+ </tr>
+ <tr>
+ <td class="td1">5</td>
+ <td class="td2 data input-txt"><input type="text" class="qb-input" value="Máy cơ điện"/></td>
+ <td class="td3 data input-txt"><input type="text" class="qb-input" value="Bảo trì sửa chữa"/></td>
+ <td class="td4 data input-txt"><input type="text" class="qb-input" value="Lorem dummy text"/></td>
+ <td class="td5 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td6 data input-txt"><input type="text" class="qb-input" /></td>
+ <td class="td7 data input-txt"><input type="text" class="qb-input"/></td>
+ <td class="td8 text-center">
+ <div class="switch_box">
+ <input type="checkbox" class="switch_cb">
+ </div>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="eW">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="1M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="2M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="3M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="6M">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="1Y">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="2Y">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td9-child">
+ <label class="qb-container">
+ <input type="radio" name="radio" value="other">
+ <span class="qb-checkmark"></span>
+ </label>
+ </td>
+ <td class="td10 data input-txt">
+ <input type="text" class="qb-input" />
+ </td>
+ <td class="td11">
+ <a class="qb-edit disable"><span class="faci-edit "></span></a>
+ <span>
+ <a class="qb-save"><span class="faci-check "></span></a>
+ <a class="qb-cancle"><span class="faci-close"></span></a>
+ </span>
+ <a class="qb-copy"><span class="faci-File4"></span></a>
+ <a class="qb-delete"><span class="faci-delete"></span></a>
+ </td>
+ </tr>
+ </tbody>
+</table>
+ */
+/* Style Data Table */
+table.tb-data { width: 2200px; color: var(--slate); table-layout: fixed; } 
+table.tb-data thead { background-color:var(--bright-blue); color:var(--white-three); font-size:13px; font-weight:600; text-align:center; height:65px; border-top:6px solid var(--bright-blue); border-left:2px solid var(--bright-blue); border-bottom:4px solid var(--bright-blue); } 
+table.tb-data thead td { vertical-align:middle; border-left:1px solid var(--light-blue-grey); padding-top:19px; padding-bottom:16px; text-transform: uppercase; } 
+table.tb-data tbody tr { border-bottom:2px solid var(--light-blue-grey); } 
+table.tb-data thead .td1 { width:3%; } 
+table.tb-data thead .td2 { width:14%; } 
+table.tb-data thead .td3 { width:12%; } 
+table.tb-data thead .td4 { width:13%; } 
+table.tb-data thead .td5 { width:7%; } 
+table.tb-data tbody .td5 label, table.tb-data tbody .td8 label { float:left; margin:4px 0 0 0; } 
+table.tb-data thead .td6 { width:7%; } 
+table.tb-data thead .td7 { width:5%; } 
+table.tb-data thead .td8 { width:5%; } 
+table.tb-data thead .td9 { padding-top:11px; padding-bottom:2px; border-bottom:1px solid var(--light-blue-grey); width:19%; } 
+table.tb-data thead .td10 { width:5%; } 
+table.tb-data thead .td11 { width:10%; } 
+table.tb-data thead .td9-child { padding-top:5px; padding-bottom:9px; width:2.375%; } 
+table.tb-data .qb-button { background:0; border:0; } 
+table.tb-data .qb-button span { color:var(--battleship-grey); font-size:18px; } 
+table.tb-data .tabledit-edit-button.active { display:none; } 
+table.tb-data tbody tr td { font-size:13px; text-align:left; color:var(--charcoal-grey); padding-top:21px; padding-bottom:19px; vertical-align:middle; } 
+table.tb-data tbody tr .td2, table.tb-data tbody tr .td3,table.tb-data tbody tr .td4 { padding-left:11px; } 
+table.tb-data tbody tr .td1 { text-align: center; } 
+table.tb-data tbody tr .td9-child { text-align: center; } 
+table.tb-data tbody tr .td9-child.input-txt { width: 4%; } 
+table.tb-data tbody tr .td9-child .qb-container { width: 50%; margin: 0 25%; padding: 0; margin-bottom: 18px; } 
+table.tb-data tbody tr td.input-txt { padding: 12px 6px; } 
+table.tb-data tbody tr .td5 .qb-switch { width: 38px; height: 19px; margin: 0 27%; } 
+table.tb-data tbody tr .td8 .qb-switch { width: 38px; height: 19px; margin: 0 20%; } 
+table.tb-data .td11 .qb-save span:before { font-size:13px; color:var(--green); } 
+table.tb-data .td11 .qb-cancle span:before { font-size:13px; color:var(--battleship-grey); } 
+table.tb-data .td11.edit { padding-right:57px; } 
+table.tb-data .td11 a span:before { font-size:18px; color:var(--battleship-grey); padding-left:6px; } 
+table.tb-data tbody .td11 { padding-right:11px; float:right; } 
+table.tb-data tbody tr .td9-child .txt-check { display:none; } 
+table.tb-data tbody tr td input { width: 94%; margin: 0; } 
+table.tb-data tbody tr td input:disabled { background: var(--very-light-pink-two); border: 1px solid var(--very-light-pink-two); } 
+table.tb-data tbody tr td .input-empty { border: solid 1px var(--grapefruit); } 
+table.tb-data .td11 .active { display: block; } 
+table.tb-data .td11 .disable { display:none; } 
+
+/******************************************************************************/
+/*************************************DIALOG***********************************/
+/******************************************************************************/
+/* Ex: */
+/*
+<div class="qb-dialog">
+ <div class="qb-dialog-overlay">
+ <div class="container-fluid qb-dialog-body">
+
+ <!-- Header Dialog -->
+ <div class="qb-dialog-header">
+ <div class="row">
+ <div class="col-12">
+ <span class="faci-votes ic-title-dialog"></span>
+ <h3 class="title-dialog">Title Dialog</h3>
+ <a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+ </div>
+ </div>
+ </div>
+
+ <!-- Content Dialog -->
+ <div class="qb-dialog-content">
+ <p>Body Dialog</p>
+ </div>
+
+ <!-- Footer Dialog -->
+ <div class="qb-dialog-footer">
+ <div class="row justify-content-end">
+ <div class="col-12 text-right">
+ <a href="#" class="btn-close">ĐÓNG</a>
+ <a href="#" class="btn-save">LƯU</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ */
+/* Style Dialog */
+.qb-dialog { width: 100%; height: 100%; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0); visibility: hidden; } 
+.qb-dialog.on { visibility: visible; opacity: 1; } 
+.qb-dialog-overlay { width:100%; height:100%; transition: all 0.4s; -moz-transition: all 0.4s; -webkit-transition: all 0.4s; -o-transition: all 0.4s; display: flex; align-items: center; position: fixed; bottom: -110vh; opacity: 0; } 
+.qb-dialog-overlay.open { bottom: 0; opacity: 1; } 
+.qb-dialog-body { max-width: 831px; height: 300px; border-radius:3px; background-color:var(--white-three); box-shadow:0 -1px 10px 0 rgba(90, 104, 122, 0.5); font-size:14px; font-weight:600; color:var(--slate); padding: 0 !important; position: relative; top:22px; } 
+.qb-dialog-body .qb-dialog-header { width:100%; height:45px; padding:14px; background-color:var(--cerulean); } 
+.qb-dialog-body .qb-dialog-header span.ic-title-dialog { font-size: 20px; float: left; position: relative; bottom: 2px; } 
+.qb-dialog-body .qb-dialog-header span.ic-title-dialog:before { color: var(--white-three); } 
+.qb-dialog-body .qb-dialog-header h3.title-dialog { font-size:14px; text-align:left; float:left; text-transform:uppercase; margin-left:13px; color:var(--white-three); font-weight: 600; } 
+.qb-dialog-body .qb-dialog-header a.ic-close-dialog { float: right; } 
+.qb-dialog-body .qb-dialog-content { padding: 22px; overflow-x: hidden; overflow-y: auto; } 
+.qb-dialog-body .qb-dialog-footer { position: absolute; bottom: 22px; right: 22px; } 
+.qb-dialog-body .qb-dialog-footer .btn-close, .btn-save { max-width:81px; max-height:30px; font-size: 14px; width: 81px; height: 31px; border-radius: 3px; display: inline-block; text-align: center; line-height: 18px; border: none; cursor: pointer; text-transform: uppercase; } 
+.qb-dialog-body .qb-dialog-footer .btn-close { color: var(--slate); margin-right: 10px; background-color: var(--white-three); } 
+.qb-dialog-body .qb-dialog-footer .btn-save { background-color: var(--bright-blue); color: #ffffff; } 
+.qb-dialog-body .qb-dialog-footer .btn-save:hover { color: #ffffff; } 
+.qb-dialog-body .qb-dialog-footer .btn-save:disabled { 
+ background-color: #005cff70; 
+}
+
+/******************************************************************************/
+/***********************************CHECKBOX***********************************/
+/******************************************************************************/
+/*Ex:
+<label class="custom-control custom-checkbox">
+ <input type="checkbox" class="custom-control-input">
+ <span class="custom-control-indicator"></span>
+</label>
+*/
+.custom-checkbox { cursor: pointer; margin: 0; } 
+.custom-checkbox:hover .custom-control-indicator { border: 1px solid var(--azure); } 
+.custom-checkbox .custom-control-indicator { border-radius: 3px; width:18px; height:18px; background-color: var(--pale-grey-two); border: solid 1px var(--light-blue-grey); } 
+.custom-control-input:focus~.custom-control-indicator { box-shadow: none; } 
+.custom-control-input:checked~.custom-control-indicator { border: 1px solid var(--azure); } 
+.custom-checkbox .custom-control-input:checked~.custom-control-indicator { background-image: none; } 
+.custom-checkbox .custom-control-input:checked~.custom-control-indicator::before { 
+ background: var(--azure); 
+ color: var(--white-three); 
+ content: "\e930"; 
+ font-family: facilio-icon; 
+ font-size: 18px; 
+ border-radius: 3px; 
+ width: 18px; 
+ height: 18px; 
+ position: relative; 
+ top: -5px; 
+ right: 1px; 
+}
+
+/******************************************************************************/
+/************************************CHECKBOX**********************************/
+/******************************************************************************/
+/*Ex:
+ <input type="checkbox" id="c1" name="cb" class="qb-checkbox" />
+ <label for="c1" class="qb-checkbox-label"></label>
+*/
+.qb-checkbox { display:none; outline: none; } 
+.qb-checkbox-label { cursor: pointer; margin:0; outline:none } 
+.qb-checkbox + .qb-checkbox-label:before { border:1px solid var(--light-blue-grey); content:""; display:inline-block; font:16px/1em sans-serif; height:18px; margin:0; padding:0; vertical-align:top; width:18px; border-radius:3px } 
+.qb-checkbox:checked + .qb-checkbox-label:before { background:var(--azure); color:var(--white-three); content:"\e910"; text-align:center; font-family:facilio-icon; text-align:center; font-size:9px; padding-top:4px; border: 0; } 
+.qb-checkbox:checked + .qb-checkbox-label:after { font-weight: bold; } 
+
+/******************************************************************************/
+/*********************************DATE PICKER RANGER***************************/
+/******************************************************************************/
+/*Ex:
+ <div class="qb-daterange">
+ <i class="faci-calendar qb-icon-ca"></i>
+ <input type="text" id="qb_daterange" class="daterange" name="daterange"/>
+ <i id="icon-down" class="faci-arrow-down qb-icon-down"></i>
+ </div>
+*/
+.qb-daterange { float: right; } 
+.qb-icon-ca { float:left; padding:5px 10px; padding-top:6px; border:1px solid var(--light-blue-grey); background:var(--pale-grey-two); border-radius:3px; border-right:0; font-size:20px; color:var(--battleship-grey); } 
+.daterange { outline: none; float:left; padding:7px 0; padding-bottom:6px; font-size:12px; font-weight:600; background-color:var(--pale-grey-two); border:solid 1px var(--light-blue-grey); border-left:0; margin-left:-1px; border-right:0; } 
+.qb-icon-down { float:left; font-size:6px; padding:13px 8px; padding-bottom:12px; background-color:var(--pale-grey-two); border:solid 1px var(--light-blue-grey); border-left:0; border-radius:3px; margin-left:-1px; } 
+
+/******************************************************************************/
+/*********************************DATE TIME PICKER*****************************/
+/******************************************************************************/
+/*Ex:
+<div>
+ <i class="faci-calendar qb-icon-ca"></i>
+ <input type="text" class="qb-txt-calendar" id="qb_date_time"placeholder="10/9/2017">
+ <i class="faci-clock qb-icon-clock"></i>
+ <input type="text" class="qb-txt-clock" id="qb_time_clock"placeholder="15:00">
+</div>
+*/
+.qb-txt-calendar { outline: none; float:left; padding-top:7px; padding-bottom:5px; font-size:13px; border:1px solid var(--light-blue-grey); background:var(--pale-grey-two); border-left:0; border-right:0; margin-left:-1px; width:94px; font-weight:600; color:var(--slate); } 
+.qb-icon-clock { padding:5px; padding-top:6px; float:left; border:1px solid var(--light-blue-grey); background:var(--pale-grey-two); border-left:0; border-right:0; font-size:20px; color:var(--battleship-grey); } 
+.qb-txt-clock { outline: none; float:left; padding-top:7px; padding-bottom:5px; font-size:13px; font-weight:600; background:var(--pale-grey-two); border:1px solid var(--light-blue-grey); border-left:0; border-radius:3px; margin-left:-1px; width:45px; color:var(--slate); } 
+
+/******************************************************************************/
+/************************************PRIORITY**********************************/
+/******************************************************************************/
+/*Ex:
+ <span class="priority low"></span>
+ <span class="priority medium"></span>
+ <span class="priority hight"></span>
+*/
+.priority { width: 18px; height: 18px; display: inline-block; border-radius: 50%; font-size: 10px; line-height: 18px; text-align: center; } 
+.priority.low { background-color: var(--white-two); } 
+.priority.low:before { content: "3"; } 
+.priority.medium { background-color: var(--maize); } 
+.priority.medium:before { content: "2"; } 
+.priority.high { background-color: var(--bright-orange); } 
+.priority.high:before { content: "1"; } 
+
+/******************************************************************************/
+/**************************************INPUT***********************************/
+/******************************************************************************/
+/*Ex:
+ <input class="qb-input" />
+*/
+.qb-input { width:275px; height:35px; border-radius:3px; border:solid 1px var(--light-blue-grey); padding-left: 5px; } 
+.qb-input:focus { border:solid 1px var(--dark-sky-blue); outline:0; } 
+/*Ex:
+ <div class="qb-footer">
+ <a class="qb-exit">ĐÓNG</a>
+ <a class="qb-save">LƯU</a>
+ </div>
+*/
+.qb-footer { float:right; font-size:14px; padding-right: 27px; } 
+.qb-footer .qb-exit { padding-right:35px; cursor: pointer; } 
+.qb-footer .qb-save { padding:7px 27px; background:var(--bright-blue); color:var(--white-three)!important; border-radius:3px; font-size:13px; cursor: pointer; } 
+/*Ex:
+<!-- Modal content -->
+<div class="qb-modal">
+ <div class="qb-header">
+ <span class="qb-icon"></span>
+ <span class="qb-title">THIẾT LẬP HỒ SƠ</span>
+ <span class="faci-close qb-close"></span>
+ </div>
+ <div class="qb-body">
+ </div>
+ <div class="qb-footer">
+ <a class="qb-exit">ĐÓNG</a>
+ <a class="qb-save">LƯU</a>
+ </div>
+</div>
+*/
+.qb-content { background-color: var(--white-three); box-shadow: 0 -1px 20px 0 rgba(90, 104, 122, 0.3); border-radius: 3px; } 
+.qb-header { padding:11px 14px; background-color:var(--dark-sky-blue); height:45px; } 
+.qb-icon { font-size:23px; padding-right:18px; float: left; } 
+.qb-icon:before { color:var(--white-three); } 
+.qb-title { padding-top: 3px; float: left; font-size:14px; font-weight:600; color:var(--white-three); } 
+.qb-close { float:right; } 
+/******************************************************************************/
+/**************************************SWITCH**********************************/
+/******************************************************************************/
+/*Ex:
+ <label class="qb-switch">
+ <input type="checkbox">
+ <span class="qb-slider round"></span>
+ </label>
+*/
+.qb-switch { position:relative; display:inline-block; width:38px; height:19px; border-radius:100px; } 
+.qb-switch input { display:none; } 
+.qb-slider { position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background-color:var(--light-blue-grey); -webkit-transition:.4s; transition:.4s; } 
+.qb-slider:before { position:absolute; content:""; width:15px; height:15px; left:2px; bottom:2px; background-color:var(--white-three); -webkit-transition:.4s; transition:.4s; } 
+.qb-switch input:checked + .qb-slider { background-color:var(--azure-two); } 
+.qb-switch input:checked + .qb-slider:before { -webkit-transform:translateX(15px); -ms-transform:translateX(15px); transform:translateX(18px); } 
+.qb-slider.round { border-radius:34px; } 
+.qb-slider.round:before { border-radius:50%; } 
+/******************************************************************************/
+/**********************************RADIO BUTTON********************************/
+/******************************************************************************/
+/*<label class="qb-container">
+ <input type="radio" name="radio">
+ <span class="qb-checkmark"></span>
+ </label>
+*/
+
+/* The container */
+.qb-container { display:block; position:relative; padding-left:35px; margin-bottom:12px; cursor:pointer; font-size:22px; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; } 
+.qb-container input { position:absolute; opacity:0; } 
+.qb-checkmark { position:absolute; top:0; left:0; width:16px; height:16px; border:solid 2px var(--light-blue-grey); border-radius:50%; } 
+.qb-container:hover input ~ .qb-checkmark { border:solid 1px var(--water-blue); background-color:var(--azure-three); } 
+.qb-container .qb-checkmark:after { background-color:var(--white-three); } 
+.qb-container input:checked ~ .qb-checkmark { border:solid 1px var(--water-blue); background-color:var(--azure-three); } 
+.qb-checkmark:after { content:""; position:absolute; display:none; } 
+.qb-container input:checked ~ .qb-checkmark:after { display:block; } 
+.qb-container input:hover ~ .qb-checkmark:after { display:block; } 
+.qb-container .qb-checkmark:after { top:4px; left:4px; width:6px; height:6px; border-radius:50%; background-color:var(--white-three); } 
+
+/******************************************************************************/
+/********************************BUTTON****************************************/
+/******************************************************************************/
+.qb-button { font-size:13px; letter-spacing:-0.4px; color: var(--slate); border:0; border-radius:3px; background-color: var(--pale-grey); } 
+.qb-button.active { background-color: var(--bright-blue); color: var(--white-three); } 
+
+/******************************************************************************/
+/********************************DATERANGEPICKER*******************************/
+/******************************************************************************/
+.daterangepicker { font-size: 14px; } 
+.daterangepicker input { font-size: 14px; } 
+
+/******************************************************************************/
+/************************************VALIDATE**********************************/
+/******************************************************************************/
+.form-error { font-size: 13px; } 
+
+/******************************************************************************/
+/********************************SEEKBAR***************************************/
+/******************************************************************************/
+input[type="range"] { -webkit-appearance: none; -moz-apperance: none; border-radius: 2px; height: 4px; width: 100%; } 
+input[type='range']::-webkit-slider-thumb { -webkit-appearance: none !important; background-color: var(--turquoise); height: 18px; border-radius: 50%; width: 18px; cursor: pointer; } 
+input[type=range]:focus { outline: none; } 
+.seekbar { width: 100%; position: relative; top: 5px; } 
+
+/******************************************************************************/
+/********************************SWEETALERT2***********************************/
+/******************************************************************************/
+.swal2-confirm, .swal2-cancel { width: 81px; height: 30px; border-radius: 3px; border: none; font-size: 13px; color: var(--white-three); } 
+.swal2-confirm { background-color: var(--bright-blue); } 
+.swal2-cancel { background-color: var(--white-three); margin-left: 15px; color: var(--slate); } 
+.sweetalert2-title { text-transform: uppercase; font-size: 28px; color:var(--azure); font-weight: normal; } 
+.sweetalert2-text { font-size: 16px; } 
+
+/******************************************************************************/
+/***********************************LOADING************************************/
+/******************************************************************************/
+.faci-loading { background-color: rgba(0,0,0,0.1); position: fixed; width: 100%; height: 100%; z-index: 5; top: 0; left: 0; right: 0; bottom: 0; display: none; text-align: center; } 
+.faci-loading.open { display: block; } 
+.faci-loading > img { position: relative; top:calc(100% - 60%); background: var(--white-three); border-radius: 5px; padding: 5px; } 

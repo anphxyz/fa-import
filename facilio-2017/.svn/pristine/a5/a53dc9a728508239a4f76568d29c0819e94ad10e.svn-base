@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>running</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="running" fill-rule="nonzero">
+            <circle id="Oval" fill="#B5DB66" cx="40" cy="40" r="40"></circle>
+            <path d="M55.388184,36.0389849 L36.909985,23.2463264 C33.7207779,21.0389752 31.1111111,22.5198718 31.1111111,26.5354499 L31.1111111,53.458076 C31.1111111,57.4736542 33.7242482,58.9594182 36.9192392,56.7605849 L55.3800867,44.0518886 C58.5739209,41.8506216 58.5773911,38.246336 55.388184,36.0389849 Z M52.9254267,41.3675354 L36.5166842,52.6634787 C35.4524584,53.3972342 34.5814127,52.9019796 34.5814127,51.5634533 L34.5814127,28.4288559 C34.5814127,27.0903298 35.4513016,26.5975088 36.5143706,27.3336982 L52.9288969,38.6965676 C53.9919662,39.43154 53.9908093,40.6337798 52.9254267,41.3675354 Z" id="Shape" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

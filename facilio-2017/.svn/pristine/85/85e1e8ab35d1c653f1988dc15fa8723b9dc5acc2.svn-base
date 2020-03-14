@@ -1,0 +1,1 @@
+export const HIDE_UNDOABLE_TOOL     = 'HIDE_UNDOABLE_TOOL';

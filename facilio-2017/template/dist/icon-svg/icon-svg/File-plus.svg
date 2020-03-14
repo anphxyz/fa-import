@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>File-plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quan-tri-he-thong---Du-lieu-goc---MENU-dropdown" transform="translate(-1327.000000, -291.000000)" fill-rule="nonzero" fill="#667884">
+            <g id="row5-copy" transform="translate(332.000000, 290.000000)">
+                <g id="Group-4" transform="translate(937.000000, 1.000000)">
+                    <g id="File-plus" transform="translate(58.000000, 0.000000)">
+                        <path d="M12,7.0295 L12,2.792 L9.207,0 L0,0 L0,16 L12,16 L12,15.9705 C14.2495,15.7205 15.999,13.816 16,11.5 C15.999,9.183 14.2495,7.278 12,7.0295 Z M8.999,1.2065 L10.793,3 L8.999,3 C8.999,3 8.999,1.2065 8.999,1.2065 Z M1,15 L1,0.999 L8,0.999 L8,3.9995 L11,3.9995 L11,7.0295 C8.7495,7.2785 7,9.1835 7,11.5 C7,12.9145 7.654,14.176 8.675,15 L1,15 Z M11.5,14.9415 C9.5995,14.937 8.062,13.3995 8.0575,11.5 C8.062,9.5995 9.5995,8.062 11.5,8.0575 C13.3995,8.062 14.937,9.5995 14.9415,11.5 C14.937,13.3995 13.3995,14.937 11.5,14.9415 Z" id="Shape"></path>
+                        <polygon id="Shape" points="12.001 11 12.001 9 11 9 11 11 9 11 9 12 11 12 11 14 12.001 14 12.001 12 14 12 14 11"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

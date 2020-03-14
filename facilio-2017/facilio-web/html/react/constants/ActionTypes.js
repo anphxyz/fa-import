@@ -1,0 +1,17 @@
+export const HIDE_UNDOABLE_TOOL     = 'HIDE_UNDOABLE_TOOL';
+export const RESET_ALL_DATA         = 'RESET_ALL_DATA';
+export const CHANGE_SV201           = 'CHANGE_SV201';
+export const CHANGE_FNAME           = 'CHANGE_FNAME';
+export const ADD_TAB                = 'ADD_TAB';
+export const ADD_TAB_AFTER_IMPORT   = 'ADD_TAB_AFTER_IMPORT';
+export const ADD_ROW                = 'ADD_ROW';
+export const GO_EDIT_MODE           = 'GO_EDIT_MODE';
+export const SAVE_EDIT              = 'SAVE_EDIT';
+export const CANCEL_EDIT            = 'CANCEL_EDIT';
+export const RMV_ROW                = 'RMV_ROW';
+export const CLONE_ROW              = 'CLONE_ROW';
+export const DO_IMPORT              = 'DO_IMPORT';
+export const IMPORT_DONE            = 'IMPORT_DONE';
+export const UPDATE_IMPORT_STATUS   = 'UPDATE_IMPORT_STATUS';
+export const ACTIVE_UPDATE_BUTTON   = 'ACTIVE_UPDATE_BUTTON';
+export const DEACTIVE_UPDATE_BUTTON = 'DEACTIVE_UPDATE_BUTTON';

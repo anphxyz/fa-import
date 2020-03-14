@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="120px" viewBox="0 0 72 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-lineR</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-lineR" fill="#3F4F63" fill-rule="nonzero">
+            <path d="M69.2976,65.92199 L15.07494,117.5039 C11.62572,120.78683 6.03341,120.78683 2.58587,117.5039 C-0.86196,114.22389 -0.86196,108.90404 2.58587,105.6243 L50.56455,59.98218 L2.58726,14.34167 C-0.86056,11.06033 -0.86056,5.74101 2.58726,2.461 C6.03508,-0.82033 11.62712,-0.82033 15.07633,2.461 L69.299,54.04371 C71.02291,55.68451 71.88388,57.83268 71.88388,59.98192 C71.88388,62.13222 71.02123,64.28198 69.2976,65.92199 Z"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tab dữ liệu gốc - nhân viên</title>
+    <link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/facilio-icon/stylesheet.css">
+    <link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="css/man-ultil.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<img src="images/nav.png" width="100%">
+<div class="content-body">
+    <div class="content-page-system-management">
+        <!-- Start Page Tab Du Lieu Goc Nhan Vien -->
+        <div class="container-fluid">
+            <div class="content">
+                <div class="content-top">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-inline">
+                                <a class="btn btn-permission" href="#" role="button" id="btn-permission">Phân gquyền</a>
+                                <div class="dropdown">
+                                    <button class="btn btn-data-root dropdown-toggle active" type="button" id="btn-data-root">
+                                        Dữ liệu gốc
+                                    </button>
+                                    <a href="#" class="name-parent-menu">Nhân viên</a><span style="font-size: 12px;">/</span><a href="#" class="name-child-menu">Nhân viên</a>
+                                    <div class="popup-menu-data-root">
+                                        <ul class="parent d-none">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="faci-buildings ic-menu"></span>Công ty - chi nhánh<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span>
+                                                </a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Danh mục quản lý</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-use3 ic-menu"></span>Nhân viên<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Nhân viên</a></li>
+                                                    <li><a href="">Nhóm nhân viên</a></li>
+                                                    <li><a href="">Nhóm theo khu vực</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><span class="faci-calendar ic-menu"></span>Lịch làm việc</a></li>
+                                            <li>
+                                                <a href="#"><span class="faci-gear ic-menu"></span>Máy - Loại thiết bị<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Máy - Loại thiết bị</a></li>
+                                                    <li><a href="">Bộ phận máy</a></li>
+                                                    <li><a href="">Nguyên nhân</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-baotrisuachua ic-menu"></span>Bảo trì<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vị trí thiết bị</a></li>
+                                                    <li><a href="">Đơn vị bảo trì</a></li>
+                                                    <li><a href="">Nhật ký sửa đổi</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="faci-vattuthaythe ic-menu"></span>Vật tư<span class="faci-arrow-lineD ic-sub-menu rotate-arrow-right"></span></a>
+                                                <ul class="sub-menu-data-root">
+                                                    <li><a href="">Vật tư</a></li>
+                                                    <li><a href="">Đơn vị tính</a></li>
+                                                    <li><a href="">Kho</a></li>
+                                                    <li><a href="">Vật tư theo thiết bị</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="content-data-root">
+                        <div class="data-root-body">
+                            <div class="top-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row justify-content-end">
+                                            <a href="#" class="btn-personnel"><span class="faci-add ic-add"></span>Nhân viên</a>
+                                            <input type="text" class="form-control search-personnel">
+                                            <a href="#" class="ic-search-personnel"><span class="faci-search"><span class="path2"></span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <table class="table table-responsive qb-table">
+                                            <thead>
+                                            <tr class="header-table">
+                                                <th>HỌ VÀ TÊN</th>
+                                                <th>TÊN ĐĂNG NHẬP</th>
+                                                <th>GIỚI TÍNH</th>
+                                                <th>MÃ NHÂN VIÊN *</th>
+                                                <th>CHỨC VỤ</th>
+                                                <th>CHỨC NĂNG</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <td class="text-left">Chăng Thái Quyền</td>
+                                                <td class="text-left">HUNGBX</td>
+                                                <td class="text-left">male</td>
+                                                <td class="text-left">NMBP-000184</td>
+                                                <td class="text-left">Nhân viên</td>
+                                                <td class="text-center">
+                                                    <a href="#" class="faci-edit ic-edit-table"></a>
+                                                    <a href="#" class="faci-delete ic-delete-table"></a>
+                                                </td>
+                                            </tr>
+                                                <tr>
+                                                    <td class="text-left">Chăng Thái Quyền</td>
+                                                    <td class="text-left">HUNGBX</td>
+                                                    <td class="text-left">male</td>
+                                                    <td class="text-left">NMBP-000184</td>
+                                                    <td class="text-left">Nhân viên</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="faci-edit ic-edit-table"></a>
+                                                        <a href="#" class="faci-delete ic-delete-table"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">Chăng Thái Quyền</td>
+                                                    <td class="text-left">HUNGBX</td>
+                                                    <td class="text-left">male</td>
+                                                    <td class="text-left">NMBP-000184</td>
+                                                    <td class="text-left">Nhân viên</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="faci-edit ic-edit-table"></a>
+                                                        <a href="#" class="faci-delete ic-delete-table"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">Chăng Thái Quyền</td>
+                                                    <td class="text-left">HUNGBX</td>
+                                                    <td class="text-left">male</td>
+                                                    <td class="text-left">NMBP-000184</td>
+                                                    <td class="text-left">Nhân viên</td>
+                                                    <td class="text-center">
+                                                        <a href="#" class="faci-edit ic-edit-table"></a>
+                                                        <a href="#" class="faci-delete ic-delete-table"></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- Dialog Add Personnel -->
+                                <div class="qb-dialog" id="dialog_add_personnel">
+                                    <div class="qb-dialog-overlay">
+                                        <div class="container-fluid qb-dialog-body">
+
+                                            <!-- Header Dialog -->
+                                            <div class="qb-dialog-header">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="faci-user-add ic-title-dialog"></span>
+                                                        <h3 class="title-dialog">NHÂN VIÊN</h3>
+                                                        <a href="#" class="faci-close close-dialog ic-close-dialog close-dialog"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Content Dialog -->
+                                            <div class="qb-dialog-content">
+                                                <div class="dialog-add-personnel">
+                                                    <form class="form-add-personnel">
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Họ*</label>
+                                                            <div class="col-8 p-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Tên*</label>
+                                                            <div class="col-8 p-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Giới tính</label>
+                                                            <label class="custom-control custom-radio">
+                                                                <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                                                <span class="custom-control-indicator rdo-male"></span>
+                                                                <span class="custom-control-description">Nam</span>
+                                                            </label>
+                                                            <label class="custom-control custom-radio">
+                                                                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                                                <span class="custom-control-indicator rdo-female"></span>
+                                                                <span class="custom-control-description">Nữ</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Ngày sinh*</label>
+                                                            <div class="col-8 p-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Tên đăng nhập*</label>
+                                                            <div class="col-8 p-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Chức vụ</label>
+                                                            <div class="col-8 p-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Nhóm nhân viên</label>
+                                                            <div class="col-8 p-0">
+                                                                <div class="dropdown">
+                                                                    <button class="qb-dropdown dropdown-toggle group-personnel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        Chưa có nhóm nhân viên
+                                                                    </button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Nhóm quyền</label>
+                                                            <div class="col-8 p-0">
+                                                                <div class="dropdown">
+                                                                    <button class="qb-dropdown dropdown-toggle group-permission" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        Chưa có nhóm quyền
+                                                                    </button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-4 col-form-label text-right">Chức danh</label>
+                                                            <div class="col-8 p-0">
+                                                                <div class="dropdown">
+                                                                    <button class="qb-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        Nhân viên
+                                                                    </button>
+                                                                    <div class="dropdown-menu">
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+                                                                        <a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                            <!-- Footer Dialog -->
+                                            <div class="qb-dialog-footer">
+                                                <div class="row justify-content-end">
+                                                    <div class="col-12 text-right">
+                                                        <a href="#" class="btn-close close-dialog">ĐÓNG</a>
+                                                        <a href="#" class="btn-save">LƯU</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Tab Du Lieu Goc Nhan Vien -->
+    </div>
+</div>
+
+<script src="dist/jquery/jquery-3.2.1.min.js"></script>
+<script src="dist/jquery/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/ultil.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="500px" viewBox="0 0 100 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>3dot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3dot" transform="translate(49.000000, 243.000000)" fill="#9B9B9B" fill-rule="nonzero">
+            <path d="M1,57 C-26.6143333,57 -49,34.6142367 -49,7 C-49,-20.6142367 -26.6143333,-43 1,-43 C28.6143333,-43 51,-20.6142367 51,7 C51,34.6142367 28.6143333,57 1,57 Z M1,257 C-26.6143333,257 -49,234.614237 -49,207 C-49,179.385763 -26.6143333,157 1,157 C28.6143333,157 51,179.385763 51,207 C51,234.614237 28.6143333,257 1,257 Z M1,-143 C-26.6143333,-143 -49,-165.385763 -49,-193 C-49,-220.614237 -26.6143333,-243 1,-243 C28.6143333,-243 51,-220.614237 51,-193 C51,-165.385763 28.6143333,-143 1,-143 Z"></path>
+        </g>
+    </g>
+</svg>

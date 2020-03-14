@@ -1,0 +1,73 @@
+/**
+ * @author Anph - 21/11/2017
+*/
+module.exports = Object.freeze({
+    _ENABLE_LOG: false,
+
+    NEW_SYNONYM: {
+        B2017_CUR: 'B2017_CUR.',//Toại
+        B2017_FACI: 'B2017_FACI.',
+        B2017_IMP: 'B2017_IMP.',
+        B2017_CURIMP: 'B2017_CURIMP.',
+        C2017_CUR: 'C2017_CUR.',//Linh
+        C2017_FACI: 'C2017_FACI.',
+        F2017_CUR: 'F2017_CUR.',
+        F2017_FACI: 'F2017_FACI.',
+        A2017_COMB: 'A2017_COMB.',
+        H2017_FACI: 'H2017_FACI.',
+        H2017_CUR: 'H2017_CUR.',
+        K2017_CUR: 'K2017_CUR.',
+        K2017_FACI: 'K2017_FACI.',
+        M2017_CUR: 'M2017_CUR.',
+        M2017_FACI: 'M2017_FACI.',
+        N2017_FACI: 'N2017_FACI.',
+        N2017_CUR: 'N2017_CUR.',
+        A2017_ADM: 'A2017_ADM.',
+        Q2017_CUR: 'Q2017_CUR.',
+        O2017_ORG: 'O2017_ORG.',
+        VALUES_DEF: 'VALUES_DEF.',
+        R2017_CUR: 'R2017_CUR.',
+        R2017_FACI: 'R2017_FACI.',
+        S2017_CUR: 'S2017_CUR.',
+        S2017_FACI: 'S2017_FACI.',
+        T2017_FACI: 'T2017_FACI.',
+        T2017_CUR: 'T2017_CUR.',
+        V2017_FACI: 'V2017_FACI.',
+        V2017_CUR: 'V2017_CUR.',
+        V2017_CUREBS: 'V2017_CUREBS.',
+        V2017_FACIEBS: 'V2017_FACIEBS.'
+    },
+    OLD_SYNONYM: {
+        B2017_CUR: 'BCURPKS.',
+        B2017_FACI: 'STDB_TOOLS.',
+        B2017_IMP: 'STDB_IMPORT.',
+        B2017_CURIMP: 'BCURPKS_IMPORT.',
+        C2017_CUR: 'CCURPKS.',
+        C2017_FACI: 'STDC_TOOLS.',
+        F2017_CUR: 'FCURPKS.',
+        F2017_FACI: 'STDF_TOOLS.',
+        A2017_COMB: 'COMBCURPKS.',
+        H2017_FACI: 'STDH_TOOLS.',
+        H2017_CUR: 'HCURPKS.',
+        K2017_CUR: 'KCURPKS.',
+        K2017_FACI: 'STDK_TOOLS.',
+        M2017_CUR: 'MCURPKS.',
+        M2017_FACI: 'STDM_TOOLS.',
+        N2017_FACI: 'STDN_TOOLS.',
+        N2017_CUR: 'NCURPKS.',
+        A2017_ADM: 'ADMIN_TOOLS.',
+        Q2017_CUR: 'QCURPKS.',
+        O2017_ORG: 'ORG_TOOLS.',
+        VALUES_DEF: 'ADMIN_VALUES.',
+        R2017_CUR: 'RCURPKS.',
+        R2017_FACI: 'STDR_TOOLS.',
+        S2017_CUR: 'SCURPKS.',
+        S2017_FACI: 'STDS_TOOLS.',
+        T2017_FACI: 'STDT_TOOLS.',
+        T2017_CUR: 'TCURPKS.',
+        V2017_FACI: 'STDV_TOOLS.',
+        V2017_CUR: 'VCURPKS.',
+        V2017_CUREBS: 'VCUREBS.',
+        V2017_FACIEBS: 'STDV_TOOLSEBS.'
+    }
+})

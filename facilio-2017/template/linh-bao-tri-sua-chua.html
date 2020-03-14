@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Bảo trì sửa chữa</title>
+	<link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/seekbar/css/seekbar.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/facilio-icon/stylesheet.css">
+	<link href="fonts/OpenSans/stylesheet.css" rel="stylesheet" type="text/css"/>
+	<link href="dist/datetimepicker-master/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>
+	<link href="css/man-ultil.css" rel="stylesheet" type="text/css"/>
+	<!-- <link href="css/toai-style.css" rel="stylesheet" type="text/css"/> -->
+	<!-- <link href="css/dinh-work.css" rel="stylesheet" type="text/css"/> -->
+
+</head>
+<body>
+
+<!-- Header -->
+<img src="images/nav.png" width="100%">
+<!-- End Header -->
+<div class="content-body">
+	<!-- Page Content -->
+	<div class="page-maintenance-repair">
+		<div class="container-fluid">
+			<!-- Boxselect Top -->
+			<div class="boxselect">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 boxselect-left">
+						<div class="form-inline form-boxselect-left">
+							<a href="#" class="btn btn-ticket btn-sm">Ticket</a>
+							<label class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input">
+								<span class="custom-control-indicator"></span>
+								<span class="custom-control-description lb-ic-check-cv">CV cá nhân đã tạo</span>
+							</label>
+							<div class="box-checkbox-rp">
+								<div class="form-inline">
+									<label class="custom-cb-repair">
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+									<span class="custom-control-description lb-ic-check-rp">Sửa chữa lớn (0)</span>
+									<div class="dropdown">
+										<button class="qb-dropdown dd-list-content dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Nội dung list
+										</button>
+										<div class="dropdown-menu">
+											<a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+											<a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+						<div class="form-inline boxselect-right">
+							<div class="col-sm-4 col-md-4 p-0">
+								<div class="dropdown">
+									<button class="qb-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										WG02
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+										<a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4 p-0">
+								<div class="dropdown">
+									<button class="qb-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Tất cả
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+										<a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-md-4 p-0">
+								<div class="dropdown">
+									<button class="qb-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Chưa hoàn thành
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+										<a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Boxselect Top -->
+
+			<!-- Select Filter -->
+			<div class="row">
+				<div class="form-group" style="margin-bottom: 0;margin-left: 10px;">
+					<div class="dropdown">
+						<button class="qb-dropdown dd-sort dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Sắp xếp theo
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+							<a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Select Filter -->
+
+			<!-- Section Content -->
+			<div class="section-content">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-left">
+							<div class="form-check form-check-inline float-left">
+								<label class="custom-control custom-checkbox cb-header">
+									<input type="checkbox" class="custom-control-input cb-content-section">
+									<span class="custom-control-indicator"></span>
+								</label>
+							</div>
+							<div style="margin-left: 35px;" >
+								<a href="#" class="title-section-left">Tiêu đề: Ipsumy dummy text of the printing and typesetting.</a><br/>
+								<span class="faci-wrenches">
+								<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+								</span>
+								<a href="#" class="require-materials">
+									<span class="faci-vattu">
+										<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span>
+									</span>
+								</a>
+								<h3 class="list-materials">NMBP-000184</h3>
+								<p><b>Mô tả:</b>  trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que hàn để tiếp tục công việc. Ipsumy dummy text of the printing and typesetting. Do quá trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que. Do quá trình hàn trục vít tải mà hết <a href="#" class="read-more"> read more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-center">
+							<a href="#">CMBP-0000184</a>
+							<span class="faci-warning">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<span class="faci-running">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p class="text-bold">Bộ phận cần sửa chữa</p>
+							<p class="text-bold">Thiết bị: băng tải cao su 1413 - 4B1BC147</p>
+							<p><span style="font-weight: 600;">Khu vực:</span> Nghiền than từ kho chứa đến các bình chứa Ipsumy dummy text of the printing and typesetting<a href="#" class="read-more"> read more</a></p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-right">
+							<span class="faci-user">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p class="text-user">Phạm Phương Khanh</p>
+							<a href="#" class="forward"><span class="faci-foward hover"></span></a>
+							<a href="#"><span class="faci-delete ic-content-right-del hover"></span></a>
+							<a href="#"><span class="faci-attach ic-content-right-file hover"></span></a>
+							<a href="#"><span class="faci-edit ic-content-right-edit hover"></span></a>
+							<br/>
+							<span class="faci-calendar"></span>
+							<span class="sp-date-1">24/3/2016</span><span class="sp-date-2">24/3/2016</span><br/>
+							<span class="faci-calendar"></span><span class="sp-time-expected">Dự kiến: 6960 (Min.)</span><a href="#"><span class="faci-edit hover"></span></a><br/>
+							<span class="faci-file"></span><span class="sp-file">(0)</span>
+							<span class="faci-image" style="margin-left: 12px;"></span><span class="sp-img">(0)</span><br/>
+							<span class="faci-historical-report"></span><a href="javascript:void(0)" class="link-report">Lịch sử báo cáo</a>
+							<a class="btn btn-report" href="#" role="button">Báo cáo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-content active">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-left">
+							<div class="form-check form-check-inline float-left">
+								<label class="custom-control custom-checkbox cb-header">
+									<input type="checkbox" class="custom-control-input cb-content-section" checked >
+									<span class="custom-control-indicator"></span>
+								</label>
+							</div>
+							<div style="margin-left: 35px;">
+								<a href="#" class="title-section-left">Tiêu đề: Ipsumy dummy text of the printing and typesetting.</a><br/>
+								<span class="faci-wrenches">
+								<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+							</span>
+							<a href="#" class="require-materials">
+								<span class="faci-vattu">
+									<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span>
+								</span>
+							</a>
+							<h3 class="list-materials">NMBP-000184</h3>
+							<p><b>Mô tả:</b>  trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que hàn để tiếp tục công việc. Ipsumy dummy text of the printing and typesetting. Do quá trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que. Do quá trình hàn trục vít tải mà hết <a href="#" class="read-more"> read more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-center">
+							<a href="#">CMBP-0000184</a>
+							<span class="faci-warning">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<span class="faci-running">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p style="font-weight: bold; margin-top: 11px; margin-bottom: 11px;">Bộ phận cần sửa chữa</p>
+							<p style="font-weight: bold; margin-top: 11px; margin-bottom: 9px;">Thiết bị: băng tải cao su 1413 - 4B1BC147</p>
+							<p><b>Khu vực:</b> Nghiền than từ kho chứa đến các bình chứa Ipsumy dummy text of the printing and typesetting<a href="#" class="read-more"> read more</a></p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-right">
+							<span class="faci-user">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p class="text-user">Phạm Phương Khanh</p>
+							<a href="#" class="forward"><span class="faci-foward hover"></span></a>
+							<a href="#"><span class="faci-delete ic-content-right-del hover"></span></a>
+							<a href="#"><span class="faci-attach ic-content-right-file hover"></span></a>
+							<a href="#"><span class="faci-edit ic-content-right-edit hover"></span></a>
+							<br/>
+							<span class="faci-calendar"></span>
+							<span class="sp-date-1">24/3/2016</span><span class="sp-date-2">24/3/2016</span><br/>
+							<span class="faci-calendar"></span><span class="sp-time-expected">Dự kiến: 6960 (Min.)</span><a href="#"><span class="faci-edit hover"></span></a><br/>
+							<span class="faci-file"></span><span class="sp-file">(0)</span>
+							<span class="faci-image" style="margin-left: 12px;"></span><span class="sp-img">(0)</span><br/>
+							<span class="faci-historical-report"></span><a href="javascript:void(0)" class="link-report">Lịch sử báo cáo</a>
+							<a class="btn btn-report" href="#" role="button">Báo cáo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-content">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-left">
+							<div class="form-check form-check-inline float-left">
+								<label class="custom-control custom-checkbox cb-header">
+									<input type="checkbox" class="custom-control-input cb-content-section">
+									<span class="custom-control-indicator"></span>
+								</label>
+							</div>
+							<div style="margin-left: 35px;">
+								<a href="#" class="title-section-left">Tiêu đề: Ipsumy dummy text of the printing and typesetting.</a><br/>
+								<span class="faci-wrenches">
+								<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+							</span>
+							<a href="#" class="require-materials">
+								<span class="faci-vattu">
+									<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span>
+								</span>
+							</a>
+							<h3 class="list-materials">NMBP-000184</h3>
+							<p><b>Mô tả:</b>  trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que hàn để tiếp tục công việc. Ipsumy dummy text of the printing and typesetting. Do quá trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que. Do quá trình hàn trục vít tải mà hết <a href="#" class="read-more"> read more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-center">
+							<a href="#">CMBP-0000184</a>
+							<span class="faci-warning">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<span class="faci-running">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p style="font-weight: bold; margin-top: 11px; margin-bottom: 11px;">Bộ phận cần sửa chữa</p>
+							<p style="font-weight: bold; margin-top: 11px; margin-bottom: 9px;">Thiết bị: băng tải cao su 1413 - 4B1BC147</p>
+							<p><b>Khu vực:</b> Nghiền than từ kho chứa đến các bình chứa Ipsumy dummy text of the printing and typesetting<a href="#" class="read-more"> read more</a></p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-right">
+							<span class="faci-user">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p class="text-user">Phạm Phương Khanh</p>
+							<a href="#" class="forward"><span class="faci-foward hover"></span></a>
+							<a href="#"><span class="faci-delete ic-content-right-del hover"></span></a>
+							<a href="#"><span class="faci-attach ic-content-right-file hover"></span></a>
+							<a href="#"><span class="faci-edit ic-content-right-edit hover"></span></a>
+							<br/>
+							<span class="faci-calendar"></span>
+							<span class="sp-date-1">24/3/2016</span><span class="sp-date-2">24/3/2016</span><br/>
+							<span class="faci-calendar"></span><span class="sp-time-expected">Dự kiến: 6960 (Min.)</span><a href="#"><span class="faci-edit hover"></span></a><br/>
+							<span class="faci-file"></span><span class="sp-file">(0)</span>
+							<span class="faci-image" style="margin-left: 12px;"></span><span class="sp-img">(0)</span><br/>
+							<span class="faci-historical-report"></span><a href="javascript:void(0)" class="link-report">Lịch sử báo cáo</a>
+							<a class="btn btn-report" href="#" role="button">Báo cáo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-content">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-left">
+							<div class="form-check form-check-inline float-left">
+								<label class="custom-control custom-checkbox cb-header">
+									<input type="checkbox" class="custom-control-input cb-content-section">
+									<span class="custom-control-indicator"></span>
+								</label>
+							</div>
+							<div style="padding-left: 35px;">
+								<a href="#" class="title-section-left">Tiêu đề: Ipsumy dummy text of the printing and typesetting.</a><br/>
+								<span class="faci-wrenches">
+								<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+							</span>
+							<a href="#" class="require-materials">
+								<span class="faci-vattu">
+									<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span>
+								</span>
+							</a>
+							<h3 class="list-materials">NMBP-000184</h3>
+							<p><b>Mô tả:</b>  trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que hàn để tiếp tục công việc. Ipsumy dummy text of the printing and typesetting. Do quá trình hàn trục vít tải mà hết que hàn nay làm phiếu xin lãnh que. Do quá trình hàn trục vít tải mà hết <a href="#" class="read-more"> read more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-center">
+							<a href="#">CMBP-0000184</a>
+							<span class="faci-warning">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<span class="faci-running">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p style="font-weight: bold; margin-top: 11px; margin-bottom: 11px;">Bộ phận cần sửa chữa</p>
+							<p style="font-weight: bold; margin-top: 11px; margin-bottom: 9px;">Thiết bị: băng tải cao su 1413 - 4B1BC147</p>
+							<p><b>Khu vực:</b> Nghiền than từ kho chứa đến các bình chứa Ipsumy dummy text of the printing and typesetting<a href="#" class="read-more"> read more</a></p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="section-content-right">
+							<span class="faci-user">
+								<span class="path1"></span><span class="path2"></span>
+							</span>
+							<p class="text-user">Phạm Phương Khanh</p>
+							<a href="#" class="forward"><span class="faci-foward hover"></span></a>
+							<a href="#"><span class="faci-delete ic-content-right-del hover"></span></a>
+							<a href="#"><span class="faci-attach ic-content-right-file hover"></span></a>
+							<a href="#"><span class="faci-edit ic-content-right-edit hover"></span></a>
+							<br/>
+							<span class="faci-calendar"></span>
+							<span class="sp-date-1">24/3/2016</span><span class="sp-date-2">24/3/2016</span><br/>
+							<span class="faci-calendar"></span><span class="sp-time-expected">Dự kiến: 6960 (Min.)</span><a href="#"><span class="faci-edit hover"></span></a><br/>
+							<span class="faci-file"></span><span class="sp-file">(0)</span>
+							<span class="faci-image" style="margin-left: 12px;"></span><span class="sp-img">(0)</span><br/>
+							<span class="faci-historical-report"></span><a href="javascript:void(0)" class="link-report">Lịch sử báo cáo</a>
+							<a class="btn btn-report" href="#" role="button">Báo cáo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Section Content -->
+
+			<!-- Dialog Delivery Job -->
+			<div class="qb-dialog" id="dialog_delivery_job">
+				<div class="qb-dialog-overlay">
+					<div class="container-fluid qb-dialog-body">
+
+						<!-- Header Dialog -->
+						<div class="qb-dialog-header">
+							<div class="row">
+								<div class="col-12">
+									<span class="faci-votes ic-title-dialog"></span>
+									<h3 class="title-dialog">PHIẾU GIAO CÔNG VIỆC</h3>
+									<a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Content Dialog -->
+						<div class="qb-dialog-content">
+							<div class="dialog-delivery-job-content">
+								<h3 class="describe-job">MÔ TẢ CÔNG VIỆC:</h3>
+								<div class="title-list-delivery-job">
+									<div class="row">
+										<div class="col-sm-6 col-md-6">
+											<h3>DANH SÁCH NGƯỜI GIAO VIỆC:</h3>
+										</div>
+										<div class="col-sm-6 col-md-6">
+											<h3>DANH SÁCH NGƯỜI ĐƯỢC GIAO VIỆC:</h3>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="box-list-job-left">
+											<div class="box-list-delivery-job">
+												<p>Nhóm: <span class="group">BT</span></p>
+												<p>Họ tên: <span class="name">Lưu, Đình Quyền</span></p>
+												<a href="#" class="btn-delivery"><span class="faci-foward"></span>Giao việc</a>
+											</div>
+											<div class="box-list-delivery-job">
+												<p>Nhóm: <span class="group">BT</span></p>
+												<p>Họ tên: <span class="name">Lưu, Đình Quyền</span></p>
+												<a href="#" class="btn-delivery"><span class="faci-foward"></span>Giao việc</a>
+											</div>
+											<div class="box-list-delivery-job">
+												<p>Nhóm: <span class="group">BT</span></p>
+												<p>Họ tên: <span class="name">Lưu, Đình Quyền</span></p>
+												<a href="#" class="btn-delivery"><span class="faci-foward"></span>Giao việc</a>
+											</div>
+											<div class="box-list-delivery-job">
+												<p>Nhóm: <span class="group">BT</span></p>
+												<p>Họ tên: <span class="name">Lưu, Đình Quyền</span></p>
+												<a href="#" class="btn-delivery"><span class="faci-foward"></span>Giao việc</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="box-list-job-right">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Dialog Delivery Job -->
+
+			<!-- Dialog Report -->
+			<div class="qb-dialog" id="dialog_report">
+				<div class="qb-dialog-overlay">
+					<div class="container-fluid qb-dialog-body">
+
+						<!-- Header Dialog -->
+						<div class="qb-dialog-header">
+							<div class="row">
+								<div class="col-12">
+									<span class="faci-votes ic-title-dialog"></span>
+									<h3 class="title-dialog">BÁO CÁO CÔNG VIỆC</h3>
+									<a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Content Dialog -->
+						<div class="qb-dialog-content">
+							<div class="dialog-report-content">
+								<div class="row">
+									<div class="col-md-12">
+										<h3>CMBP-0000184</h3>
+										<span class="faci-warning">
+										<span class="path1"></span><span class="path2"></span>
+									</span>
+										<span class="faci-running">
+										<span class="path1"></span><span class="path2"></span>
+									</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<label>Tỷ lệ hoàn thành công việc  <b style="font-size: 14px;">30%</b></label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 seekbar">
+										<div class="seekbar-complete"></div>
+									</div>
+									<div class="col-md-6">
+										<div class="d-flex flex-row-reverse">
+											<div class="form-inline">
+												<label class="col-form-label lb-time-th">Thời gian thực hiện(*) </label>
+												<span class="faci-calendar ic-calendar"></span>
+												<div class="dropdown">
+													<button class="slt-calendar dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														1/9/2017 - 24/9/2017
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<div class="form-group">
+											<label><b>Mô tả</b></label>
+											<textarea class="form-control describe" rows="5"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Dialog -->
+						<div class="qb-dialog-footer">
+							<div class="row justify-content-end">
+								<div class="col-12 text-right">
+									<a href="#" class="btn-close close-dialog">ĐÓNG</a>
+									<a href="#" class="btn-save">LƯU</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Dialog Report -->
+
+			<!-- Dialog History Report -->
+			<div class="qb-dialog" id="dialog_history_report">
+				<div class="qb-dialog-overlay">
+					<div class="container-fluid qb-dialog-body">
+
+						<!-- Header Dialog -->
+						<div class="qb-dialog-header">
+							<div class="row">
+								<div class="col-12">
+									<span class="faci-votes ic-title-dialog"></span>
+									<h3 class="title-dialog">LỊCH SỬ BÁO CÁO</h3>
+									<a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Content Dialog -->
+						<div class="qb-dialog-content">
+							<div class="dialog-history-report-content">
+								<div class="row">
+									<div class="col-md-12">
+										<p>Tiêu đề: Ipsumy dummy text of the printing and typesetting.</p>
+									</div>
+								</div>
+								<div class="row-content">
+									<div class="row">
+										<div class="col-sm-12 col-md-6">
+											<span class="faci-worker ic-row-content"></span>
+											<label class="lb-vn-th">Nhân viên thực hiện: <span class="row-sp-name">&nbsp;Trần Hoàng
+											Hiệp</span></label><br/>
+											<label class="lb-nt">Ngày tạo: <span class="row-sp-date">&nbsp;32/7/2013 10:06</span></label>
+										</div>
+										<div class="col-sm-12 col-md-4">
+											<div class="float-left">
+												<span class="faci-file ic-row-content-file"></span><span class="count-file">(0)</span>
+												<span class="faci-image ic-row-content-img" style="margin-left: 12px;"></span><span class="count-img">(0)</span><br/>
+											</div>
+											<a class="btn-complete" href="#">Hoàn thành</a>
+										</div>
+										<div class="col-sm-12 col-md-2">
+											<div class="d-flex flex-row-reverse">
+												<a href="#" class="ic-row-content-del"><span class="faci-delete ic-delete-row"></span></a>
+												<a href="#" class="ic-row-content-edit"><span class="faci-edit ic-edit-row"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row-content">
+									<div class="row">
+										<div class="col-sm-12 col-md-6">
+											<span class="faci-worker ic-row-content"></span>
+											<label class="lb-vn-th">Nhân viên thực hiện: <span class="row-sp-name">&nbsp;Trần Hoàng
+											Hiệp</span></label><br/>
+											<label class="lb-nt">Ngày tạo: <span class="row-sp-date">&nbsp;32/7/2013 10:06</span></label>
+										</div>
+										<div class="col-sm-12 col-md-4">
+											<div class="float-left">
+												<span class="faci-file ic-row-content-file"></span><span class="count-file">(0)</span>
+												<span class="faci-image ic-row-content-img" style="margin-left: 12px;"></span><span class="count-img">(0)</span><br/>
+											</div>
+											<a class="btn-complete" href="#">Hoàn thành</a>
+										</div>
+										<div class="col-sm-12 col-md-2">
+											<div class="d-flex flex-row-reverse">
+												<a href="#" class="ic-row-content-del"><span class="faci-delete ic-delete-row"></span></a>
+												<a href="#" class="ic-row-content-edit"><span class="faci-edit ic-edit-row"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row-content">
+									<div class="row">
+										<div class="col-sm-12 col-md-6">
+											<span class="faci-worker ic-row-content"></span>
+											<label class="lb-vn-th">Nhân viên thực hiện: <span class="row-sp-name">&nbsp;Trần Hoàng
+											Hiệp</span></label><br/>
+											<label class="lb-nt">Ngày tạo: <span class="row-sp-date">&nbsp;32/7/2013 10:06</span></label>
+										</div>
+										<div class="col-sm-12 col-md-4">
+											<div class="float-left">
+												<span class="faci-file ic-row-content-file"></span><span class="count-file">(0)</span>
+												<span class="faci-image ic-row-content-img" style="margin-left: 12px;"></span><span class="count-img">(0)</span><br/>
+											</div>
+											<a class="btn-complete" href="#">Hoàn thành</a>
+										</div>
+										<div class="col-sm-12 col-md-2">
+											<div class="d-flex flex-row-reverse">
+												<a href="#" class="ic-row-content-del"><span class="faci-delete ic-delete-row"></span></a>
+												<a href="#" class="ic-row-content-edit"><span class="faci-edit ic-edit-row"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Dialog History Report -->
+
+			<!-- Dialog Repair -->
+			<div class="qb-dialog" id="dialog_repair">
+				<div class="qb-dialog-overlay">
+					<div class="container-fluid qb-dialog-body">
+
+						<!-- Header Dialog -->
+						<div class="qb-dialog-header">
+							<div class="row">
+								<div class="col-12">
+									<span class="faci-votes ic-title-dialog"></span>
+									<h3 class="title-dialog">CÔNG VIỆC SỬA CHỮA</h3>
+									<a href="#" class="faci-close ic-close-dialog close-dialog"></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Content Dialog -->
+						<div class="qb-dialog-content">
+							<div class="dialog-repair-content">
+								<div class="row">
+									<div class="col-md-10">
+										<div class="form-group">
+											<label>Tiêu đề(*)</label>
+											<input type="text" class="form-control title-repair">
+										</div>
+									</div>
+									<div class="col-md-2 p-0">
+										<div class="cb-repair">
+											<div class="d-flex flex-row-reverse">
+												<label class="custom-control custom-checkbox">
+													<input type="checkbox" class="custom-control-input">
+													<span class="custom-control-indicator"></span>
+													<span class="custom-control-description lb-repair-big lb-control">Sửa chữa lớn</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<div class="form-group">
+											<label>Mô tả công việc</label>
+											<textarea class="form-control decription" rows="5"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-md-5 no-pd-right">
+										<div class="form-group">
+											<label>Máy(*)</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-3 no-pd-right">
+										<div class="form-group">
+											<label>Dự kiến hoàn thành</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-4 no-pd-right">
+										<div class="form-group">
+											<label>Loại(*)</label><br/>
+											<div class="dropdown">
+												<button class="slt-kind dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 col-md-5 no-pd-right">
+										<div class="form-group">
+											<label>Bộ phận(*)</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-3 no-pd-right">
+										<div class="form-group">
+											<label>Ngày thực hiện</label><br/>
+											<span class="faci-calendar ic-calendar"></span>
+											<div class="dropdown">
+												<button class="slt-date-th dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													1/9/2017
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-4 no-pd-right">
+										<div class="form-group">
+											<label>Nhân viên(*)</label><br/>
+											<div class="dropdown">
+												<button class="slt-nv dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="prioritize">
+										<div class="col-sm-12 col-md-12">
+											<span class="lb-prioritize">Ưu tiên:&nbsp&nbsp</span>
+											<label class="custom-control custom-radio">
+												<input id="radio1" name="radio" type="radio" class="custom-control-input">
+												<span class="custom-control-indicator rdo-custom"></span>
+												<span class="custom-control-description lb-control">Cao</span>
+											</label>
+											<label class="custom-control custom-radio">
+												<input id="radio2" name="radio" type="radio" class="custom-control-input">
+												<span class="custom-control-indicator rdo-custom"></span>
+												<span class="custom-control-description lb-control">Bình thường</span>
+											</label>
+											<label class="custom-control custom-radio">
+												<input id="radio3" name="radio" type="radio" class="custom-control-input">
+												<span class="custom-control-indicator rdo-custom"></span>
+												<span class="custom-control-description lb-control">Thấp</span>
+											</label>
+											<label class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input">
+												<span class="custom-control-indicator"></span>
+												<span class="custom-control-description lb-control">Kết thúc</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Dialog -->
+						<div class="qb-dialog-footer">
+							<div class="row justify-content-end">
+								<div class="col-12 text-right">
+									<a href="#" class="btn-close close-dialog">ĐÓNG</a>
+									<a href="#" class="btn-save">LƯU</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Dialog Repair -->
+
+			<!-- Dialog Yeu Cau Vat Tu -->
+			<div class="popup-slider" id="popup_slider_require_materials">
+				<div class="popup-slider-content popup-slider-large">
+
+					<div class="popup-slider-large-top">
+						<div class="row">
+							<div class="col-12">
+								<h3>CMBP-00001841</h3>
+								<a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-slider-large-content">
+						<!-- Dialog Content Yeu Cau Vat Tu -->
+						<div class="dialog-content-ycvt">
+							<div class="row">
+								<div class="col-12">
+									<h3>PHIẾU YÊU CẦU VẬT TƯ</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<label class="col-form-label lb-text">Thiết bị:</label><span class="sp-tb"> Airslide 621.TC01 / 5G1TC003</span>
+									<label class="col-form-label lb-text">&nbsp;Bộ phận:</label><span class="sp-bp"> KIỂM TRA THIẾT BỊ XUẤT XI MĂNG XÁ</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-6">
+									<div class="form-inline">
+										<label class="col-form-label lb-text">Phiếu yêu cầu</label>
+										<div class="dropdown">
+											<button class="qb-dropdown slt-require dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												NMBS-002668
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+												<a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+										<label class="col-form-label lb-text">Kho chính</label>
+										<div class="dropdown">
+											<button class="qb-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Tất cả
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item qb-dropdown-item" href="#">Action</a>
+												<a class="dropdown-item qb-dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item qb-dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<div class="d-flex flex-row-reverse form-search">
+										<a href="#" class="btn-search">
+									<span class="faci-search">
+										<span class="path2"></span>
+									</span>
+										</a>
+										<input type="text" class="form-control input-search">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<table class="table table-responsive qb-table">
+										<thead>
+										<tr class="header-table">
+											<th>
+												MÃ VẬT TƯ
+											</th>
+											<th>TÊN VẬT TƯ</th>
+											<th>ĐƠN VỊ</th>
+											<th>TỒN KHO</th>
+											<th>TỒN KHO THỰC</th>
+											<th>GHI CHÚ</th>
+											<th>TRẠNG THÁI</th>
+											<th>KHO CHÍNH</th>
+											<th>KHO CON</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>031801000091</td>
+											<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+											<td>Cái</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td></td>
+											<td>Active</td>
+											<td>D21</td>
+											<td>Khu 1</td>
+										</tr>
+										<tr>
+											<td>031801000091</td>
+											<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+											<td>Cái</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td></td>
+											<td>Active</td>
+											<td>D21</td>
+											<td>Khu 1</td>
+										</tr>
+										<tr>
+											<td>031801000091</td>
+											<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+											<td>Cái</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td></td>
+											<td>Active</td>
+											<td>D21</td>
+											<td>Khu 1</td>
+										</tr>
+										<tr>
+											<td>031801000091</td>
+											<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+											<td>Cái</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td></td>
+											<td>Active</td>
+											<td>D21</td>
+											<td>Khu 1</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- End Dialog Yeu Cau Vat Tu -->
+
+			<!-- Dialog Yeu Cau Vat Tu Danh Sach Vat Tu -->
+			<div class="popup-slider" id="popup_slider_ycvt_dsvt">
+				<div class="popup-slider-content popup-slider-large">
+
+					<div class="popup-slider-large-content">
+						<!-- Dialog Content Yeu Cau Vat Tu Danh Sach Vat Tu -->
+						<div class="dialog-content-ycvt-dsvt">
+							<div class="table-content">
+								<div class="row">
+									<div class="col-12">
+										<table class="table table-responsive qb-table">
+											<thead>
+											<tr class="header-table">
+												<th><span class="faci-delete"></span></th>
+												<th>PHIẾU YÊU CẦU</th>
+												<th>MÃ VẬT TƯ</th>
+												<th>TÊN VẬT TƯ</th>
+												<th>ĐƠN VỊ</th>
+												<th>MỤC ĐÍCH</th>
+												<th>SỐ LƯỢNG</th>
+												<th>THỜI GIAN SỬ DỤNG</th>
+												<th>KHO CON</th>
+												<th>GHI CHÚ</th>
+												<th>NGÀY CẬP NHẬT</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											<tr>
+												<td>
+													<label class="custom-control custom-checkbox" style="margin-right: 0;">
+														<input type="checkbox" class="custom-control-input cb-row">
+														<span class="custom-control-indicator"></span>
+													</label>
+												</td>
+												<td>NMBS-002668</td>
+												<td>031801000091</td>
+												<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720;
+													LMIN=577)
+												</td>
+												<td>Cái</td>
+												<td></td>
+												<td>0.0</td>
+												<td>20/10/2017</td>
+												<td>Khu 1</td>
+												<td></td>
+												<td>12/10/2017</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-slider-large-footer">
+						<div class="row justify-content-end">
+							<a href="#" class="btn btn-close close-popup-slider">ĐÓNG</a>
+							<a href="#" class="btn btn-save">LƯU</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- End Dialog Yeu Cau Vat Tu Danh Sach Vat Tu -->
+
+			<!-- Dialog Danh Sach Vat Tu  -->
+			<div class="popup-slider" id="popup_slider_dialog_dsvt">
+				<div class="popup-slider-content popup-slider-large">
+
+					<div class="popup-slider-large-top">
+						<div class="row">
+							<div class="col-12">
+								<h3>NMBP-000184</h3>
+								<a href="#" class="close-popup-slider"><span class="faci-close float-right close-slide"></span></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup-slider-large-content">
+						<!-- Dialog Content Danh Sach Vat Tu -->
+						<div class="dialog-content-dsvt">
+							<div class="row">
+								<div class="col-12">
+									<h3>DANH SÁCH VẬT TƯ</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<table class="table table-responsive qb-table">
+										<thead>
+										<tr class="header-table">
+											<th>MÃ VẬT TƯ</th>
+											<th>TÊN VẬT TƯ</th>
+											<th>ĐƠN VỊ</th>
+											<th>SỐ LƯỢNG</th>
+											<th>SỐ LƯỢNG CHẤP NHẬN</th>
+											<th>SỐ LƯỢNG CẤN ĐH</th>
+											<th>TỒN KHO</th>
+											<th>MỤC ĐÍCH</th>
+											<th>THỜI ĐIỂM SỬ DỤNG</th>
+											<th>YÊU CẦU</th>
+											<th>MÃ TÀI SẢN</th>
+											<th>GHI CHÚ</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>031801000091</td>
+											<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+											<td>Cái</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>Xuất VT cho SC thường xuyên tự làm</td>
+											<td>20/10/2017</td>
+											<td>Xuất kho</td>
+											<td>511TC002</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>031801000091</td>
+											<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+											<td>Cái</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>Xuất VT cho SC thường xuyên tự làm</td>
+											<td>20/10/2017</td>
+											<td>Xuất kho</td>
+											<td>511TC002</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>031801000091</td>
+											<td class="text-left name-material">BAO CHE ONG XA CLINKER (ONG TELESCOPE D=960; LMAX=3720; LMIN=577)</td>
+											<td>Cái</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>0.0</td>
+											<td>Xuất VT cho SC thường xuyên tự làm</td>
+											<td>20/10/2017</td>
+											<td>Xuất kho</td>
+											<td>511TC002</td>
+											<td></td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- End Dialog Danh Sach Vat Tu  -->
+		</div>
+	</div>
+	<!-- End Page Content -->
+</div>
+
+<script src="dist/jquery/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="dist/seekbar/js/seekbar.js"></script>
+<script src="dist/datetimepicker-master/build/jquery.datetimepicker.full.js" type="text/javascript"></script>
+<script src="dist/bootstrap-daterangepicker-master/moment.js" type="text/javascript"></script>
+<script src="dist/bootstrap-daterangepicker-master/daterangepicker.js" type="text/javascript"></script>
+<script src="dist/jquery-ui-1.12.1.custom/jquery-ui.js" type="text/javascript"></script>
+<!-- <script src="js/man-ultil.js"></script> -->
+<!-- <script src="js/work.js"></script> -->
+<script src="dist/bootstrap-treeview/js/bootstrap-treeview.js"></script>
+<script src="js/ultil.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
